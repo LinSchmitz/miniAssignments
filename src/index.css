@@ -1,5 +1,5 @@
 :root {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -86,7 +86,7 @@ nav span {
 }
 
 .square101::before {
-  content: "";
+  content: '';
   width: 85%;
   height: 85%;
   left: 50%;
@@ -156,8 +156,8 @@ li {
   border: 1px solid var(--fg);
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  width: 280px;
-  height: 350px;
+  width: 300px;
+  height: 100px;
   display: flex;
   flex-direction: column;
 }
@@ -170,13 +170,13 @@ li {
 }
 
 .card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.2rem;
+  margin: 0.2rem 0 1rem 0;
+  font-size: 0.8rem;
 }
 
 .card p {
   margin: 0;
-  font-size: 1rem;
+  font-size: 0.6rem;
   line-height: 1.5;
 }
 
@@ -209,7 +209,7 @@ li {
   border-radius: 10px;
   border-style: none;
   transition: 0.3s;
-  width: 100px;
+  width: 80px;
   background-color: var(--color-blu);
 }
 

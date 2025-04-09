@@ -13,10 +13,9 @@ function Header() {
     <header>
       <nav>
         <div>
-          Code Craft <span className="square101">101</span>
+          Mini Codes <span className="square101">101</span>
         </div>
         <div className="navbar">
-          <h4>Home</h4>
           <h4>About</h4>
           <h4>Projects</h4>
         </div>
@@ -36,10 +35,18 @@ function Main() {
 
       <section className="cards">
         <div className="card">
-          <h2>Code Craft 101</h2>
+          <h2>Guess My Number</h2>
           <p>Developed an SEO-friendly website</p>
-          <img className="imgs" src="img/CodeCraft101.jpg" alt="CodeCraft101" />
+          {/* <img className="imgs" src="img/CodeCraft101.jpg" alt="CodeCraft101" /> */}
           <div className="btns">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/naleilan/CodeCraft101"
+              className="code"
+            >
+              <button>info</button>
+            </a>
             <a
               target="_blank"
               rel="noreferrer"
@@ -49,126 +56,6 @@ function Main() {
               <button>Code</button>
             </a>
             <a target="_blank" rel="noreferrer" href="#" className="preview">
-              <button>Preview</button>
-            </a>
-          </div>
-        </div>
-
-        <div className="card">
-          <h2>Forkify</h2>
-          <p>Developed an SEO-friendly website</p>
-          <img className="imgs" src="img/forkify.jpg" alt="Forkify" />
-          <div className="btns">
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://github.com/naleilan/forkify"
-              className="code"
-            >
-              <button>Code</button>
-            </a>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://forkifydine.netlify.app/"
-              className="preview"
-            >
-              <button>Preview</button>
-            </a>
-          </div>
-        </div>
-
-        <div className="card">
-          <h2>Mapify</h2>
-          <p>Developed an SEO-friendly website</p>
-          <img className="imgs" src="img/mapify.jpg" alt="mapify" />
-          <div className="btns">
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://github.com/naleilan/mapify"
-              className="code"
-            >
-              <button>Code</button>
-            </a>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://naleilan.github.io/mapify/"
-              className="preview"
-            >
-              <button>Preview</button>
-            </a>
-          </div>
-        </div>
-
-        <div className="card">
-          <h2>Steps Slider</h2>
-          <p>Developed an SEO-friendly website</p>
-          <img className="imgs" src="img/steps-slider.jpg" alt="CodeCraft101" />
-          <div className="btns">
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://github.com/naleilan/steps-slider"
-              className="code"
-            >
-              <button>Code</button>
-            </a>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://steps-slider.netlify.app/"
-              className="preview"
-            >
-              <button>Preview</button>
-            </a>
-          </div>
-        </div>
-
-        <div className="card">
-          <h2>Check List</h2>
-          <p>Developed an SEO-friendly website</p>
-          <img className="imgs" src="img/checklist.jpg" alt="checklist" />
-          <div className="btns">
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://github.com/naleilan/travel-list"
-              className="code"
-            >
-              <button>Code</button>
-            </a>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://traveler-list.netlify.app/"
-              className="preview"
-            >
-              <button>Preview</button>
-            </a>
-          </div>
-        </div>
-
-        <div className="card">
-          <h2>Profile Card</h2>
-          <p>Developed an SEO-friendly website</p>
-          <img className="imgs" src="img/profilecard.jpg" alt="ProfileCard" />
-          <div className="btns">
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://github.com/naleilan/javascriptAssignments/blob/main/ProfileCard"
-              className="code"
-            >
-              <button>Code</button>
-            </a>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://profilecard101.netlify.app/"
-              className="preview"
-            >
               <button>Preview</button>
             </a>
           </div>
