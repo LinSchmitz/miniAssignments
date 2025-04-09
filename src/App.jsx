@@ -13,7 +13,7 @@ function Header() {
     <header>
       <nav>
         <div>
-          Mini Codes <span className="square101">101</span>
+          <span className="square101"> Mini Codes </span>
         </div>
         <div className="navbar">
           <h4>About</h4>
@@ -34,6 +34,87 @@ function Main() {
       </div>
 
       <section className="cards">
+        <div className="card">
+          <h2>Guess My Number</h2>
+          <p>Developed an SEO-friendly website</p>
+          {/* <img className="imgs" src="img/CodeCraft101.jpg" alt="CodeCraft101" /> */}
+          <div className="btns">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/naleilan/CodeCraft101"
+              className="code"
+            >
+              <button>info</button>
+            </a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/naleilan/CodeCraft101"
+              className="code"
+            >
+              <button>Code</button>
+            </a>
+            <a target="_blank" rel="noreferrer" href="#" className="preview">
+              <button>Preview</button>
+            </a>
+          </div>
+        </div>
+
+        <div className="card">
+          <h2>Guess My Number</h2>
+          <p>Developed an SEO-friendly website</p>
+          {/* <img className="imgs" src="img/CodeCraft101.jpg" alt="CodeCraft101" /> */}
+          <div className="btns">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/naleilan/CodeCraft101"
+              className="code"
+            >
+              <button>info</button>
+            </a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/naleilan/CodeCraft101"
+              className="code"
+            >
+              <button>Code</button>
+            </a>
+            <a target="_blank" rel="noreferrer" href="#" className="preview">
+              <button>Preview</button>
+            </a>
+          </div>
+        </div>
+
+        <div className="card">
+          <h2>Guess My Number</h2>
+          <p>Developed an SEO-friendly website</p>
+          {/* <img className="imgs" src="img/CodeCraft101.jpg" alt="CodeCraft101" /> */}
+          <div className="btns">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/naleilan/CodeCraft101"
+              className="code"
+            >
+              <button>info</button>
+            </a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/naleilan/CodeCraft101"
+              className="code"
+            >
+              <button>Code</button>
+            </a>
+            <a target="_blank" rel="noreferrer" href="#" className="preview">
+              <button>Preview</button>
+            </a>
+          </div>
+        </div>
+
         <div className="card">
           <h2>Guess My Number</h2>
           <p>Developed an SEO-friendly website</p>
