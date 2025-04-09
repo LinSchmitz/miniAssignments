@@ -109,7 +109,7 @@ nav span {
 
 .navbar {
   display: flex;
-  margin-left: auto;
+  /* margin-left: auto; */
   cursor: pointer;
 }
 
@@ -118,6 +118,7 @@ nav span {
 }
 /*********main********/
 main {
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -129,15 +130,6 @@ ul,
 li {
   list-style: none;
 }
-
-/* .cards {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 1100px;
-  margin: 3rem 1rem;
-} */
 
 .cards {
   display: grid;
@@ -156,9 +148,6 @@ li {
 
 .card {
   position: relative;
-  /* margin: 1rem; */
-  /* width: 250px; */
-  /* height: 100px; */
   padding: 1rem;
   text-align: left;
   justify-content: center;
@@ -247,40 +236,30 @@ input {
 .searchbtn {
   justify-content: flex-end;
   margin-left: auto;
-}
-
-input,
-.caret {
-  margin: auto;
-}
-
-.searchbtn {
   position: relative;
   width: 100%;
   max-width: 17em;
 }
 
-input,
-.caret {
-  display: block;
-  transition: all calc(var(--dur) * 0.5) linear;
-}
-input,
-.caret {
-  display: block;
-  transition: all calc(var(--dur) * 0.5) linear;
-}
 input {
   background: transparent;
   border-radius: 50%;
   box-shadow: 0 0 0 0.25em inset;
   caret-color: var(--color-blu);
-  width: 2em;
-  height: 2em;
+  width: 1.6em;
+  height: 1.6em;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
+
+input,
+.caret {
+  margin: auto;
+  display: block;
+  transition: all calc(var(--dur) * 0.5) linear;
+}
+
 input:focus,
 input:valid {
   background: var(--input);
@@ -292,10 +271,12 @@ input:valid {
   width: 100%;
   height: 3em;
 }
+
 input:focus {
   animation: showCaret var(--dur) steps(1);
   outline: transparent;
 }
+
 input:focus + .caret,
 input:valid + .caret {
   animation: handleToCaret var(--dur) linear;
@@ -304,9 +285,11 @@ input:valid + .caret {
   height: 1.5em;
   transform: translate(0, -1em) rotate(-180deg) translate(7.5em, -0.25em);
 }
+
 input::-webkit-search-decoration {
   -webkit-appearance: none;
 }
+
 label {
   color: var(--fg);
   overflow: hidden;
@@ -314,6 +297,7 @@ label {
   width: 0;
   height: 0;
 }
+
 .caret {
   background: currentColor;
   border-radius: 0 0 0.125em 0.125em;

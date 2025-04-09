@@ -15,6 +15,11 @@ function Header() {
         <div>
           <span className="square101"> Mini Codes </span>
         </div>
+        <div className="searchbtn">
+          <label htmlFor="search">Search</label>
+          <input id="search" type="search" pattern=".*\S.*" required />
+          <span className="caret"></span>
+        </div>
         <div className="navbar">
           <h4>About</h4>
           <h4>Projects</h4>
@@ -27,11 +32,11 @@ function Header() {
 function Main() {
   return (
     <main>
-      <div className="searchbtn">
+      {/* <div className="searchbtn">
         <label htmlFor="search">Search</label>
         <input id="search" type="search" pattern=".*\S.*" required />
         <span className="caret"></span>
-      </div>
+      </div> */}
 
       <section className="cards">
         <div className="card">
