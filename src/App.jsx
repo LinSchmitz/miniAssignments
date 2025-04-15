@@ -30,82 +30,41 @@ function Header() {
 }
 
 function Main() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = e => {
+    e.preventDefault(); // Prevent anchor tag navigation
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => setIsModalOpen(false);
+
   return (
     <main>
-      {/* <div className="searchbtn">
-        <label htmlFor="search">Search</label>
-        <input id="search" type="search" pattern=".*\S.*" required />
-        <span className="caret"></span>
-      </div> */}
-
       <section className="cards">
         <div className="card">
           <h2>Guess My Number</h2>
           <p>Developed an SEO-friendly website</p>
-          {/* <img className="imgs" src="img/CodeCraft101.jpg" alt="CodeCraft101" /> */}
           <div className="btns">
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://github.com/naleilan/CodeCraft101"
-              className="code"
-            >
-              <button>info</button>
-            </a>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://github.com/naleilan/CodeCraft101"
-              className="code"
-            >
-              <button>Code</button>
-            </a>
-            <a target="_blank" rel="noreferrer" href="#" className="preview">
-              <button>Preview</button>
-            </a>
-          </div>
-        </div>
+            <button className="show-modal">info</button>
 
-        <div className="card">
-          <h2>Guess My Number</h2>
-          <p>Developed an SEO-friendly website</p>
-          {/* <img className="imgs" src="img/CodeCraft101.jpg" alt="CodeCraft101" /> */}
-          <div className="btns">
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://github.com/naleilan/CodeCraft101"
-              className="code"
-            >
-              <button>info</button>
-            </a>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://github.com/naleilan/CodeCraft101"
-              className="code"
-            >
-              <button>Code</button>
-            </a>
-            <a target="_blank" rel="noreferrer" href="#" className="preview">
-              <button>Preview</button>
-            </a>
-          </div>
-        </div>
-
-        <div className="card">
-          <h2>Guess My Number</h2>
-          <p>Developed an SEO-friendly website</p>
-          {/* <img className="imgs" src="img/CodeCraft101.jpg" alt="CodeCraft101" /> */}
-          <div className="btns">
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://github.com/naleilan/CodeCraft101"
-              className="code"
-            >
-              <button>info</button>
-            </a>
+            {/* Modal - moved outside of cards */}
+            {isModalOpen && (
+              <>
+                <div className="overlay" onClick={closeModal}></div>
+                <div className="modal">
+                  <button className="close-modal" onClick={closeModal}>
+                    &times;
+                  </button>
+                  <h1>I'm a modal window 😍</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </>
+            )}
             <a
               target="_blank"
               rel="noreferrer"
