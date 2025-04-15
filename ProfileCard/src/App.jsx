@@ -65,14 +65,14 @@ function Intro() {
 function SkillsList() {
   return (
     <div className="skill-list">
-      <Skill skill="react" emoji="💪" />
+      <Skill skill="react" emoji="💪" color="red" />
     </div>
   );
 }
 
 function Skill(props) {
   return (
-    <div className="skills">
+    <div className="skills" style={{ backgroundColor: props.color }}>
       <span>
         {props.skill}
         {props.emoji}
