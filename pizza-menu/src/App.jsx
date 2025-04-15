@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './index.css';
 
 const pizzaData = [
   {
@@ -47,7 +48,7 @@ const pizzaData = [
 
 export default function App() {
   return (
-    <div>
+    <div className="container">
       <Header />
       <Menu />
       <Footer />
@@ -57,34 +58,45 @@ export default function App() {
 
 function Header() {
   return (
-    <div>
+    <header className="header">
       <h1>Fast React Pizza.co</h1>
-    </div>
+    </header>
   );
 }
 
 function Menu() {
   return (
-    <div>
+    <main className="menu">
       <h2>Our Menu</h2>
       <Pizza />
       <Pizza />
       <Pizza />
       <Pizza />
-    </div>
+    </main>
   );
 }
 
 function Pizza() {
   return (
-    <div>
+    <div className="pizza">
       <img src="./public/pizzas/focaccia.jpg" alt="focaccia" />
-      <h2>Pizza focaccia</h2>
+      <h3>Pizza focaccia</h3>
       <p>Bread with italian olive oil and rosemary</p>
     </div>
   );
 }
 
 function Footer() {
-  return <footer>{new Date().toLocaleTimeString()}. We're open.</footer>;
+  const Hour = new Date().toLocaleTimeString();
+  const openHour = '12';
+  const closeHour = '22';
+  const isOpen = Hour >= openHour && Hour <= closeHour;
+
+  console.log(isOpen, Hour, openHour);
+
+  return (
+    <footer className="footer">
+      {new Date().toLocaleTimeString()}. We're open.
+    </footer>
+  );
 }
