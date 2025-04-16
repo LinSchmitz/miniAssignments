@@ -65,7 +65,7 @@ function Intro() {
 function SkillsList() {
   return (
     <div className="skill-list">
-      <Skill skill="react" emoji="💪" color="red" />
+      <Skill skill="react" emoji="💪" color="#7886c7" />
     </div>
   );
 }
