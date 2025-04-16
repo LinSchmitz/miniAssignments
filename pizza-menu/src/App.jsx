@@ -71,21 +71,9 @@ function Menu() {
 
       <div>
         {pizzaData.map(pizza => (
-          <Pizza pizzaObject={pizza} />
+          <Pizza pizzaObject={pizza} key={pizza.name} />
         ))}
       </div>
-      {/* <Pizza
-        img="./public/pizzas/focaccia.jpg"
-        name="Pizza focaccia"
-        ingredients="Bread with italian olive oil and rosemary"
-        price={12}
-      />
-      <Pizza
-        img="./public/pizzas/Prosciutto.jpg"
-        name="Pizza Prosciutto"
-        ingredients="Tomato, mozarella, ham, aragula, and burrata cheese"
-        price={18}
-      /> */}
     </main>
   );
 }
