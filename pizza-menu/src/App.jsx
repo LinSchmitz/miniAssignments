@@ -92,12 +92,21 @@ function Pizza(props) {
 }
 
 function Footer() {
-  const currentHour = new Date().getHours(); // const min = new Date().getMinutes();
-  const openHour = '12';
-  const closeHour = '22';
+  const currentHour = new Date().getHours(); // returns number (e.g., 20 for 8 PM)
+  const openHour = 12; // number
+  const closeHour = 22; // number
   const isOpen = currentHour >= openHour && currentHour <= closeHour;
 
-  // console.log(isOpen, currentHour, min, closeHour, openHour);
-
-  return <footer className="footer">{isOpen && <p> we are Open </p>}</footer>;
+  return (
+    <footer className="footer">
+      {isOpen && (
+        <div className="order">
+          <p>
+            We are Open until {closeHour}:00. Come visit us or order ONLINE.
+          </p>
+          <button className="btn">Order</button>
+        </div>
+      )}
+    </footer>
+  );
 }
