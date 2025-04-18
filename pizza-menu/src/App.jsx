@@ -66,6 +66,7 @@ function Header() {
 
 function Menu() {
   const pizzas = pizzaData;
+  // const pizzas = []; //check for null amounts
   const pizzasNumber = pizzas.length;
 
   return (
@@ -76,12 +77,14 @@ function Menu() {
        we dont want to render ul for nothing
        rendering happens just when we have data in list
     */}
-      {pizzasNumber > 0 && (
+      {pizzasNumber > 0 ? (
         <ul className="pizzas">
           {pizzas.map(pizza => (
             <Pizza pizzaObject={pizza} key={pizza.name} />
           ))}
         </ul>
+      ) : (
+        <p>We're still working on our menu. :)</p>
       )}
     </main>
   );
@@ -108,13 +111,17 @@ function Footer() {
 
   return (
     <footer className="footer">
-      {isOpen && (
+      {isOpen ? (
         <div className="order">
           <p>
             We are Open until {closeHour}:00. Come visit us or order ONLINE.
           </p>
           <button className="btn">Order</button>
         </div>
+      ) : (
+        <p>
+          We're happy to welcome you between {openHour}:00 and {closeHour}:00
+        </p>
       )}
     </footer>
   );
