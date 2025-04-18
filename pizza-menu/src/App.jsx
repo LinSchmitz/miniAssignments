@@ -78,11 +78,17 @@ function Menu() {
        rendering happens just when we have data in list
     */}
       {pizzasNumber > 0 ? (
-        <ul className="pizzas">
-          {pizzas.map(pizza => (
-            <Pizza pizzaObject={pizza} key={pizza.name} />
-          ))}
-        </ul>
+        <>
+          <p>
+            Authentic Italian cuisine. 6 creative dishes to choose from. All
+            from our stone oven, all organic, all delicious.
+          </p>
+          <ul className="pizzas">
+            {pizzas.map(pizza => (
+              <Pizza pizzaObject={pizza} key={pizza.name} />
+            ))}
+          </ul>
+        </>
       ) : (
         <p>We're still working on our menu. :)</p>
       )}
