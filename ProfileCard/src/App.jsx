@@ -63,28 +63,32 @@ function Intro() {
 }
 
 function SkillsList() {
-  const allSkills = skills;
+  // const allSkills = skills;
 
   return (
-    <div className="skill-list">
-      <ul>
-        {allSkills.map(skill => (
-          <Skill skillsObj={skill} key={skill.skill} />
-        ))}
-      </ul>
-    </div>
+    <ul className="skill-list">
+      {skills.map(skill => (
+        <Skill
+          skill={skill.skill}
+          color={skill.color}
+          level={skill.level}
+          key={skill.skill}
+        />
+      ))}
+    </ul>
   );
 }
 
-function Skill({ skillsObj }) {
+function Skill({ skill, color, level }) {
+  console.log(level);
   return (
-    <li>
-      <div className="skill" style={{ backgroundColor: skillsObj.color }}>
-        <span>
-          {skillsObj.skill}
-          {skillsObj.emoji}
-        </span>
-      </div>
+    <li className="skill" style={{ backgroundColor: color }}>
+      <span>
+        {skill}
+        {level == 'Advance' ? '💪' : ''}
+        {level == 'Intermediate' ? '👩‍💻' : ''}
+        {level == 'beginner' ? '😊' : ''}
+      </span>
     </li>
   );
 }
