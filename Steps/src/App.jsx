@@ -7,26 +7,26 @@ export default function App() {
   return (
     <div className="card">
       <Numbers />
-      <Main />
       <Buttons />
     </div>
   );
 }
 
 function Numbers() {
+  const step = 1;
   return (
     <div className="numbers">
       <div className="number">
-        <div className="activ">1</div>
-        <div>2</div>
-        <div>3</div>
+        <div className={step >= 1 ? 'active' : ''}>1</div>
+        <div className={step >= 2 ? 'active' : ''}>2</div>
+        <div className={step >= 3 ? 'active' : ''}>3</div>
       </div>
+      <Main step={step} />
     </div>
   );
 }
 
-function Main() {
-  const step = 1;
+function Main({ step }) {
   return (
     <main className="main">
       <p>

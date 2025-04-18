@@ -51,7 +51,6 @@ body::before {
   border: 1px solid var(--dark-color);
   border-radius: 15px;
   background-color: var(--light-color);
-  /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); */
   box-shadow: 0 10px 30px rgba(120, 134, 199, 0.25);
 }
 
@@ -59,7 +58,8 @@ body::before {
 
 .numbers {
   display: flex;
-  gap: 7rem;
+  flex-direction: column;
+  gap: 5rem;
   padding-bottom: 2rem;
   border-radius: 7px;
 }
@@ -82,7 +82,7 @@ body::before {
   font-size: 18px;
 }
 
-.number .activ {
+.number .active {
   background-color: var(--btn-color);
   color: var(--light-color);
 }
