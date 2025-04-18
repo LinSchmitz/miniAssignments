@@ -2,7 +2,7 @@
 
 :root {
   --light-bg: #f4eeff;
-  --dark-bg: #424874;
+  --dark-text: #343434;
   --strong-color: #7886c7;
   --medium-color: #211c84;
   --beginner-color: #2d336b;
@@ -16,10 +16,42 @@
 
 body {
   font-family: 'IBM Plex Mono', sans-serif;
-  background-color: var(--dark-bg);
-  color: var(--light-bg);
+  background-color: var(--light-bg);
+  color: var(--dark-text);
 }
 
 h1 {
   margin-bottom: 12px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+  padding: 2rem;
+  width: 30rem;
+  height: 20rem;
+  border: 1px solid var(--beginner-color);
+  border-radius: 15px;
+}
+
+.numbers {
+  display: flex;
+  gap: 7rem;
+  padding-bottom: 2rem;
+}
+
+.number {
+  background-color: var(--beginner-color);
+  color: var(--light-bg);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 500;
 }
