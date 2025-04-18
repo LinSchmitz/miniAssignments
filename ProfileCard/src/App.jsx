@@ -5,27 +5,27 @@ const skills = [
   {
     skill: 'javaScript',
     level: 'beginner',
-    color: 'yellow',
+    color: '#2d336b',
   },
   {
     skill: 'HTML + CSS',
     level: 'Advance',
-    color: 'orangered',
+    color: '#7886c7',
   },
   {
     skill: 'Reactjs',
     level: 'Intermediate',
-    color: 'blue',
+    color: '#211c84',
   },
   {
     skill: 'GIT',
     level: 'Advance',
-    color: 'orange',
+    color: '#7886c7',
   },
   {
     skill: 'PL/SQL',
     level: 'Advance',
-    color: 'green',
+    color: '#7886c7',
   },
 ];
 
@@ -63,20 +63,28 @@ function Intro() {
 }
 
 function SkillsList() {
+  const allSkills = skills;
+
   return (
     <div className="skill-list">
-      <Skill skill="react" emoji="💪" color="#7886c7" />
+      <ul>
+        {allSkills.map(skill => (
+          <Skill skillsObj={skill} key={skill.skill} />
+        ))}
+      </ul>
     </div>
   );
 }
 
-function Skill(props) {
+function Skill({ skillsObj }) {
   return (
-    <div className="skills" style={{ backgroundColor: props.color }}>
-      <span>
-        {props.skill}
-        {props.emoji}
-      </span>
-    </div>
+    <li>
+      <div className="skill" style={{ backgroundColor: skillsObj.color }}>
+        <span>
+          {skillsObj.skill}
+          {skillsObj.emoji}
+        </span>
+      </div>
+    </li>
   );
 }
