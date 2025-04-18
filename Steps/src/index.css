@@ -14,12 +14,28 @@
 
 body {
   font-family: 'IBM Plex Mono', sans-serif;
-  background-color: var(--light-color);
   color: var(--dark-text);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
 }
 
-h1 {
-  margin-bottom: 12px;
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../public/img/1.jpg');
+  background-size: 100% 100%; /* Stretch the image to fit */
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(8px); /* Apply the blur effect only to the background */
+  z-index: -1; /* Keep it behind the content */
 }
 
 .card {
@@ -33,6 +49,9 @@ h1 {
   height: 20rem;
   border: 1px solid var(--dark-color);
   border-radius: 15px;
+  background-color: var(--light-color);
+  /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); */
+  box-shadow: 0 10px 30px rgba(120, 134, 199, 0.25);
 }
 
 .numbers {

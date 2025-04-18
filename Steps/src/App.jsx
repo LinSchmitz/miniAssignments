@@ -3,10 +3,12 @@ import './index.css';
 
 export default function App() {
   return (
-    <div className="card">
-      <Numbers />
-      <Main />
-      <Buttons />
+    <div className="background-blur">
+      <div className="card">
+        <Numbers />
+        <Main />
+        <Buttons />
+      </div>
     </div>
   );
 }
