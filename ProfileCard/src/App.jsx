@@ -83,11 +83,11 @@ function Skill({ skill, color, level }) {
   console.log(level);
   return (
     <li className="skill" style={{ backgroundColor: color }}>
+      <span>{skill}</span>
       <span>
-        {skill}
-        {level == 'Advance' ? '💪' : ''}
-        {level == 'Intermediate' ? '👩‍💻' : ''}
-        {level == 'beginner' ? '😊' : ''}
+        {level === 'Advance' && '💪'}
+        {level === 'Intermediate' && '👩‍💻'}
+        {level === 'beginner' && '😊'}
       </span>
     </li>
   );
