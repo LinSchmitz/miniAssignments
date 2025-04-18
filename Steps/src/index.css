@@ -4,6 +4,7 @@
   --light-color: #f4eeff;
   --dark-color: #343434;
   --btn-color: #7950f2;
+  --btn-unactive: #bebebe;
 }
 
 * {
@@ -54,33 +55,46 @@ body::before {
   box-shadow: 0 10px 30px rgba(120, 134, 199, 0.25);
 }
 
+/* --- steps --- */
+
 .numbers {
   display: flex;
   gap: 7rem;
   padding-bottom: 2rem;
+  border-radius: 7px;
 }
 
 .number {
-  background-color: var(--btn-color);
-  color: var(--light-color);
-  border-radius: 50%;
-  border: none;
-  width: 50px;
-  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  gap: 7rem;
+}
 
+.number > div {
+  height: 40px;
+  aspect-ratio: 1;
+  background-color: var(--btn-unactive);
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  font-weight: 500;
-  cursor: pointer;
+  font-size: 18px;
 }
+
+.number .activ {
+  background-color: var(--btn-color);
+  color: var(--light-color);
+}
+
+/* -- buttons  */
 
 .btns {
   display: flex;
   width: 100%;
   justify-content: space-around;
 }
+
 .btn {
   width: 7rem;
   height: 3rem;

@@ -1,14 +1,14 @@
 import React from 'react';
 import './index.css';
 
+const msg = ['Learn javaScript', 'Learn Reactjs', 'Code alot'];
+
 export default function App() {
   return (
-    <div className="background-blur">
-      <div className="card">
-        <Numbers />
-        <Main />
-        <Buttons />
-      </div>
+    <div className="card">
+      <Numbers />
+      <Main />
+      <Buttons />
     </div>
   );
 }
@@ -16,19 +16,22 @@ export default function App() {
 function Numbers() {
   return (
     <div className="numbers">
-      <div className="number">1</div>
-      <div className="number">2</div>
-      <div className="number">3</div>
+      <div className="number">
+        <div className="activ">1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
     </div>
   );
 }
 
 function Main() {
+  const step = 1;
   return (
     <main className="main">
-      <p>step1 : Learn javaScript</p>
-      <p>Step2 : Learn Reactjs</p>
-      <p>Step3 : Code alot</p>
+      <p>
+        Steps {step}: {msg[step - 1]}{' '}
+      </p>
     </main>
   );
 }
