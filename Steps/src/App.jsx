@@ -22,14 +22,20 @@ function Numbers() {
 }
 
 function Main() {
-  return <main>Step</main>;
+  return (
+    <main className="main">
+      <p>step1 : sldvfdkjvbl\bd</p>
+      <p>Step2 :sdn\kjcvbjkvbslj</p>
+      <p>Step3 :abjsbljcbdsvlj</p>
+    </main>
+  );
 }
 
 function Buttons() {
   return (
-    <div>
-      <button>Previous</button>
-      <button>Next</button>
+    <div className="btns">
+      <button className="btn">Previous</button>
+      <button className="btn">Next</button>
     </div>
   );
 }
