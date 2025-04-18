@@ -24,9 +24,9 @@ function Numbers() {
 function Main() {
   return (
     <main className="main">
-      <p>step1 : sldvfdkjvbl\bd</p>
-      <p>Step2 :sdn\kjcvbjkvbslj</p>
-      <p>Step3 :abjsbljcbdsvlj</p>
+      <p>step1 : Learn javaScript</p>
+      <p>Step2 : Learn Reactjs</p>
+      <p>Step3 : Code alot</p>
     </main>
   );
 }

@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&display=swap');
 
 :root {
-  --light-bg: #f4eeff;
-  --dark-text: #343434;
-  --strong-color: #7886c7;
-  --medium-color: #211c84;
-  --beginner-color: #2d336b;
+  --light-color: #f4eeff;
+  --dark-color: #343434;
+  --btn-color: #7950f2;
 }
 
 * {
@@ -16,7 +14,7 @@
 
 body {
   font-family: 'IBM Plex Mono', sans-serif;
-  background-color: var(--light-bg);
+  background-color: var(--light-color);
   color: var(--dark-text);
 }
 
@@ -33,7 +31,7 @@ h1 {
   padding: 2rem;
   width: 30rem;
   height: 20rem;
-  border: 1px solid var(--beginner-color);
+  border: 1px solid var(--dark-color);
   border-radius: 15px;
 }
 
@@ -44,8 +42,8 @@ h1 {
 }
 
 .number {
-  background-color: var(--beginner-color);
-  color: var(--light-bg);
+  background-color: var(--btn-color);
+  color: var(--light-color);
   border-radius: 50%;
   border: none;
   width: 50px;
@@ -69,5 +67,6 @@ h1 {
   height: 3rem;
   border-radius: 50px;
   border: none;
-  background-color: var(--strong-color);
+  background-color: var(--btn-color);
+  cursor: pointer;
 }
