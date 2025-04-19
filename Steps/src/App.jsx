@@ -36,11 +36,23 @@ function Main({ step }) {
   );
 }
 
+function handlePrevious() {
+  alert('prev');
+}
+
+function handleNext() {
+  alert('Next');
+}
+
 function Buttons() {
   return (
     <div className="btns">
-      <button className="btn">Previous</button>
-      <button className="btn">Next</button>
+      <button className="btn" onClick={handlePrevious}>
+        Previous
+      </button>
+      <button className="btn" onClick={handleNext}>
+        Next
+      </button>
     </div>
   );
 }
