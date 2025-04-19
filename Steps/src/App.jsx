@@ -7,11 +7,13 @@ export default function App() {
   const [step, setStep] = useState(1);
 
   function handlePrevious() {
-    alert('prev');
+    if (step <= 1) return null;
+    setStep(s => s - 1);
   }
 
   function handleNext() {
-    alert('Next');
+    if (step >= 3) return null;
+    setStep(s => s + 1);
   }
 
   return (
