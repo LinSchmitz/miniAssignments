@@ -16,10 +16,12 @@ export default function App() {
   }
 
   return (
-    <div>
+    <>
+      <button className="close" onClick={() => setIsOpen(is => !is)}>
+        &times;
+      </button>
       {isOpen && (
         <div className="card">
-          <p className="close">X</p>
           <div className="numbers">
             <div className="number">
               <div className={step >= 1 ? 'active' : ''}>1</div>
@@ -44,6 +46,6 @@ export default function App() {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 }
