@@ -16,6 +16,7 @@ export default function App() {
 
   return (
     <div className="card">
+      <p className="close">X</p>
       <div className="numbers">
         <div className="number">
           <div className={step >= 1 ? 'active' : ''}>1</div>
