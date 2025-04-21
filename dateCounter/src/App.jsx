@@ -1,42 +1,42 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 export default function App() {
-  const dt = new Date().toLocaleDateString();
+  return (
+    <div>
+      <Counter />
+    </div>
+  );
+}
+
+function Counter() {
   const [step, setStep] = useState(1);
   const [count, setCount] = useState(1);
 
-  function handlePreStep() {
-    setStep(step => step - 1);
-  }
+  const date = new Date();
+  date.setDate(date.getDate() + count);
 
-  function handleNextStep() {
-    setStep(step => step + 1);
-  }
+  // function handleNextStep() {
+  //   setStep(step => step + 1);
+  // }
 
-  function handlePreCount() {
-    setCount(count => count - 1);
-    dt == dt + count;
-  }
-
-  function handleNextCount() {
-    setCount(count => count + 1);
-  }
+  // function handlePreCount() {
+  //   setCount(count => count - 1);
+  // }
 
   return (
     <div className="card">
       <div className="rows">
-        <button onClick={handlePreStep}>-</button>
+        <button onClick={() => setStep(s => s - 1)}>-</button>
         <h3>Step:{step} </h3>
-        <button onClick={handleNextStep}>+</button>
+        <button onClick={() => setStep(s => s + 1)}>+</button>
       </div>
       <div className="rows">
-        <button onClick={handlePreCount}>-</button>
+        <button onClick={() => setCount(c => c - 1)}>-</button>
         <h3>Count:{count} </h3>
-        <button onClick={handleNextCount}>+</button>
+        <button onClick={() => setCount(c => c + 1)}>+</button>
       </div>
       <p>
-        {count} Days from today is {dt}
+        {count} Days from today is {date.toDateString()}
       </p>
     </div>
   );
