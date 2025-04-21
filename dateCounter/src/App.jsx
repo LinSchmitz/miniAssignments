@@ -15,14 +15,6 @@ function Counter() {
   const date = new Date();
   date.setDate(date.getDate() + count);
 
-  // function handleNextStep() {
-  //   setStep(step => step + 1);
-  // }
-
-  // function handlePreCount() {
-  //   setCount(count => count - 1);
-  // }
-
   return (
     <div className="card">
       <div className="rows">
@@ -36,7 +28,15 @@ function Counter() {
         <button onClick={() => setCount(c => c + 1)}>+</button>
       </div>
       <p>
-        {count} Days from today is {date.toDateString()}
+        <span>
+          {count === 0
+            ? 'Today is '
+            : count > 0
+            ? `${count} Days from today is `
+            : `${count} Days ago was `}
+        </span>
+
+        <span>{date.toDateString()}</span>
       </p>
     </div>
   );
