@@ -17,7 +17,7 @@ export default function App() {
 }
 
 function Logo() {
-  return <h1>🌴 Far Away 💼</h1>;
+  return <h1>🩴 Far Away ✈️</h1>;
 }
 function Form() {
   return (
@@ -34,7 +34,7 @@ function PackingList() {
 function Stats() {
   return (
     <footer className="stats">
-      <em>💼 You have X items on your list, and you already packed X (X%)</em>
+      <em>🩴 You have X items on your list, and you already packed X (X%)</em>
     </footer>
   );
 }
