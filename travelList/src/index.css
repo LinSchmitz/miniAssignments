@@ -11,9 +11,9 @@
   --color-yellow: #f6e6cb;
   --color-blue: #c9d7dd; */
 
-  --color-brown: #86a788;
-  --color-orange: #ffe2e2;
-  --color-yellow: #fffdec;
+  --color-brown: #659287;
+  --color-orange: #fffdec;
+  --color-yellow: #ffe2e2;
   --color-blue: #d1e9f6;
 }
 
@@ -71,7 +71,8 @@ h3 {
 button,
 select,
 input {
-  color: var(--color-brown);
+  background-color: var(--color-brown);
+  color: var(--color-yellow);
   font-family: inherit;
   border: none;
   border-radius: 10rem;
@@ -84,6 +85,7 @@ input {
 .add-form button {
   text-transform: uppercase;
   background-color: var(--color-blue);
+  color: var(--color-brown);
 }
 
 .list {
