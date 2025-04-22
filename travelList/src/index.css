@@ -71,8 +71,8 @@ h3 {
 button,
 select,
 input {
-  background-color: var(--color-yellow);
-  color: var(--color-brown);
+  /* background-color: var(--color-yellow); */
+  color: var(--color-yellow);
   font-family: inherit;
   border: none;
   border-radius: 10rem;
