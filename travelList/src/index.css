@@ -12,8 +12,8 @@
   --color-blue: #c9d7dd; */
 
   --color-brown: #86a788;
-  --color-orange: #fffdec;
-  --color-yellow: #ffe2e2;
+  --color-orange: #ffe2e2;
+  --color-yellow: #fffdec;
   --color-blue: #d1e9f6;
 }
 
@@ -71,8 +71,7 @@ h3 {
 button,
 select,
 input {
-  /* background-color: var(--color-yellow); */
-  color: var(--color-yellow);
+  color: var(--color-brown);
   font-family: inherit;
   border: none;
   border-radius: 10rem;
