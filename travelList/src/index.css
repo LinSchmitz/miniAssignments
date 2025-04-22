@@ -1,10 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@500;700&display=swap');
 
 :root {
-  --color-brown: #a66e38;
+  /* --color-brown: #a66e38;
   --color-orange: #ffad60;
   --color-yellow: #ffeead;
-  --color-blue: #96ceb4;
+  --color-blue: #96ceb4; */
+
+  /* --color-brown: #a0937d;
+  --color-orange: #e8c872;
+  --color-yellow: #f6e6cb;
+  --color-blue: #c9d7dd; */
+
+  --color-brown: #86a788;
+  --color-orange: #fffdec;
+  --color-yellow: #ffe2e2;
+  --color-blue: #c9d7dd;
 }
 
 * {
