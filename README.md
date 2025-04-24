@@ -4,6 +4,70 @@
 
 ---
 
+# 🧳 Travel List App
+
+A simple React app to manage your travel items, allowing you to add, track, and mark items as packed for your upcoming trip.
+
+## ✨ Features
+
+- 🛍 Add items with their quantity to your packing list
+
+- ✅ Mark items as packed
+
+- 🔄 Toggle between packed and not packed status
+
+- 📊 View stats for total items and packed items
+
+## 🛠 Tech Stack
+
+- ⚛️ React
+
+- 🎨 CSS
+
+![alt text](public/img/travelList.png)
+
+---
+
+# 📅 Date Slider App
+
+A fun and interactive React app that calculates the date based on a counter. Use a <strong>step slider</strong> to increase or decrease by custom intervals and explore past or future dates!
+
+## ✨ Features
+
+- ➕➖ Increment or decrement a counter by a custom step value
+
+- 📅 Dynamically calculates the date based on the counter
+
+- 🧮 Type in a value or use buttons to change the count
+
+- 🎚 Adjustable step range from 0 to 10
+
+## 🛠 Tech Stack
+
+- ⚛️ React (useState)
+
+- 💅 CSS for styling
+
+## 🚀 How It Works
+
+- `step`: Controls how much to increase/decrease the count
+
+- `count`: Tracks how many days to shift from today
+
+- `new date`: JavaScript Date API updates the display in real time
+
+## 🧠 Concepts Practiced
+
+- useState hooks for managing UI state
+
+- Controlled components (inputs, range)
+
+- Date manipulation in JavaScript
+
+![alt text](public/img/dateSlider.png)
+
+---
+
 # 🧠 React Flashcard App
 
 A simple Flashcard App built with React to practice JavaScript interview questions and state management.
@@ -147,65 +211,3 @@ A simple stepper app built with React. It allows the user to navigate through di
 ## ![alt text](public/img/steps.png)
 
 ---
-
-# 🧳 Travel List App
-
-A simple React app to manage your travel items, allowing you to add, track, and mark items as packed for your upcoming trip.
-
-## ✨ Features
-
-- 🛍 Add items with their quantity to your packing list
-
-- ✅ Mark items as packed
-
-- 🔄 Toggle between packed and not packed status
-
-- 📊 View stats for total items and packed items
-
-## 🛠 Tech Stack
-
-- ⚛️ React
-
-- 🎨 CSS
-
-![alt text](public/img/travelList.png)
-
----
-
-# 📅 Date Slider App
-
-A fun and interactive React app that calculates the date based on a counter. Use a <strong>step slider</strong> to increase or decrease by custom intervals and explore past or future dates!
-
-## ✨ Features
-
-- ➕➖ Increment or decrement a counter by a custom step value
-
-- 📅 Dynamically calculates the date based on the counter
-
-- 🧮 Type in a value or use buttons to change the count
-
-- 🎚 Adjustable step range from 0 to 10
-
-## 🛠 Tech Stack
-
-- ⚛️ React (useState)
-
-- 💅 CSS for styling
-
-## 🚀 How It Works
-
-- `step`: Controls how much to increase/decrease the count
-
-- `count`: Tracks how many days to shift from today
-
-- `new date`: JavaScript Date API updates the display in real time
-
-## 🧠 Concepts Practiced
-
-- useState hooks for managing UI state
-
-- Controlled components (inputs, range)
-
-- Date manipulation in JavaScript
-
-![alt text](public/img/dateSlider.png)

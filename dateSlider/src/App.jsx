@@ -15,6 +15,11 @@ function Counter() {
   const date = new Date();
   date.setDate(date.getDate() + count);
 
+  function handleClick() {
+    setCount(0);
+    setStep(1);
+  }
+
   return (
     <div className="card">
       <div className="rows">
@@ -28,13 +33,17 @@ function Counter() {
         <span>{step} </span>
       </div>
       <div className="rows">
-        <button onClick={() => setCount(c => c - step)}>-</button>
+        <button className="btn" onClick={() => setCount(c => c - step)}>
+          -
+        </button>
         <input
           type="text"
           value={count}
           onChange={e => setCount(Number(e.target.value))}
         />
-        <button onClick={() => setCount(c => c + step)}>+</button>
+        <button className="btn" onClick={() => setCount(c => c + step)}>
+          +
+        </button>
       </div>
       <p>
         <span>
@@ -47,6 +56,12 @@ function Counter() {
 
         <span>{date.toDateString()}</span>
       </p>
+
+      {count !== 0 || step !== 1 ? (
+        <div>
+          <button onClick={handleClick}>Reset</button>
+        </div>
+      ) : null}
     </div>
   );
 }
