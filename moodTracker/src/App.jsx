@@ -53,18 +53,26 @@ function SmillyEmoji({ mood, title, onClick }) {
 }
 
 function Main({ selectedMood }) {
+  const [text, setText] = useState('');
+
   if (!selectedMood)
     return <main style={{ justifyContent: 'center' }}>Select a mood</main>;
 
   return (
     <main>
       <div className="maindetail">
+        <textarea
+          className="input-mode"
+          placeholder="Write a short note..."
+          value={text}
+          onChange={e => setText(e.target.value)}
+        />
         <div className="selectedemoji">
           <h4>Current Mood:</h4>
           <SmillyEmoji mood={selectedMood.mood} title={selectedMood.title} />
           <p>{selectedMood.title}</p>
         </div>
-        <textarea className="input-mode" placeholder="Write a short note..." />
+        {text}
       </div>
     </main>
   );

@@ -4,6 +4,46 @@
 
 ---
 
+# 😄 Mood Tracker App
+
+A simple and interactive React app that lets users track their current mood. Built for practicing React state management with `useState`.
+
+---
+
+## 📸
+
+---
+
+## ✨ Features
+
+- 🌈 Choose your mood from a set of emoji options
+
+- 📝 Add a personal note about how you feel
+
+- 📆 See the currently selected mood and note
+
+- 🔄 Reset mood and start over
+
+---
+
+## 🧠 Concepts Practiced
+
+- React Functional Components
+
+- `useState` Hook
+
+- Conditional Rendering
+
+- Event Handling
+
+- Simple Component Composition
+
+---
+
+![alt text](public/img/modeTracker.png)
+
+## <video controls src="public/img/modeTracker.mp4" title="Title"></video>
+
 # 🧳 Travel List App
 
 A simple React app to manage your travel items, allowing you to add, track, and mark items as packed for your upcoming trip.
