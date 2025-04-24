@@ -3,10 +3,13 @@
 :root {
   --light-color: #f4eeff;
   --dark-color: #343434;
-  --btn-color: #7950f2;
-  --btn-unactive: #bebebe;
-  --color-till: #a3faf8;
-  --color-cheek: #ffc0cb;
+  --color-cheek: #f7cfd8;
+
+  --color-happy: #81e7af;
+  --color-sad: #9ec6f3;
+  --color-surprised: #dbffcb;
+  --color-angry: #ff6363;
+  --color-winking: #8f87f1;
 }
 
 * {
@@ -27,63 +30,133 @@ body {
   background-color: var(--light-color);
 }
 
-/* smily emoji */
+.emoji-row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  gap: 10px;
+}
+
 .emoji {
   position: relative;
-  width: 150px;
-  height: 150px;
-  background-color: var(--color-till);
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   box-shadow: inset -4px -4px 8px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+/* Happy Mood */
+.emoji.happy {
+  background-color: var(--color-happy);
+}
+
+.emoji.sad {
+  background-color: var(--color-sad);
+}
+
+.emoji.surprised {
+  background-color: var(--color-surprised);
+}
+
+.emoji.angry {
+  background-color: var(--color-angry);
+}
+
+.emoji.winking {
+  background-color: var(--color-winking);
 }
 
 .eye {
   position: absolute;
-  top: 50px;
-  width: 16px;
-  height: 16px;
+  top: 25px; /* Adjusted for smaller emoji */
+  width: 8px; /* Adjusted size */
+  height: 8px;
   background-color: #333;
   border-radius: 50%;
 }
 
 .eye.left {
-  left: 25px;
+  left: 10px;
 }
 
 .eye.right {
-  right: 25px;
+  right: 10px;
+}
+
+.eye.winking {
+  width: 12px;
+  height: 4px;
+  border-radius: 0;
+  top: 25px;
 }
 
 .mouth {
   position: absolute;
-  bottom: 25px;
+  bottom: 10px;
   left: 50%;
-  width: 70px;
-  height: 35px;
+  width: 35px; /* Adjusted size */
+  height: 17px; /* Adjusted size */
   background-color: transparent;
-  border: 4px solid var(--dark-color);
+  border: 3px solid var(--dark-color);
   border-top: none;
   border-radius: 0 0 50px 50px;
   transform: translateX(-50%);
 }
 
-.cheek {
-  position: absolute;
-  top: 70px;
-  bottom: 35px;
+/* Happy Mood */
+.mouth.happy {
   width: 40px;
   height: 20px;
+  background-color: #e4ecf1;
+  border: 3px solid var(--dark-color);
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+/* Sad Mood */
+.mouth.sad {
+  bottom: 15px;
+  width: 35px;
+  height: 1px;
+  border-radius: 0;
+}
+
+/* Surprised Mood */
+.mouth.surprised {
+  width: 25px;
+  height: 25px;
+  background-color: var(--light-color);
+  border-radius: 50%;
+  border: 3px solid var(--dark-color);
+}
+
+/* Angry Mood */
+.mouth.angry {
+  transform: translateX(-50%) rotate(180deg);
+}
+
+.mouth.winking {
+  transform: translateX(-50%) rotate(180deg);
+}
+
+.cheek {
+  position: absolute;
+  top: 35px;
+  bottom: 35px;
+  width: 20px;
+  height: 10px;
   background-color: var(--color-cheek);
-  border-radius: 50%/ 50%;
-  opacity: 0.7;
+  border-radius: 50% / 50%;
+  opacity: 0.5;
 }
 
 .cheek.left {
-  left: 10px;
+  left: 5px;
 }
 
 .cheek.right {
-  right: 10px;
+  right: 5px;
 }
-
-/* happy emoji */
