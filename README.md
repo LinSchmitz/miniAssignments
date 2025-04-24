@@ -1,8 +1,10 @@
 # All my js mini project from multiple courses
 
-- still updating
+## 🚀 still updating
 
-# 🧠 React Flashcard App
+---
+
+# 🧠 Flashcard App
 
 A simple Flashcard App built with React to practice JavaScript interview questions and state management.
 
@@ -10,7 +12,7 @@ A simple Flashcard App built with React to practice JavaScript interview questio
 
 ---
 
-### 🧠 Random Advice Generator App
+# 🧠 Random Advice Generator App(getAdvise)
 
 A small and fun ReactJS project that fetches random life advice from the Advice Slip API and displays it on the screen. Great for practicing React Hooks (useState, useEffect), working with APIs, and learning about API caching issues.
 
@@ -32,4 +34,38 @@ A small and fun ReactJS project that fetches random life advice from the Advice 
 
 🎨 HTML & CSS
 
+![alt text](public/img/getAdvice.png)
+
 ---
+
+# 🧠 Date Counter
+
+![alt text](public/img/dateCounter.png)
+
+---
+
+# 🧠 Pizza Menu
+
+![alt text](public/img/pizzaMenu.png)
+
+---
+
+# 🧠 Profile Card
+
+## ![alt text](public/img/ProfileCard.png)
+
+---
+
+# 🧠 Steps
+
+## ![alt text](public/img/steps.png)
+
+---
+
+# 🧠 Travel List
+
+![alt text](public/img/travelList.png)
+
+---
+
+# 🧠
