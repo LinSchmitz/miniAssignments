@@ -37,8 +37,22 @@ const questions = [
   },
 ];
 
-function App() {
-  return <div>flashcard</div>;
+export default function App() {
+  return (
+    <div>
+      <Flashcard />
+    </div>
+  );
 }
 
-export default App;
+function Flashcard() {
+  return (
+    <div className="flashcards">
+      {questions.map(question => (
+        <div>
+          <p>{question.question} </p>
+        </div>
+      ))}
+    </div>
+  );
+}

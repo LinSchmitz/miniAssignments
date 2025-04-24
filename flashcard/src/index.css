@@ -38,7 +38,7 @@ body {
 .flashcards p {
   width: 400px;
   height: 200px;
-  background-color: var(--light-color);
+  background-color: var(--dark-color);
   border: 3px solid var(--back-color);
   color: var(--gray1);
   padding: 1.5rem;
