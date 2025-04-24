@@ -1,29 +1,19 @@
-### 🧠 Random Advice Generator App
+# 🍕 Fast React Pizza.co
 
-A small and fun ReactJS project that fetches random life advice from the Advice Slip API and displays it on the screen. Great for practicing React Hooks (useState, useEffect), working with APIs, and learning about API caching issues.
+A fun and interactive pizza menu app built with React. Explore a list of delicious pizzas, check availability, and see dynamic updates based on opening hours.
 
-### 🚀 Features
+## ✨ Features
 
-🔄 Fetches random advice from an external API
-💡 Displays a new advice every time the button is clicked
-🧮 Keeps track of how many advices you've seen
-🎯 Simple and minimal UI
+- 🧾 Displays a dynamic menu of pizzas
 
-### 🧰 Tech Stack
+- ❌ Marks pizzas as sold out visually
 
-⚛️ React (with Hooks)
-📦 JavaScript (ES6+)
-🎨 HTML & CSS
+- 🕒 Shows open/closed message based on real-time hours
 
-### 🧠 What I Learned
+- 🔁 Conditional rendering and clean component-based architecture
 
-How to fetch data with fetch() in React
-Handling API response and updating state
-React re-renders and how to deal with caching issues
-Writing clean, component-based code
+## 🛠 Tech Stack
 
-### ✨ Future Improvements
+- ⚛️ React
 
-Add loading spinner
-Add error handling
-Fancy UI with Tailwind or styled-components
+- 🎨 CSS

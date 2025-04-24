@@ -4,9 +4,21 @@
 
 ---
 
-# 🧠 Flashcard App
+# 🧠 React Flashcard App
 
 A simple Flashcard App built with React to practice JavaScript interview questions and state management.
+
+## ✨ Features
+
+- 🖱️ Click to reveal or hide answers
+- ⚙️ State management with `useState`
+- 🔁 Conditional rendering and dynamic styling
+- 🧱 Clean and reusable component structure
+
+## 🛠 Tech Stack
+
+- ⚛️ React
+- 🎨 CSS
 
 ![alt text](flashcard/public/img/flashcard.png)
 
@@ -16,7 +28,7 @@ A simple Flashcard App built with React to practice JavaScript interview questio
 
 A small and fun ReactJS project that fetches random life advice from the Advice Slip API and displays it on the screen. Great for practicing React Hooks (useState, useEffect), working with APIs, and learning about API caching issues.
 
-### ✨ Features
+## ✨ Features
 
 🔄 Fetches random advice from an external API
 
@@ -26,7 +38,7 @@ A small and fun ReactJS project that fetches random life advice from the Advice 
 
 🎯 Simple and minimal UI
 
-### 🧰 Tech Stack
+## 🧰 Tech Stack
 
 ⚛️ React (with Hooks)
 
@@ -64,7 +76,25 @@ A simple and interactive React app that helps you explore `useState`, perform dy
 
 ---
 
-# 🧠 Pizza Menu
+# 🍕 Fast React Pizza.co
+
+A fun and interactive pizza menu app built with React. Explore a list of delicious pizzas, check availability, and see dynamic updates based on opening hours.
+
+## ✨ Features
+
+- 🧾 Displays a dynamic menu of pizzas
+
+- ❌ Marks pizzas as sold out visually
+
+- 🕒 Shows open/closed message based on real-time hours
+
+- 🔁 Conditional rendering and clean component-based architecture
+
+## 🛠 Tech Stack
+
+- ⚛️ React
+
+- 🎨 CSS
 
 ![alt text](public/img/pizzaMenu.png)
 

@@ -4,12 +4,12 @@ A simple Flashcard App built with React to practice JavaScript interview questio
 
 ## ✨ Features
 
-- Click to reveal or hide answers
-- State management with `useState`
-- Conditional rendering and dynamic styling
-- Clean and reusable component structure
+- 🖱️ Click to reveal or hide answers
+- ⚙️ State management with `useState`
+- 🔁 Conditional rendering and dynamic styling
+- 🧱 Clean and reusable component structure
 
-## 📦 Tech Stack
+## 🛠 Tech Stack
 
-- React
-- CSS
+- ⚛️ React
+- 🎨 CSS
