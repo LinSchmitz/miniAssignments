@@ -8,6 +8,8 @@ A simple Flashcard App built with React to practice JavaScript interview questio
 
 ![alt text](flashcard/public/img/flashcard.png)
 
+---
+
 ### 🧠 Random Advice Generator App
 
 A small and fun ReactJS project that fetches random life advice from the Advice Slip API and displays it on the screen. Great for practicing React Hooks (useState, useEffect), working with APIs, and learning about API caching issues.
