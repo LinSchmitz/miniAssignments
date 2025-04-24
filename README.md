@@ -120,17 +120,53 @@ A personal developer profile card built with React. Includes a profile picture, 
 
 - 🎨 CSS
 
-### ![alt text](public/img/ProfileCard.png)
+## ![alt text](public/img/ProfileCard.png)
 
 ---
 
-# 🧠 Steps
+# 🧠 Stepper App
+
+A simple stepper app built with React. It allows the user to navigate through different steps, showing motivational messages with previous and next buttons.
+
+## ✨ Features
+
+- 🧭 Navigate through steps with "Previous" and "Next" buttons
+
+- 🚪 Toggle visibility of the card using the close button
+
+- 🔢 Displays current step and related motivational message
+
+- 🟢 Highlights active steps dynamically
+
+## 🛠 Tech Stack
+
+- ⚛️ React
+
+- 🎨 CSS
 
 ## ![alt text](public/img/steps.png)
 
 ---
 
-# 🧠 Travel List
+# 🧳 Travel List App
+
+A simple React app to manage your travel items, allowing you to add, track, and mark items as packed for your upcoming trip.
+
+## ✨ Features
+
+- 🛍 Add items with their quantity to your packing list
+
+- ✅ Mark items as packed
+
+- 🔄 Toggle between packed and not packed status
+
+- 📊 View stats for total items and packed items
+
+## 🛠 Tech Stack
+
+- ⚛️ React
+
+- 🎨 CSS
 
 ![alt text](public/img/travelList.png)
 

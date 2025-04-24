@@ -1,29 +1,19 @@
-### 🧠 Random Advice Generator App
+# 🧳 Travel List App
 
-A small and fun ReactJS project that fetches random life advice from the Advice Slip API and displays it on the screen. Great for practicing React Hooks (useState, useEffect), working with APIs, and learning about API caching issues.
+A simple React app to manage your travel items, allowing you to add, track, and mark items as packed for your upcoming trip.
 
-### 🚀 Features
+## ✨ Features
 
-🔄 Fetches random advice from an external API
-💡 Displays a new advice every time the button is clicked
-🧮 Keeps track of how many advices you've seen
-🎯 Simple and minimal UI
+- 🛍 Add items with their quantity to your packing list
 
-### 🧰 Tech Stack
+- ✅ Mark items as packed
 
-⚛️ React (with Hooks)
-📦 JavaScript (ES6+)
-🎨 HTML & CSS
+- 🔄 Toggle between packed and not packed status
 
-### 🧠 What I Learned
+- 📊 View stats for total items and packed items
 
-How to fetch data with fetch() in React
-Handling API response and updating state
-React re-renders and how to deal with caching issues
-Writing clean, component-based code
+## 🛠 Tech Stack
 
-### ✨ Future Improvements
+- ⚛️ React
 
-Add loading spinner
-Add error handling
-Fancy UI with Tailwind or styled-components
+- 🎨 CSS
