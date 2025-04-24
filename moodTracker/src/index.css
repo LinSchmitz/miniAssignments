@@ -6,6 +6,7 @@
   --color-cheek: #f7cfd8;
 
   --color-happy: #81e7af;
+  --color-good: #ffcdb2;
   --color-sad: #9ec6f3;
   --color-surprised: #dbffcb;
   --color-angry: #ff6363;
@@ -21,13 +22,19 @@
 body {
   font-family: 'IBM Plex Mono', sans-serif;
   color: var(--dark-color);
-  margin: 0;
+  margin: 1rem;
   display: flex;
   justify-content: center;
-  align-items: center;
   min-height: 100vh;
   position: relative;
   background-color: var(--light-color);
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .emoji-row {
@@ -41,8 +48,8 @@ body {
 
 .emoji {
   position: relative;
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   box-shadow: inset -4px -4px 8px rgba(0, 0, 0, 0.15);
   overflow: hidden;
@@ -52,6 +59,10 @@ body {
 /* Happy Mood */
 .emoji.happy {
   background-color: var(--color-happy);
+}
+
+.emoji.good {
+  background-color: var(--color-good);
 }
 
 .emoji.sad {
@@ -66,15 +77,15 @@ body {
   background-color: var(--color-angry);
 }
 
-.emoji.winking {
+.emoji.supersad {
   background-color: var(--color-winking);
 }
 
 .eye {
   position: absolute;
-  top: 25px; /* Adjusted for smaller emoji */
-  width: 8px; /* Adjusted size */
-  height: 8px;
+  top: 15px;
+  width: 5px;
+  height: 5px;
   background-color: #333;
   border-radius: 50%;
 }
@@ -87,19 +98,27 @@ body {
   right: 10px;
 }
 
-.eye.winking {
+.eye.supersad {
   width: 12px;
   height: 4px;
   border-radius: 0;
-  top: 25px;
+  top: 15px;
+}
+
+.eye.angry {
+  width: 12px;
+  height: 4px;
+  border-radius: 0;
+  top: 15px;
 }
 
 .mouth {
   position: absolute;
+  top: 25px;
   bottom: 10px;
   left: 50%;
-  width: 35px; /* Adjusted size */
-  height: 17px; /* Adjusted size */
+  width: 35px;
+  height: 17px;
   background-color: transparent;
   border: 3px solid var(--dark-color);
   border-top: none;
@@ -109,7 +128,8 @@ body {
 
 /* Happy Mood */
 .mouth.happy {
-  width: 40px;
+  width: 30px;
+  top: 25px;
   height: 20px;
   background-color: #e4ecf1;
   border: 3px solid var(--dark-color);
@@ -120,13 +140,15 @@ body {
 /* Sad Mood */
 .mouth.sad {
   bottom: 15px;
+  top: 30px;
   width: 35px;
-  height: 1px;
+  height: 3px;
   border-radius: 0;
 }
 
 /* Surprised Mood */
 .mouth.surprised {
+  top: 20px;
   width: 25px;
   height: 25px;
   background-color: var(--light-color);
@@ -139,13 +161,15 @@ body {
   transform: translateX(-50%) rotate(180deg);
 }
 
-.mouth.winking {
+/* supersad Mood */
+.mouth.supersad {
   transform: translateX(-50%) rotate(180deg);
 }
 
+/*  not using  */
 .cheek {
   position: absolute;
-  top: 35px;
+  top: 22px;
   bottom: 35px;
   width: 20px;
   height: 10px;

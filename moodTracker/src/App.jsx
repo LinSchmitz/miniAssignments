@@ -3,8 +3,8 @@ import './index.css';
 
 export default function App() {
   return (
-    <div>
-      Mood tracker
+    <div className="app">
+      <h3>Mood tracker</h3>
       <EmojiRow />
       <div className="half-circle"></div>
     </div>
@@ -16,10 +16,11 @@ function EmojiRow() {
     <div className="container">
       <div className="emoji-row">
         <SmillyEmoji mood="happy" title="happy" />
-        <SmillyEmoji mood="sad" title="sad" />
+        <SmillyEmoji mood="good" title="good" />
         <SmillyEmoji mood="surprised" title="surprised" />
+        <SmillyEmoji mood="sad" title="sad" />
         <SmillyEmoji mood="angry" title="angry" />
-        <SmillyEmoji mood="winking" title="winking" />
+        <SmillyEmoji mood="supersad" title="super sad" />
       </div>
     </div>
   );
@@ -30,13 +31,12 @@ function SmillyEmoji({ mood, title }) {
     <div className={`emoji ${mood}`} title={title}>
       <div className="smiley">
         <div
-          className={`eye left ${mood === 'winking' ? 'winking' : ''}`}
+          className={`eye left ${mood === 'supersad' ? 'supersad' : ''}`}
         ></div>
         <div
-          className={`eye right ${mood === 'winking' ? 'winking' : ''}`}
+          className={`eye right ${mood === 'supersad' ? 'supersad' : ''}`}
         ></div>
-        <div className={`cheek left ${mood}`}></div>
-        <div className={`cheek right ${mood}`}></div>
+
         <div className={`mouth ${mood}`}></div>
       </div>
     </div>
