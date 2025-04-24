@@ -13,7 +13,3 @@ A simple Flashcard App built with React to practice JavaScript interview questio
 
 - React
 - CSS
-
-## video
-
-<video controls src="public/img/flashcard.mp4" title="Title"></video>

@@ -2,6 +2,12 @@
 
 - still updating
 
+# 🧠 React Flashcard App
+
+A simple Flashcard App built with React to practice JavaScript interview questions and state management.
+
+![alt text](flashcard/public/img/flashcard.png)
+
 ### Etch-a-Sketch
 
 "Etch a Sketch" Project that I made by using HTML, CSS, Javascript.
