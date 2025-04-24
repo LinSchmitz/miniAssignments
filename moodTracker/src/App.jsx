@@ -15,19 +15,19 @@ function EmojiRow() {
   return (
     <div className="container">
       <div className="emoji-row">
-        <SmillyEmoji mood="happy" />
-        <SmillyEmoji mood="sad" />
-        <SmillyEmoji mood="surprised" />
-        <SmillyEmoji mood="angry" />
-        <SmillyEmoji mood="winking" />
+        <SmillyEmoji mood="happy" title="happy" />
+        <SmillyEmoji mood="sad" title="sad" />
+        <SmillyEmoji mood="surprised" title="surprised" />
+        <SmillyEmoji mood="angry" title="angry" />
+        <SmillyEmoji mood="winking" title="winking" />
       </div>
     </div>
   );
 }
 
-function SmillyEmoji({ mood }) {
+function SmillyEmoji({ mood, title }) {
   return (
-    <div className={`emoji ${mood}`}>
+    <div className={`emoji ${mood}`} title={title}>
       <div className="smiley">
         <div
           className={`eye left ${mood === 'winking' ? 'winking' : ''}`}
