@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './index.css';
 
 const questions = [
@@ -46,11 +46,18 @@ export default function App() {
 }
 
 function Flashcard() {
+  const [selectedId, setSelectedId] = useState(11);
+
   return (
     <div className="flashcards">
       {questions.map(question => (
-        <div>
-          <p>{question.question} </p>
+        <div
+          key={question.id}
+          className={question.id === selectedId ? 'selected' : ''}
+        >
+          <p>
+            {question.id === selectedId ? question.answer : question.question}
+          </p>
         </div>
       ))}
     </div>

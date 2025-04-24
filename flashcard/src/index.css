@@ -31,7 +31,7 @@ body {
   gap: 25px;
   flex-wrap: wrap;
   margin: 1.5rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
 }
 
@@ -39,15 +39,15 @@ body {
   width: 400px;
   height: 200px;
   background-color: var(--dark-color);
-  border: 3px solid var(--back-color);
-  color: var(--gray1);
+  border: 3px solid var(--dark-color);
+  color: var(--light-color);
   padding: 1.5rem;
   border-radius: 10px;
   cursor: pointer;
 }
 
 .selected p {
-  border: 3px solid var(--light-color);
+  border: 3px solid var(--back-color);
   background-color: var(--back-color);
   color: var(--light-color);
 }
