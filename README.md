@@ -100,9 +100,27 @@ A fun and interactive pizza menu app built with React. Explore a list of delicio
 
 ---
 
-# 🧠 Profile Card
+# 🧠 Developer Profile Card
 
-## ![alt text](public/img/ProfileCard.png)
+A personal developer profile card built with React. Includes a profile picture, introduction, and a list of technical skills with visual indicators based on experience level.
+
+## ✨ Features
+
+- 🖼 Displays an avatar and brief developer bio
+
+- 🧪 Lists skills with color-coded experience levels
+
+- 🔁 Dynamic rendering using `map()` and component props
+
+- 🎨 Custom styling with dynamic background colors
+
+## 🛠 Tech Stack
+
+- ⚛️ React
+
+- 🎨 CSS
+
+### ![alt text](public/img/ProfileCard.png)
 
 ---
 
