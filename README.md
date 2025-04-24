@@ -40,9 +40,13 @@ A simple and interactive React app that lets users track their current mood. Bui
 
 ---
 
+## 📸
+
 ![alt text](public/img/modeTracker.png)
 
 ## <video controls src="public/img/modeTracker.mp4" title="Title"></video>
+
+---
 
 # 🧳 Travel List App
 
