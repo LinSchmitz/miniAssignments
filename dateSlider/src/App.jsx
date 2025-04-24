@@ -18,11 +18,22 @@ function Counter() {
   return (
     <div className="card">
       <div className="rows">
-        <input type="range" min="0" max="10" />
+        <input
+          type="range"
+          min="0"
+          max="10"
+          value={step}
+          onChange={e => setStep(Number(e.target.value))}
+        />
+        <span>{step} </span>
       </div>
       <div className="rows">
         <button onClick={() => setCount(c => c - step)}>-</button>
-        <h3>Count:{count} </h3>
+        <input
+          type="text"
+          value={count}
+          onChange={e => setCount(Number(e.target.value))}
+        />
         <button onClick={() => setCount(c => c + step)}>+</button>
       </div>
       <p>
