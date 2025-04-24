@@ -33,8 +33,16 @@ body {
 .app {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  padding: 2rem;
+  border: 1px solid var(--dark-color);
+  border-radius: 15px;
+  height: 95vh;
+  width: 35rem;
+}
+
+main {
+  padding-top: 2rem;
 }
 
 .emoji-row {
