@@ -58,10 +58,13 @@ function Main({ selectedMood }) {
 
   return (
     <main>
-      <div className="selectedemoji">
-        <h4>Current Mood:</h4>
-        <SmillyEmoji mood={selectedMood.mood} title={selectedMood.title} />
-        <p>{selectedMood.title}</p>
+      <div className="maindetail">
+        <div className="selectedemoji">
+          <h4>Current Mood:</h4>
+          <SmillyEmoji mood={selectedMood.mood} title={selectedMood.title} />
+          <p>{selectedMood.title}</p>
+        </div>
+        <textarea className="input-mode" placeholder="Write a short note..." />
       </div>
     </main>
   );
