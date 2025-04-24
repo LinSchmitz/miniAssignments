@@ -14,7 +14,7 @@ A simple Flashcard App built with React to practice JavaScript interview questio
 
 A small and fun ReactJS project that fetches random life advice from the Advice Slip API and displays it on the screen. Great for practicing React Hooks (useState, useEffect), working with APIs, and learning about API caching issues.
 
-### 🚀 Features
+### ✨ Features
 
 🔄 Fetches random advice from an external API
 💡 Displays a new advice every time the button is clicked
@@ -36,9 +36,9 @@ Writing clean, component-based code
 
 ### ✨ Future Improvements
 
-Add loading spinner
-Add error handling
-Fancy UI with Tailwind or styled-components
+⚛️ Add loading spinner
+📦 Add error handling
+🎨 Fancy UI with Tailwind or styled-components
 
 ---
 
