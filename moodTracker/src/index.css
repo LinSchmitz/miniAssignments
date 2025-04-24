@@ -54,6 +54,12 @@ body {
   box-shadow: inset -4px -4px 8px rgba(0, 0, 0, 0.15);
   overflow: hidden;
   cursor: pointer;
+  transition: all 0.3s;
+}
+
+.emoji:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
 }
 
 /* Happy Mood */

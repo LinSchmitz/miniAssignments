@@ -19,8 +19,8 @@ function EmojiRow() {
         <SmillyEmoji mood="good" title="good" />
         <SmillyEmoji mood="surprised" title="surprised" />
         <SmillyEmoji mood="sad" title="sad" />
-        <SmillyEmoji mood="angry" title="angry" />
         <SmillyEmoji mood="supersad" title="super sad" />
+        <SmillyEmoji mood="angry" title="angry" />
       </div>
     </div>
   );
