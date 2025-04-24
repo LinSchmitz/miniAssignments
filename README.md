@@ -27,7 +27,7 @@ A small and fun ReactJS project that fetches random life advice from the Advice 
 📦 JavaScript (ES6+)
 🎨 HTML & CSS
 
-### 🧠 What I Learned
+### What I Learned
 
 How to fetch data with fetch() in React
 Handling API response and updating state
@@ -40,42 +40,60 @@ Add loading spinner
 Add error handling
 Fancy UI with Tailwind or styled-components
 
-### Etch-a-Sketch
+---
+
+### 🧠 Etch-a-Sketch
 
 "Etch a Sketch" Project that I made by using HTML, CSS, Javascript.
 In this project, creating a toy to flex DOM manipulation skills.
 This is a browser version of something between a sketchpad and an Etch-A-Sketch.
 The project uses JS to edit grid and mouse events to draw boxes.
 
-### blogPreviewCard
+---
+
+### 🧠 blogPreviewCard
 
 [blog preview cards](https://blogprevcards.netlify.app/)
 
-### BMI
+---
+
+### 🧠 BMI
 
 [BMI](https://c-bmi.netlify.app/)
 
-### bakcolorchange
+---
+
+### 🧠 bakcolorchange
 
 [change background color](https://bakcolorchange.netlify.app/)
 
-### countryList
+---
+
+### 🧠 countryList
 
 [country List](https://listofcountry.netlify.app/)
 
-### Library
+---
+
+### 🧠 Library
 
 This project made by HTML, css and javaScript.
 to store lists of books.
 
-### Tic-Tac-Toe
+---
+
+### 🧠 Tic-Tac-Toe
 
 This game made with HTML, css and javaScript for portfolio.
 
-### nested comments
+---
+
+### 🧠 nested comments
 
 [nested comments](https://nstd-comments.netlify.app/)
 
-### Todo List 2
+---
+
+### 🧠 Todo List 2
 
 [Todo List 2](https://listofday.netlify.app/)
