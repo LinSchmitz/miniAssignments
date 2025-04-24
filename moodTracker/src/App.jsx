@@ -53,12 +53,13 @@ function SmillyEmoji({ mood, title, onClick }) {
 }
 
 function Main({ selectedMood }) {
-  if (!selectedMood) return <main>Select a mood</main>;
+  if (!selectedMood)
+    return <main style={{ justifyContent: 'center' }}>Select a mood</main>;
 
   return (
     <main>
-      <h4>Current Mood:</h4>
-      <div style={{ marginTop: '1rem' }}>
+      <div className="selectedemoji">
+        <h4>Current Mood:</h4>
         <SmillyEmoji mood={selectedMood.mood} title={selectedMood.title} />
         <p>{selectedMood.title}</p>
       </div>
