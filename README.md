@@ -171,5 +171,3 @@ A simple React app to manage your travel items, allowing you to add, track, and 
 ![alt text](public/img/travelList.png)
 
 ---
-
-# 🧠
