@@ -5,6 +5,8 @@
   --dark-color: #343434;
   --btn-color: #7950f2;
   --btn-unactive: #bebebe;
+  --color-till: #a3faf8;
+  --color-cheek: #ffc0cb;
 }
 
 * {
@@ -22,41 +24,66 @@ body {
   align-items: center;
   min-height: 100vh;
   position: relative;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  width: 30rem;
-  height: 20rem;
-  border: 1px solid var(--dark-color);
-  border-radius: 15px;
   background-color: var(--light-color);
-  padding: 7rem;
 }
 
-.rows {
-  display: flex;
-  align-items: center;
-  gap: 3px;
-  width: 100%;
+/* smily emoji */
+.emoji {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background-color: var(--color-till);
+  border-radius: 50%;
+  box-shadow: inset -4px -4px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* -- buttons  */
-
-.btn {
-  width: 1.5rem;
-  height: 1.5rem;
-  border: none;
-  background-color: var(--btn-color);
-  cursor: pointer;
+.eye {
+  position: absolute;
+  top: 50px;
+  width: 16px;
+  height: 16px;
+  background-color: #333;
+  border-radius: 50%;
 }
 
-input {
-  height: 1.5rem;
-  width: 100%;
-  color: var(--dark-color);
+.eye.left {
+  left: 25px;
 }
+
+.eye.right {
+  right: 25px;
+}
+
+.mouth {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  width: 70px;
+  height: 35px;
+  background-color: transparent;
+  border: 4px solid var(--dark-color);
+  border-top: none;
+  border-radius: 0 0 50px 50px;
+  transform: translateX(-50%);
+}
+
+.cheek {
+  position: absolute;
+  top: 70px;
+  bottom: 35px;
+  width: 40px;
+  height: 20px;
+  background-color: var(--color-cheek);
+  border-radius: 50%/ 50%;
+  opacity: 0.7;
+}
+
+.cheek.left {
+  left: 10px;
+}
+
+.cheek.right {
+  right: 10px;
+}
+
+/* happy emoji */
