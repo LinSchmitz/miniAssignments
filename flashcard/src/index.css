@@ -1,10 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&display=swap');
-
 :root {
-  --light-color: #f4eeff;
-  --dark-color: #343434;
-  --btn-color: #7950f2;
-  --btn-unactive: #bebebe;
+  --light-color: #f5eddc;
+  --dark-color: #383838;
+  --back-color: #d63245;
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
 }
 
 * {
@@ -14,93 +17,37 @@
 }
 
 body {
-  font-family: 'IBM Plex Mono', sans-serif;
-  color: var(--dark-text);
   margin: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  place-items: center;
+  min-width: 320px;
   min-height: 100vh;
-  position: relative;
 }
 
-.card {
+.flashcards {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin: 1rem;
-  padding: 3rem;
-  width: 30rem;
-  height: 20rem;
-  border: 1px solid var(--dark-color);
-  border-radius: 15px;
-  background-color: var(--light-color);
-  box-shadow: 0 10px 30px rgba(120, 134, 199, 0.25);
-}
-
-.close {
-  position: fixed; /* Changed from absolute */
-  top: 16px;
-  right: 16px;
-  border: none;
-  background: none;
-  cursor: pointer;
-  font-size: 40px;
-  color: inherit;
-  z-index: 1000; /* Make sure it stays on top */
-}
-
-.close:hover {
-  color: var(--btn-color);
-}
-
-/* --- steps --- */
-
-.numbers {
-  display: flex;
-  flex-direction: column;
-  gap: 5rem;
-  padding-bottom: 2rem;
-  border-radius: 7px;
-}
-
-.number {
-  display: flex;
-  justify-content: space-between;
-  cursor: pointer;
-  gap: 7rem;
-}
-
-.number > div {
-  height: 40px;
-  aspect-ratio: 1;
-  background-color: var(--btn-unactive);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: 18px;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin: 1.5rem;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
-.number .active {
-  background-color: var(--btn-color);
-  color: var(--light-color);
-}
-
-/* -- buttons  */
-
-.btns {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-}
-
-.btn {
-  width: 7rem;
-  height: 3rem;
-  border-radius: 50px;
-  border: none;
-  background-color: var(--btn-color);
+.flashcards p {
+  width: 400px;
+  height: 200px;
+  background-color: var(--light-color);
+  border: 3px solid var(--back-color);
+  color: var(--gray1);
+  padding: 1.5rem;
+  border-radius: 10px;
   cursor: pointer;
+}
+
+.selected p {
+  border: 3px solid var(--light-color);
+  background-color: var(--back-color);
+  color: var(--light-color);
 }
