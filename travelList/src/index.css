@@ -15,6 +15,7 @@
   --color-orange: #fffdec;
   --color-yellow: #ffe2e2;
   --color-blue: #d1e9f6;
+  --color-delete: #c94545;
 }
 
 * {
@@ -137,9 +138,10 @@ input[type='checkbox'] {
   cursor: pointer;
   background: none;
   border: none;
-  font-size: 1.8rem;
+  font-size: 3rem;
   padding: 0.8rem;
   transform: translateY(2px);
+  color: var(--color-delete);
 }
 
 .stats {

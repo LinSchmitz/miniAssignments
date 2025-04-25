@@ -89,7 +89,7 @@ function Item({ item }) {
         {item.description}
         {item.quantity}
       </span>
-      <button>X</button>
+      <button className="btn-delete">&times;</button>
     </li>
   );
 }
