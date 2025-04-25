@@ -66,8 +66,6 @@ A simple React app to manage your travel items, allowing you to add, track, and 
 
 - 🎨 CSS
 
-![alt text](public/img/travelList.png)
-
 ---
 
 # 📅 Date Slider App
