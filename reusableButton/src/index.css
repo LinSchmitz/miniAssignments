@@ -105,13 +105,25 @@ body::before {
 
 /* -- buttons  */
 
-.btns {
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons button {
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: bold;
+
   display: flex;
   align-items: center;
-  justify-content: center;
-  /* width: 7rem;
-  height: 3rem;
-  border-radius: 50px;
-  border: none;
-  cursor: pointer; */
+  gap: 10px;
+}
+
+.buttons button span {
+  font-size: 16px;
+  line-height: 1;
 }

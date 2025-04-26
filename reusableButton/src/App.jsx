@@ -33,7 +33,7 @@ export default function App() {
 
           <StepMessage step={step}>{msg[step - 1]}</StepMessage>
 
-          <div className="btns">
+          <div className="buttons">
             <Button
               bgColor="#7950f2"
               textColor="#f4eeff"
