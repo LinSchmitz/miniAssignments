@@ -4,6 +4,8 @@
 
 ⚛️ React, 📦 JavaScript (ES6+), 🎨 HTML & CSS
 
+---
+
 ## 🚀 still updating
 
 ---
