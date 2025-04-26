@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react';
+import React, { useState } from 'react';
 
 const faqs = [
   {
@@ -42,7 +42,7 @@ const faqs = [
 
 export default function App() {
   return (
-    <div className="app">
+    <div>
       <Accordian data={faqs} />
     </div>
   );
@@ -50,21 +50,26 @@ export default function App() {
 
 function Accordian({ data }) {
   return (
-    <ul>
+    <div className="accordion">
       {data.map((el, i) => (
         <AccordianItem num={i} title={el.title} text={el.text} key={i} />
       ))}
-    </ul>
+    </div>
   );
 }
 
 function AccordianItem({ num, title, text }) {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div className="item">
+    <div
+      className={`item ${isOpen ? 'open' : ''}`}
+      onClick={() => setIsOpen(!isOpen)}
+    >
       <p className="number">{num < 9 ? `0${num + 1}` : num + 1} </p>
       <p className="title">{title} </p>
-      <p className="icon"> - </p>
-      <p className="content-box">{text} </p>
+      <p className="icon">{isOpen ? '-' : '+'}</p>
+      {isOpen && <p className="content-box">{text} </p>}
     </div>
   );
 }
