@@ -1,5 +1,9 @@
 # All my js mini project from multiple courses
 
+### 🛠 Tech Stack
+
+⚛️ React, 📦 JavaScript (ES6+), 🎨 HTML & CSS
+
 ## 🚀 still updating
 
 ---
@@ -8,11 +12,11 @@
 
 A simple and interactive React app that displays fun random facts in an accordion layout. Built for practicing React components and useState management.
 
-## 📸 Preview
+### 📸 Preview
 
 ![alt text](public/img/accordionList.png)
 
-## ✨ Features
+### ✨ Features
 
 🔥 Displays a list of random facts
 
@@ -22,15 +26,9 @@ A simple and interactive React app that displays fun random facts in an accordio
 
 🎨 Easy to customize and extend
 
-## 🛠️ Built With
-
-React (Functional Components)
+### 🛠️ Built With
 
 useState hook (for opening/closing items)
-
-JavaScript (ES6+)
-
-and CSS
 
 ---
 
@@ -38,13 +36,11 @@ and CSS
 
 A simple and interactive React app that lets users track their current mood. Built for practicing React state management with `useState`.
 
----
+### 📸 Preview
 
-## 📸
+![alt text](public/img/modeTracker.png)
 
----
-
-## ✨ Features
+### ✨ Features
 
 - 🌈 Choose your mood from a set of emoji options
 
@@ -56,7 +52,7 @@ A simple and interactive React app that lets users track their current mood. Bui
 
 ---
 
-## 🧠 Concepts Practiced
+### 🧠 Concepts Practiced
 
 - React Functional Components
 
@@ -70,17 +66,15 @@ A simple and interactive React app that lets users track their current mood. Bui
 
 ---
 
-## 📸
-
-![alt text](public/img/modeTracker.png)
-
----
-
 # 🧳 Travel List App
 
 A simple React app to manage your travel items, allowing you to add, track, and mark items as packed for your upcoming trip.
 
-## ✨ Features
+### 📸 Preview
+
+![alt text](public/img/travelLists.png)
+
+### ✨ Features
 
 - 🛍 Add items with their quantity to your packing list
 
@@ -90,21 +84,17 @@ A simple React app to manage your travel items, allowing you to add, track, and 
 
 - 📊 View stats for total items and packed items
 
-## 🛠 Tech Stack
-
-- ⚛️ React
-
-- 🎨 CSS
-
-![alt text](public/img/travelLists.png)
-
 ---
 
 # 📅 Date Slider App
 
 A fun and interactive React app that calculates the date based on a counter. Use a <strong>step slider</strong> to increase or decrease by custom intervals and explore past or future dates!
 
-## ✨ Features
+### 📸 Preview
+
+![alt text](public/img/dateSlider.png)
+
+### ✨ Features
 
 - ➕➖ Increment or decrement a counter by a custom step value
 
@@ -114,13 +104,7 @@ A fun and interactive React app that calculates the date based on a counter. Use
 
 - 🎚 Adjustable step range from 0 to 10
 
-## 🛠 Tech Stack
-
-- ⚛️ React (useState)
-
-- 💅 CSS for styling
-
-## 🚀 How It Works
+### 🚀 How It Works
 
 - `step`: Controls how much to increase/decrease the count
 
@@ -128,7 +112,7 @@ A fun and interactive React app that calculates the date based on a counter. Use
 
 - `new date`: JavaScript Date API updates the display in real time
 
-## 🧠 Concepts Practiced
+### 🧠 Concepts Practiced
 
 - useState hooks for managing UI state
 
@@ -136,27 +120,25 @@ A fun and interactive React app that calculates the date based on a counter. Use
 
 - Date manipulation in JavaScript
 
-![alt text](public/img/dateSlider.png)
-
 ---
 
 # 🧠 React Flashcard App
 
 A simple Flashcard App built with React to practice JavaScript interview questions and state management.
 
-## ✨ Features
-
-- 🖱️ Click to reveal or hide answers
-- ⚙️ State management with `useState`
-- 🔁 Conditional rendering and dynamic styling
-- 🧱 Clean and reusable component structure
-
-## 🛠 Tech Stack
-
-- ⚛️ React
-- 🎨 CSS
+### 📸 Preview
 
 ![alt text](flashcard/public/img/flashcard.png)
+
+### ✨ Features
+
+- 🖱️ Click to reveal or hide answers
+
+- ⚙️ State management with `useState`
+
+- 🔁 Conditional rendering and dynamic styling
+
+- 🧱 Clean and reusable component structure
 
 ---
 
@@ -164,7 +146,11 @@ A simple Flashcard App built with React to practice JavaScript interview questio
 
 A small and fun ReactJS project that fetches random life advice from the Advice Slip API and displays it on the screen. Great for practicing React Hooks (useState, useEffect), working with APIs, and learning about API caching issues.
 
-## ✨ Features
+### 📸 Preview
+
+![alt text](public/img/getAdvice.png)
+
+### ✨ Features
 
 🔄 Fetches random advice from an external API
 
@@ -174,23 +160,17 @@ A small and fun ReactJS project that fetches random life advice from the Advice 
 
 🎯 Simple and minimal UI
 
-## 🧰 Tech Stack
-
-⚛️ React (with Hooks)
-
-📦 JavaScript (ES6+)
-
-🎨 HTML & CSS
-
-![alt text](public/img/getAdvice.png)
-
 ---
 
 # 🗓️ Date Counter App
 
 A simple and interactive React app that helps you explore `useState`, perform dynamic updates, and manipulate dates based on user input. Great for learning how state updates can drive UI changes in real time.
 
-## ✨ Features
+### 📸 Preview
+
+![alt text](public/img/dateCounter.png)
+
+### ✨ Features
 
 - 🔁 Adjust the **step** value to control how much the counter increases or decreases.
 
@@ -200,23 +180,17 @@ A simple and interactive React app that helps you explore `useState`, perform dy
 
 - 🗓️ Smart messages like “3 days ago” or “5 days from today”.
 
-## 🛠 Tech Stack
-
-⚛️ **React** (with Hooks)
-
-📦 **JavaScript** (ES6+)
-
-🎨 **HTML & CSS**
-
-![alt text](public/img/dateCounter.png)
-
 ---
 
 # 🍕 Fast React Pizza.co
 
 A fun and interactive pizza menu app built with React. Explore a list of delicious pizzas, check availability, and see dynamic updates based on opening hours.
 
-## ✨ Features
+### 📸 Preview
+
+![alt text](public/img/pizzaMenu.png)
+
+### ✨ Features
 
 - 🧾 Displays a dynamic menu of pizzas
 
@@ -226,21 +200,17 @@ A fun and interactive pizza menu app built with React. Explore a list of delicio
 
 - 🔁 Conditional rendering and clean component-based architecture
 
-## 🛠 Tech Stack
-
-- ⚛️ React
-
-- 🎨 CSS
-
-![alt text](public/img/pizzaMenu.png)
-
 ---
 
 # 🧠 Developer Profile Card
 
 A personal developer profile card built with React. Includes a profile picture, introduction, and a list of technical skills with visual indicators based on experience level.
 
-## ✨ Features
+### 📸 Preview
+
+![alt text](public/img/ProfileCard.png)
+
+### ✨ Features
 
 - 🖼 Displays an avatar and brief developer bio
 
@@ -250,21 +220,17 @@ A personal developer profile card built with React. Includes a profile picture, 
 
 - 🎨 Custom styling with dynamic background colors
 
-## 🛠 Tech Stack
-
-- ⚛️ React
-
-- 🎨 CSS
-
-## ![alt text](public/img/ProfileCard.png)
-
 ---
 
 # 🧠 Stepper App
 
 A simple stepper app built with React. It allows the user to navigate through different steps, showing motivational messages with previous and next buttons.
 
-## ✨ Features
+### 📸 Preview
+
+![alt text](public/img/steps.png)
+
+### ✨ Features
 
 - 🧭 Navigate through steps with "Previous" and "Next" buttons
 
@@ -273,13 +239,3 @@ A simple stepper app built with React. It allows the user to navigate through di
 - 🔢 Displays current step and related motivational message
 
 - 🟢 Highlights active steps dynamically
-
-## 🛠 Tech Stack
-
-- ⚛️ React
-
-- 🎨 CSS
-
-## ![alt text](public/img/steps.png)
-
----
