@@ -12,6 +12,8 @@
 
 # 📚 Accordion Facts
 
+---
+
 A simple and interactive React app that displays fun random facts in an accordion layout. Built for practicing React components and useState management.
 
 ### 📸 Preview
@@ -35,6 +37,8 @@ useState hook (for opening/closing items)
 ---
 
 # 😄 Mood Tracker App
+
+---
 
 A simple and interactive React app that lets users track their current mood. Built for practicing React state management with `useState`.
 
@@ -69,6 +73,8 @@ A simple and interactive React app that lets users track their current mood. Bui
 ---
 
 # 🧳 Travel List App
+
+---
 
 A simple React app to manage your travel items, allowing you to add, track, and mark items as packed for your upcoming trip.
 
