@@ -58,20 +58,21 @@ function Accordian({ data }) {
           curOpen={curOpen}
           onCurOpen={setCurOpen}
           title={el.title}
-          text={el.text}
           num={i}
           key={i}
-        />
+        >
+          {el.text}
+        </AccordianItem>
       ))}
     </div>
   );
 }
 
-function AccordianItem({ num, curOpen, onCurOpen, title, text }) {
+function AccordianItem({ num, curOpen, onCurOpen, title, children }) {
   const isOpen = num === curOpen;
 
   function handleToggle() {
-    onCurOpen(num);
+    onCurOpen(isOpen ? null : num);
   }
 
   return (
@@ -79,7 +80,7 @@ function AccordianItem({ num, curOpen, onCurOpen, title, text }) {
       <p className="number">{num < 9 ? `0${num + 1}` : num + 1} </p>
       <p className="title">{title} </p>
       <p className="icon">{isOpen ? '-' : '+'}</p>
-      {isOpen && <p className="content-box">{text} </p>}
+      {isOpen && <p className="content-box">{children} </p>}
     </div>
   );
 }
