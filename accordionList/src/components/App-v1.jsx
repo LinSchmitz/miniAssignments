@@ -49,33 +49,23 @@ export default function App() {
 }
 
 function Accordian({ data }) {
-  const [curOpen, setCurOpen] = useState(null);
-
   return (
     <div className="accordion">
       {data.map((el, i) => (
-        <AccordianItem
-          curOpen={curOpen}
-          onCurOpen={setCurOpen}
-          title={el.title}
-          text={el.text}
-          num={i}
-          key={i}
-        />
+        <AccordianItem num={i} title={el.title} text={el.text} key={i} />
       ))}
     </div>
   );
 }
 
-function AccordianItem({ num, curOpen, onCurOpen, title, text }) {
-  const isOpen = num === curOpen;
-
-  function handleToggle() {
-    onCurOpen(num);
-  }
+function AccordianItem({ num, title, text }) {
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className={`item ${isOpen ? 'open' : ''}`} onClick={handleToggle}>
+    <div
+      className={`item ${isOpen ? 'open' : ''}`}
+      onClick={() => setIsOpen(!isOpen)}
+    >
       <p className="number">{num < 9 ? `0${num + 1}` : num + 1} </p>
       <p className="title">{title} </p>
       <p className="icon">{isOpen ? '-' : '+'}</p>
