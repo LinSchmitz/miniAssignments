@@ -10,30 +10,37 @@ export default function App() {
 }
 
 function TipCalculator() {
+  const [bill, setBill] = useState('');
+
   return (
     <div>
-      <BillInput />
-      <SelectPercentage />
-      <SelectPercentage />
-      <Output />
+      <BillInput bill={bill} onSetBill={setBill} />
+      <SelectPercentage>How did you like the Service?</SelectPercentage>
+      <SelectPercentage>How did your friend like the Service?</SelectPercentage>
+      <Output bill={bill} onBill={setBill} />
       <Reset />
     </div>
   );
 }
 
-function BillInput() {
+function BillInput({ bill, onSetBill }) {
   return (
     <div>
-      <h4>How much was the bill? </h4>
-      <input type="text" placeholder="Bill value" />
+      <span>How much was the bill? </span>
+      <input
+        type="text"
+        placeholder="Bill value"
+        value={bill}
+        onChange={e => onSetBill(e.target.value)}
+      />
     </div>
   );
 }
 
-function SelectPercentage() {
+function SelectPercentage({ children }) {
   return (
     <div>
-      <h4>How did you like the Service? </h4>
+      <label>{children}</label>
       <select>
         <option value="0">Dissatisfied(0%)</option>
         <option value="5">It was ok(5%)</option>
@@ -44,13 +51,11 @@ function SelectPercentage() {
   );
 }
 
-function Output() {
+function Output({ bill, setBill }) {
   return (
-    <div>
-      <h4>
-        You pay ${0}(${0} + $12 tip)
-      </h4>
-    </div>
+    <h3>
+      You pay ${0}(${bill} + $12 tip)
+    </h3>
   );
 }
 
