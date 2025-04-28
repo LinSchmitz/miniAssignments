@@ -17,7 +17,7 @@ function TipCalculator() {
       <BillInput bill={bill} onSetBill={setBill} />
       <SelectPercentage>How did you like the Service?</SelectPercentage>
       <SelectPercentage>How did your friend like the Service?</SelectPercentage>
-      <Output bill={bill} onBill={setBill} />
+      <Output bill={bill} />
       <Reset />
     </div>
   );
@@ -31,7 +31,7 @@ function BillInput({ bill, onSetBill }) {
         type="text"
         placeholder="Bill value"
         value={bill}
-        onChange={e => onSetBill(e.target.value)}
+        onChange={e => onSetBill(Number(e.target.value))}
       />
     </div>
   );
@@ -51,7 +51,7 @@ function SelectPercentage({ children }) {
   );
 }
 
-function Output({ bill, setBill }) {
+function Output({ bill }) {
   return (
     <h3>
       You pay ${0}(${bill} + $12 tip)
