@@ -25,9 +25,14 @@ const initialFriends = [
 export default function App() {
   return (
     <div className="app">
-      <dov className="sidebar">
+      <div className="sidebar">
         <FriendsList />
-      </dov>
+        <FormAddFreind />
+        <Button>Add friend</Button>
+      </div>
+      <div className="form-split-bill">
+        <FormSplitBill />
+      </div>
     </div>
   );
 }
@@ -63,7 +68,43 @@ function Friend({ friend }) {
       )}
 
       {friend.balance === 0 && <p>You and {friend.name} are even </p>}
-      <button className="button">Select</button>
+      <Button>Select</Button>
     </li>
+  );
+}
+
+function FormAddFreind() {
+  return (
+    <form className="form-add-friend">
+      <label>🧑‍🤝‍🧑 Friend name</label>
+      <input type="text" />
+
+      <label> Image Url</label>
+      <input type="text" />
+      <Button>Add</Button>
+    </form>
+  );
+}
+
+function Button({ children }) {
+  return <button className="button">{children} </button>;
+}
+
+function FormSplitBill() {
+  return (
+    <form>
+      <h3>Split Bill with {}</h3>
+      <label>💰 Bill value</label>
+      <input type="text" />
+
+      <label>👦🏼 Your expense</label>
+      <input type="text" />
+
+      <label>👧🏼 {} expense </label>
+      <input type="text" />
+
+      <h3>🤑 Who is paying the bill?</h3>
+      <Button>Split Bill</Button>
+    </form>
   );
 }
