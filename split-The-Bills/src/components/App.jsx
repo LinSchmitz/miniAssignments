@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react';
+import React, { useState } from 'react';
 
 const initialFriends = [
   {
@@ -23,12 +23,17 @@ const initialFriends = [
 ];
 
 export default function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="app">
       <div className="sidebar">
         <FriendsList />
-        <FormAddFreind />
-        <Button>Add friend</Button>
+        {isOpen && <FormAddFreind />}
+        <button className="button" onClick={() => setIsOpen(!isOpen)}>
+          {isOpen ? 'Close' : 'Add friend'}
+        </button>
+        {/* <Button onIsOpen={setIsOpen}>Add friend</Button> */}
       </div>
 
       <FormSplitBill />
