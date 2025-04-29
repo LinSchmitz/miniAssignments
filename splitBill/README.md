@@ -1,13 +1,14 @@
-# 📚 Accordion Facts
+# 💰 Tip Calculator App
 
-A simple and interactive React app that displays fun random facts in an accordion layout. Built for practicing React components and useState management.
+A simple and interactive React app to help you calculate tips based on how you and a friend rate the service.
+Built for practicing state management using useState.
 
-## ✨ Features
+### ✨ Features
 
-🔥 Displays a list of random facts
+💵 Enter the total bill amount
 
-🧩 Expand or collapse each fact individually
+🤝 Rate the service from both you and your friend
 
-⚛️ Built with React functional components
+🧮 Calculates total tip and final amount to pay
 
-🛠️ Easy to customize and extend
+🔄 Reset and start over anytime
