@@ -23,5 +23,21 @@ const initialFriends = [
 ];
 
 export default function App() {
-  return <div className="app">hi</div>;
+  return (
+    <div className="app">
+      <FriendList />
+    </div>
+  );
+}
+
+function FriendList() {
+  return (
+    <ul>
+      {initialFriends.map(friend => (
+        <li>
+          {friend.name} {friend.balance}
+        </li>
+      ))}
+    </ul>
+  );
 }
