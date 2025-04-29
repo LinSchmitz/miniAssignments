@@ -40,6 +40,7 @@ export default function App() {
 
   function handleAddFreind(friend) {
     setFriends(friends => [...friends, friend]);
+    setShowAddFreind(false);
   }
 
   return (
