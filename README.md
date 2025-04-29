@@ -6,7 +6,7 @@
 
 +++++++++++++++++++++++++++++++++++++++++++++++
 
-# 💰 Tip Calculator App
+# 💰 Tip Calculator App (splitBill)
 
 A simple and interactive React app to help you calculate tips based on how you and a friend rate the service.
 Built for practicing state management using useState.
