@@ -22,18 +22,30 @@ const initialFriends = [
   },
 ];
 
+function Button({ children, onClick }) {
+  return (
+    <button className="button" onClick={onClick}>
+      {children}{' '}
+    </button>
+  );
+}
+
 export default function App() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [showAddFreind, setShowAddFreind] = useState(false);
+
+  function handleShowAddfreind() {
+    setShowAddFreind(!showAddFreind);
+  }
 
   return (
     <div className="app">
       <div className="sidebar">
         <FriendsList />
-        {isOpen && <FormAddFreind />}
-        <button className="button" onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? 'Close' : 'Add friend'}
-        </button>
-        {/* <Button onIsOpen={setIsOpen}>Add friend</Button> */}
+        {showAddFreind && <FormAddFreind />}
+
+        <Button onClick={handleShowAddfreind}>
+          {showAddFreind ? 'Close' : 'Add friend'}
+        </Button>
       </div>
 
       <FormSplitBill />
@@ -88,10 +100,6 @@ function FormAddFreind() {
       <Button>Add</Button>
     </form>
   );
-}
-
-function Button({ children }) {
-  return <button className="button">{children} </button>;
 }
 
 function FormSplitBill() {
