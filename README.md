@@ -23,9 +23,7 @@ Clean and modular component structure
 ### 📸 Preview
 
 ![alt text](splitBill.png)
-
-<video controls src="1.mp4" title="alt text"></video>
-
+<video controls src="public/img/splitBill.mp4" title="Title"></video>
 🛠️ Tech Stack
 React.js – UI framework
 
