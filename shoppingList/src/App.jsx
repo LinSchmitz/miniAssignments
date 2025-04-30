@@ -69,9 +69,16 @@ function ProductsList({ item }) {
     <li>
       <img src={item.image} />
       <div className="items">
-        <span>{item.name}</span>
+        {item.name}
         <span>{item.description}</span>
-        <span>€{item.price}</span>
+        <div className="items-add">
+          €{item.price}
+          <div className="items-btn">
+            <button className="btn">-</button>
+            <button className="btn btn-add">Add</button>
+            <button className="btn">+</button>
+          </div>
+        </div>
       </div>
     </li>
   );
