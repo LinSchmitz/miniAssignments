@@ -1,31 +1,23 @@
-# 🧳 Travel List App
+# 🧾 Split a Bill with Friends – React App
 
-This is a simple React application that helps users manage a packing list before going on a trip. It uses:
+This is a simple and interactive React application that allows users to split expenses with friends and keep track of balances. It's a beginner-friendly project demonstrating essential React concepts like useState, component props, conditional rendering, and form handling.
 
-useState to manage app state (list of items, form inputs).
+### 🚀 Features
 
-Props to pass functions and data between components.
+Add friends with name and avatar
 
-Event handling to update the UI (add, delete, toggle).
+Select a friend to split a bill with
 
-Conditional rendering (cross out packed items).
+Track who owes whom and how much
 
-Component composition (splitting the app into smaller pieces).
+Automatically updates balances after each split
 
-A simple React app to manage your travel items, allowing you to add, track, and mark items as packed for your upcoming trip.
+Clean and modular component structure
 
-## ✨ Features
+### 🛠️ Tech Stack
 
-- 🛍 Add items with their quantity to your packing list
+React.js – UI framework
 
-- ✅ Mark items as packed
+JavaScript – Programming language
 
-- 🔄 Toggle between packed and not packed status
-
-- 📊 View stats for total items and packed items
-
-## 🛠 Tech Stack
-
-- ⚛️ React
-
-- 🎨 CSS
+CSS – For styling the app (basic class-based styling)
