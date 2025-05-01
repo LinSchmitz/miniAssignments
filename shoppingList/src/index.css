@@ -113,16 +113,40 @@ li img {
   gap: 2rem;
 }
 
-.items-btn {
-  display: flex;
-  gap: 5px;
-}
-
 .btn {
   border: none;
   border-radius: 15px;
   background-color: var(--color-light1);
-  width: 50px;
+  width: 80px;
   height: 30px;
   cursor: pointer;
+}
+
+.btn-remove {
+  background-color: var(--color-red);
+}
+
+.btn-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn-items button {
+  background-color: var(--color-light1);
+  border: none;
+  color: var(--color-dark);
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-items h3 {
+  margin: 0 1rem;
+}
+
+.empty {
+  display: none;
 }

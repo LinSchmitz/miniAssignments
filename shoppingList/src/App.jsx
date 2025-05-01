@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react';
+import React, { useState } from 'react';
 
-const productsList = [
+const initialItems = [
   {
     id: 1,
     name: 'MacBook Pro 16” M2',
@@ -40,26 +40,48 @@ const productsList = [
 ];
 
 export default function App() {
+  const [quantities, setQuantities] = useState(false);
+
+  function handleRemoveItems(id) {
+    console.log('Remove item with ID:', id);
+    setQuantities(false);
+  }
+
   return (
     <div className="app">
-      <Products />
-      <AddItems />
+      <ItemsList
+        quantities={quantities}
+        onQuantities={setQuantities}
+        onRemoveItems={handleRemoveItems}
+      />
       <Bill />
     </div>
   );
 }
 
-function Products() {
+function ItemsList({ quantities, onQuantities, onRemoveItems }) {
+  const items = initialItems;
+
   return (
     <ul>
-      {productsList.map(item => (
-        <ProductsList item={item} key={item.id} />
+      {items.map(item => (
+        <Item
+          item={item}
+          key={item.id}
+          quantities={quantities}
+          onQuantities={onQuantities}
+          onRemoveItems={onRemoveItems}
+        />
       ))}
     </ul>
   );
 }
 
-function ProductsList({ item }) {
+function Item({ item, quantities, onQuantities, onRemoveItems }) {
+  function handleAdd() {
+    onQuantities(!quantities);
+  }
+
   return (
     <li>
       <img src={item.image} />
@@ -69,15 +91,38 @@ function ProductsList({ item }) {
 
         <div className="price-and-button">
           €{item.price}
-          <button className="btn">Add</button>
+          <button
+            className={quantities ? 'empty' : 'btn'}
+            onClick={() => handleAdd(item.id)}
+          >
+            {quantities ? '' : 'Add to cart'}
+          </button>
         </div>
+        {quantities && (
+          <div>
+            <AddItems onRemoveItems={onRemoveItems} itemId={item.id} />
+          </div>
+        )}
       </div>
     </li>
   );
 }
 
-function AddItems() {
-  return <div>AddItems</div>;
+function AddItems({ itemId, onRemoveItems }) {
+  return (
+    <>
+      {
+        <div className="btn-items ">
+          <button>-</button>
+          <h3>X</h3>
+          <button>+</button>
+          <button className="btn-remove" onClick={() => onRemoveItems(itemId)}>
+            Remove
+          </button>
+        </div>
+      }
+    </>
+  );
 }
 
 function Bill() {
