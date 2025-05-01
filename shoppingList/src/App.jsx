@@ -54,7 +54,7 @@ export default function App() {
         onQuantities={setQuantities}
         onRemoveItems={handleRemoveItems}
       />
-      <Bill />
+      <FormBill />
     </div>
   );
 }
@@ -84,9 +84,9 @@ function Item({ item, quantities, onQuantities, onRemoveItems }) {
 
   return (
     <li>
-      <img src={item.image} />
+      <img src={item.image} alt={item.name} />
       <div className="items">
-        <span>{item.name}</span>
+        <h3>{item.name}</h3>
         <span>{item.description}</span>
 
         <div className="price-and-button">
@@ -110,21 +110,25 @@ function Item({ item, quantities, onQuantities, onRemoveItems }) {
 
 function AddItems({ itemId, onRemoveItems }) {
   return (
-    <>
-      {
-        <div className="btn-items ">
-          <button>-</button>
-          <h3>X</h3>
-          <button>+</button>
-          <button className="btn-remove" onClick={() => onRemoveItems(itemId)}>
-            Remove
-          </button>
-        </div>
-      }
-    </>
+    <div className="btn-items ">
+      <Button>-</Button>
+      <h3>X</h3>
+      <Button>+</Button>
+      <Button className="btn-remove" onClick={() => onRemoveItems(itemId)}>
+        Remove
+      </Button>
+    </div>
   );
 }
 
-function Bill() {
-  return <div>Bill</div>;
+function FormBill() {
+  return (
+    <form>
+      <h2>Items List</h2>
+    </form>
+  );
+}
+
+function Button({ children }) {
+  return <button className="btn">{children} </button>;
 }
