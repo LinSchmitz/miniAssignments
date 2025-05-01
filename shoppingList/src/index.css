@@ -123,6 +123,12 @@ li img {
   gap: 1rem;
 }
 
+.button-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Space between buttons and "X" */
+}
+
 .item-left {
   display: flex;
   align-items: center;

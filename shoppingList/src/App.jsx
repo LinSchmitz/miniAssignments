@@ -109,7 +109,7 @@ function Item({ item, quantities, onQuantities, onRemoveItems }) {
 
 function AddItems({ itemId, onRemoveItems }) {
   return (
-    <div>
+    <div className="button-group">
       <Button className="button" width="30px">
         -
       </Button>
