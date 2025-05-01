@@ -7,14 +7,10 @@
 :root {
   --x: 0;
   --y: 0;
-  --xp: 0;
-  --yp: 0;
-  --hue: calc(0 + (var(--xp) * 500));
 
   --bg: #2b2a2a;
   --color-light1: #e8f6ef;
   --color-dark: #424242;
-  --color-green: #36dfc0;
   --color-red: #e05b5b;
 
   --size: 100px;
@@ -109,48 +105,93 @@ li img {
 }
 
 .form-bill {
-  width: 30%;
-  grid-template-columns: 1fr 3fr;
-  padding: 3.2rem 4rem;
+  width: 100%;
+  max-width: 500px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.item-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.item-left img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: var(--br);
+}
+
+/* .item-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+} */
+
+.total {
+  text-align: right;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 /**** Button   ****/
 
-.btn {
+.button {
+  padding: 0.8rem 1.2rem;
   border: none;
   border-radius: 15px;
-  background-color: var(--color-light1);
-  width: 80px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 90px;
   height: 30px;
-  cursor: pointer;
-}
-
-.btn-remove {
-  background-color: var(--color-red);
-}
-
-.btn-items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-
-.btn-items button {
   background-color: var(--color-light1);
-  border: none;
-  color: var(--color-dark);
-  font-size: 1.2rem;
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
-  cursor: pointer;
 }
 
-.btn-items h3 {
-  margin: 0 1rem;
+.button:hover {
+  background-color: var(--color-dark);
+  color: var(--color-light1);
 }
 
-.empty {
+.button.empty {
   display: none;
+  pointer-events: none;
+}
+
+/*****  media *******/
+
+@media (max-width: 600px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .item-left,
+  .item-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .total,
+  .buy-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .buy-button {
+    justify-content: center;
+  }
 }

@@ -61,7 +61,6 @@ export default function App() {
 
 function ItemsList({ quantities, onQuantities, onRemoveItems }) {
   const items = initialItems;
-
   return (
     <ul>
       {items.map(item => (
@@ -91,12 +90,12 @@ function Item({ item, quantities, onQuantities, onRemoveItems }) {
 
         <div className="price-and-button">
           €{item.price}
-          <button
-            className={quantities ? 'empty' : 'btn'}
+          <Button
+            className={quantities ? 'button empty' : 'button'}
             onClick={() => handleAdd(item.id)}
           >
             {quantities ? '' : 'Add to cart'}
-          </button>
+          </Button>
         </div>
         {quantities && (
           <div>
@@ -110,11 +109,19 @@ function Item({ item, quantities, onQuantities, onRemoveItems }) {
 
 function AddItems({ itemId, onRemoveItems }) {
   return (
-    <div className="btn-items ">
-      <Button>-</Button>
+    <div>
+      <Button className="button" width="30px">
+        -
+      </Button>
       <h3>X</h3>
-      <Button>+</Button>
-      <Button className="btn-remove" onClick={() => onRemoveItems(itemId)}>
+      <Button className="button" width="30px">
+        +
+      </Button>
+      <Button
+        className="button"
+        color={'var(--color-red)'}
+        onClick={() => onRemoveItems(itemId)}
+      >
         Remove
       </Button>
     </div>
@@ -124,11 +131,55 @@ function AddItems({ itemId, onRemoveItems }) {
 function FormBill() {
   return (
     <form className="form-bill">
-      <h2>Items List</h2>
+      <h2>Cart</h2>
+
+      <div className="cart-item">
+        <div className="item-left">
+          <img src="https://picsum.photos/id/1/50" alt="item" />
+          <div>
+            <h3>Item Name</h3>
+            <h4>€Price</h4>
+          </div>
+        </div>
+
+        <div>
+          <Button className="button" width="30px">
+            -
+          </Button>
+          <span>1</span>
+          <Button className="button" width="30px">
+            +
+          </Button>
+          <Button className="button" width="30px">
+            &times;
+          </Button>
+        </div>
+      </div>
+
+      <div className="total">
+        <h2>Total: €X</h2>
+      </div>
+
+      <div>
+        <Button className="button">BUY</Button>
+      </div>
     </form>
   );
 }
 
-function Button({ children }) {
-  return <button className="btn">{children} </button>;
+function Button({ children, onClick, width, color, className }) {
+  const buttonClass = `${className} ${color ? 'button' : 'hover'}`;
+
+  return (
+    <button
+      className={buttonClass}
+      onClick={onClick}
+      style={{
+        width: width || '90px',
+        // backgroundColor: color || 'var(--color-light1)',
+      }}
+    >
+      {children}
+    </button>
+  );
 }
