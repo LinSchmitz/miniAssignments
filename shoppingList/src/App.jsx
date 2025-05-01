@@ -123,7 +123,7 @@ function AddItems({ itemId, onRemoveItems }) {
 
 function FormBill() {
   return (
-    <form>
+    <form className="form-bill">
       <h2>Items List</h2>
     </form>
   );
