@@ -118,7 +118,7 @@ function AddItems({ itemId, onRemoveItems }) {
         +
       </Button>
       <Button
-        className="button"
+        className="remove"
         color={'var(--color-red)'}
         onClick={() => onRemoveItems(itemId)}
       >
@@ -168,11 +168,12 @@ function FormBill() {
 }
 
 function Button({ children, onClick, width, color, className }) {
-  const buttonClass = `${className} ${color ? 'button' : 'hover'}`;
+  // const buttonClass = `${className} ${color ? 'button' : 'hover'}`;
 
   return (
     <button
-      className={buttonClass}
+      className={`button ${className || ''}`}
+      // className={buttonClass}
       onClick={onClick}
       style={{
         width: width || '90px',

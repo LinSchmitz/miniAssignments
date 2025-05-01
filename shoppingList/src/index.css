@@ -12,6 +12,7 @@
   --color-light1: #e8f6ef;
   --color-dark: #424242;
   --color-red: #e05b5b;
+  --color-darkred: #8b0000;
 
   --size: 100px;
   --br: 1rem; /* border radious */
@@ -169,6 +170,16 @@ li img {
 .button.empty {
   display: none;
   pointer-events: none;
+}
+
+/* Red button for Remove */
+.button.remove {
+  background-color: var(--color-red);
+  color: white;
+}
+
+.button.remove:hover {
+  background-color: var(--color-darkred);
 }
 
 /*****  media *******/
