@@ -60,17 +60,19 @@ body {
 
 .app {
   width: 100%;
-  padding: 2rem;
+  padding: 5rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 ul {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  width: 100%;
+  width: 70%;
   padding: 0;
   margin: 0;
 }
@@ -99,15 +101,16 @@ li img {
 }
 
 .items {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   padding: 2rem;
   gap: 3rem;
 }
 
-.items-add {
+.price-and-button {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
 }
 
 .items-btn {
@@ -119,11 +122,7 @@ li img {
   border: none;
   border-radius: 15px;
   background-color: var(--color-light1);
-  width: 30px;
+  width: 50px;
   height: 30px;
   cursor: pointer;
-}
-
-.btn-add {
-  width: 50px;
 }

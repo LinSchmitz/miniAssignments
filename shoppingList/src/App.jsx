@@ -7,40 +7,35 @@ const productsList = [
     name: 'MacBook Pro 16” M2',
     price: 2799,
     image: 'https://picsum.photos/id/1/300',
-    description:
-      "Apple's high-performance laptop with M2 Pro chip, 16GB RAM, and 512GB SSD.",
+    description: ' M2 Pro chip, 16GB RAM, and 512GB SSD.',
   },
   {
     id: 2,
     name: 'Dell XPS 13',
     price: 1499,
     image: 'https://picsum.photos/id/2/300',
-    description:
-      'Sleek Windows ultrabook with 12th Gen Intel i7, 16GB RAM, and 512GB SSD.',
+    description: ' 12th Gen Intel i7, 16GB RAM, and 512GB SSD.',
   },
   {
     id: 3,
     name: 'iPhone 15 Pro',
     price: 1099,
     image: 'https://picsum.photos/id/6/300',
-    description:
-      'Apple’s latest iPhone with A17 chip, 128GB storage, and titanium frame.',
+    description: ' A17 chip, 128GB storage, and titanium frame.',
   },
   {
     id: 4,
     name: 'Samsung Galaxy S24 Ultra',
     price: 1199,
     image: 'https://picsum.photos/id/6/300',
-    description:
-      'Flagship Android phone with Snapdragon 8 Gen 3, 200MP camera, and 5000mAh battery.',
+    description: ' Snapdragon 8 Gen 3, 200MP camera, and 5000mAh battery.',
   },
   {
     id: 5,
     name: 'Lenovo Legion 5 Pro',
     price: 1599,
     image: 'https://picsum.photos/id/6/300',
-    description:
-      'Gaming laptop with AMD Ryzen 7, RTX 4070, 16GB RAM, and 1TB SSD.',
+    description: ' AMD Ryzen 7, RTX 4070, 16GB RAM, and 1TB SSD.',
   },
 ];
 
@@ -69,15 +64,12 @@ function ProductsList({ item }) {
     <li>
       <img src={item.image} />
       <div className="items">
-        {item.name}
+        <span>{item.name}</span>
         <span>{item.description}</span>
-        <div className="items-add">
+
+        <div className="price-and-button">
           €{item.price}
-          <div className="items-btn">
-            <button className="btn">-</button>
-            <button className="btn btn-add">Add</button>
-            <button className="btn">+</button>
-          </div>
+          <button className="btn">Add</button>
         </div>
       </div>
     </li>
