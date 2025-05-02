@@ -160,7 +160,7 @@ function FormBill() {
         <h2>Total: €X</h2>
       </div>
 
-      <div>
+      <div class="buy-button-wrapper">
         <Button className="button">BUY</Button>
       </div>
     </form>
