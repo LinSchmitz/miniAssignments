@@ -228,7 +228,7 @@ li img {
   }
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 300px) {
   .app {
     padding: 1rem;
   }
@@ -241,4 +241,4 @@ li img {
   .button {
     width: 100%;
   }
-}
+} */
