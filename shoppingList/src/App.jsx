@@ -40,11 +40,16 @@ const initialItems = [
 ];
 
 export default function App() {
-  const [quantities, setQuantities] = useState(false);
+  const [quantities, setQuantities] = useState({});
 
   function handleRemoveItems(id) {
     console.log('Remove item with ID:', id);
-    setQuantities(false);
+    // setQuantities(false);
+    setQuantities(prev => {
+      const updated = { ...prev };
+      delete updated[id];
+      return updated;
+    });
   }
 
   return (
@@ -77,8 +82,12 @@ function ItemsList({ quantities, onQuantities, onRemoveItems }) {
 }
 
 function Item({ item, quantities, onQuantities, onRemoveItems }) {
-  function handleAdd() {
+  function handleAdd(id) {
     onQuantities(!quantities);
+    onQuantities(prev => ({
+      ...prev,
+      [id]: !prev[id],
+    }));
   }
 
   return (
@@ -91,13 +100,13 @@ function Item({ item, quantities, onQuantities, onRemoveItems }) {
         <div className="price-and-button">
           €{item.price}
           <Button
-            className={quantities ? 'button empty' : 'button'}
+            className={quantities[item.id] ? 'button empty' : 'button'}
             onClick={() => handleAdd(item.id)}
           >
-            {quantities ? '' : 'Add to cart'}
+            {quantities[item.id] ? '' : 'Add to cart'}
           </Button>
         </div>
-        {quantities && (
+        {quantities[item.id] && (
           <div>
             <AddItems onRemoveItems={onRemoveItems} itemId={item.id} />
           </div>
