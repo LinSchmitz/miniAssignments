@@ -117,13 +117,32 @@ function Item({ item, quantities, onQuantities, onRemoveItems }) {
 }
 
 function AddItems({ itemId, onRemoveItems }) {
+  const [item, setItem] = useState(0);
+
+  function handleAddItem(itemId) {
+    setItem(item => item + 1);
+  }
+
+  function handleSubtractItem(itemId) {
+    // if (item < 0) return;
+    setItem(item => (item > 0 ? item - 1 : 0));
+  }
+
   return (
     <div className="button-group">
-      <Button className="button" width="30px">
+      <Button
+        className="button"
+        onClick={() => handleSubtractItem(itemId)}
+        width="30px"
+      >
         -
       </Button>
-      <h3>X</h3>
-      <Button className="button" width="30px">
+      <h3>{item} </h3>
+      <Button
+        className="button"
+        onClick={() => handleAddItem(itemId)}
+        width="30px"
+      >
         +
       </Button>
       <Button
