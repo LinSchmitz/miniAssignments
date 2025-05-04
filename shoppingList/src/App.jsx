@@ -108,7 +108,7 @@ function Item({ item, quantities, onQuantities, onRemoveItems }) {
         </div>
         {quantities[item.id] && (
           <div>
-            <AddItems onRemoveItems={onRemoveItems} itemId={item.id} />
+            <AddItems onRemoveItems={onRemoveItems} item={item} />
           </div>
         )}
       </div>
@@ -116,39 +116,35 @@ function Item({ item, quantities, onQuantities, onRemoveItems }) {
   );
 }
 
-function AddItems({ itemId, onRemoveItems }) {
-  const [item, setItem] = useState(0);
+function AddItems({ item, onRemoveItems }) {
+  const [itemCount, setItemCount] = useState(0);
 
-  function handleAddItem(itemId) {
-    setItem(item => item + 1);
+  function handleAddItem() {
+    setItemCount(itemCount => itemCount + 1);
+    <FormBill itemCount={itemCount} />;
   }
 
-  function handleSubtractItem(itemId) {
-    // if (item < 0) return;
-    setItem(item => (item > 0 ? item - 1 : 0));
+  function handleSubtractItem() {
+    setItemCount(itemCount => (itemCount > 0 ? itemCount - 1 : 0));
   }
 
   return (
     <div className="button-group">
       <Button
         className="button"
-        onClick={() => handleSubtractItem(itemId)}
+        onClick={() => handleSubtractItem}
         width="30px"
       >
         -
       </Button>
-      <h3>{item} </h3>
-      <Button
-        className="button"
-        onClick={() => handleAddItem(itemId)}
-        width="30px"
-      >
+      <h3>{itemCount} </h3>
+      <Button className="button" onClick={() => handleAddItem} width="30px">
         +
       </Button>
       <Button
         className="remove"
         color={'var(--color-red)'}
-        onClick={() => onRemoveItems(itemId)}
+        onClick={() => onRemoveItems(item.id)}
       >
         Remove
       </Button>
@@ -156,7 +152,7 @@ function AddItems({ itemId, onRemoveItems }) {
   );
 }
 
-function FormBill() {
+function FormBill({ item, itemCount }) {
   return (
     <form className="form-bill">
       <h2>Cart</h2>
@@ -165,7 +161,7 @@ function FormBill() {
         <div className="item-left">
           <img src="https://picsum.photos/id/1/50" alt="item" />
           <div>
-            <h3>Item Name</h3>
+            <h3>{item.id} </h3>
             <h4>€Price</h4>
           </div>
         </div>
@@ -174,7 +170,7 @@ function FormBill() {
           <Button className="button" width="30px">
             -
           </Button>
-          <span>1</span>
+          <span>{itemCount}</span>
           <Button className="button" width="30px">
             +
           </Button>
