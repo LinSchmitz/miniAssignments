@@ -86,7 +86,8 @@ Clean and modular component structure
 ### 📸 Preview
 
 ![alt text](splitBill.png)
-<video controls src="public/img/splitBill.mp4" title="Title"></video>
+
+![alt text](public/img/splitBill.gif)
 
 🛠️ Tech Stack
 React.js – UI framework
@@ -145,6 +146,8 @@ A simple and interactive React app that lets users track their current mood. Bui
 ### 📸 Preview
 
 ![alt text](public/img/modeTracker.png)
+
+![alt text](public/img/modeTracker.gif)
 
 ### ✨ Features
 
