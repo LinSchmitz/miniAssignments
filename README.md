@@ -26,7 +26,7 @@ Lightweight and beginner-friendly
 
 ### 📸 Preview
 
-<video controls src="public/img/Star Rating.mp4" title="Title"></video>
+![alt text](<public/img/Star Rating.gif>)
 
 ## 🛠 Tech Stack
 
