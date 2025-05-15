@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react';
+import React, { useState } from 'react';
 
 const containerStyle = {
   display: 'flex',
@@ -9,7 +9,6 @@ const containerStyle = {
 
 const starContainetStyle = {
   display: 'flex',
-  gap: '4px',
 };
 
 const textStyle = {
@@ -18,14 +17,16 @@ const textStyle = {
 };
 
 export default function StarRating({ maxRating = 5 }) {
+  const [rating, setRating] = useState(1);
+
   return (
     <div style={containerStyle}>
       <div style={starContainetStyle}>
         {Array.from({ length: maxRating }, (_, i) => (
-          <Star key={i} />
+          <Star key={i} onRate={() => setRating(i + 1)} />
         ))}
       </div>
-      <p style={textStyle}>10</p>
+      <p style={textStyle}>{rating || ''} </p>
     </div>
   );
 }
@@ -36,9 +37,9 @@ const starStyle = {
   cursor: 'pointer',
 };
 
-function Star() {
+function Star({ onRate }) {
   return (
-    <span role="button" style={starStyle}>
+    <span role="button" style={starStyle} onClick={onRate}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 20 20"
