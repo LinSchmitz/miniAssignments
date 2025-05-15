@@ -6,6 +6,17 @@
 
 +++++++++++++++++++++++++++++++++++++++++++++++
 
++++++++++++++++++++++++++++++++++++++++++++++++
+StarsRating
+
++++++++++++++++++++++++++++++++++++++++++++++++
+dateCounter
++++++++++++++++++++++++++++++++++++++++++++++++
+dateSlider
++++++++++++++++++++++++++++++++++++++++++++++++
+reusableButton
++++++++++++++++++++++++++++++++++++++++++++++++
+
 🧾 Split a Bill with Friends – React App
 This is a simple and interactive React application that allows users to split expenses with friends and keep track of balances. It's a beginner-friendly project demonstrating essential React concepts like useState, component props, conditional rendering, and form handling.
 
