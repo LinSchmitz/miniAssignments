@@ -17,8 +17,9 @@ export default function StarRating({
   size = 48,
   className = '',
   message = [],
+  defaultRating = 0,
 }) {
-  const [rating, setRating] = useState(0);
+  const [rating, setRating] = useState(defaultRating);
   const [tempRating, setTempRating] = useState(0);
 
   const textStyle = {
