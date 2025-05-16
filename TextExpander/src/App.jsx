@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function App() {
   return (
@@ -26,7 +26,7 @@ export default function App() {
         foot on the moon or when rovers were sent to roam around on Mars.
       </TextExpander>
 
-      <TextExpander expanded={true} className="box" collapsedNumWords={50}>
+      <TextExpander expanded={true} className="box" collapsedNumWords={10}>
         Space missions have given us incredible insights into our universe and
         have inspired future generations to keep reaching for the stars. Space
         travel is a pretty cool thing to think about. Who knows what we'll
@@ -40,18 +40,31 @@ function TextExpander({
   children,
   collapsedNumWords,
   expandButtonText,
-  collapseButtonText,
+  collapseButtonText = 'show more',
   buttonColor = 'blue',
   expanded,
   className,
 }) {
+  // const [expand, setExpand] = useState(collapsedNumWords);
+  const first10Words = children
+    .split(/\s+/)
+    .slice(0, collapsedNumWords)
+    .join(' ');
+
+  function handleClick() {
+    return <p> click</p>;
+  }
+
   return (
     <>
       {expanded && (
         <div className={className}>
-          {children}
-          <button style={{ color: buttonColor, border: 'none' }}>
-            show more
+          {first10Words}...
+          <button
+            style={{ color: buttonColor, border: 'none' }}
+            onClick={handleClick}
+          >
+            {expanded ? 'show less' : collapseButtonText}
           </button>
         </div>
       )}
