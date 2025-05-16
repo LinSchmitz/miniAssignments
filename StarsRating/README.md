@@ -4,21 +4,22 @@ A simple, interactive, and reusable Star Rating component built with React. Hove
 
 ## ✨ Features
 
-Dynamic rendering of stars (default: 5)
-
-Hover effect to preview rating
-
-Click to select rating
-
-Fully customizable
-
-Lightweight and beginner-friendly
+✅ Dynamic rendering of stars (default: 5)  
+✅ Hover effect to preview rating  
+✅ Click to select rating  
+✅ Optional custom messages per star  
+✅ Fully customizable (color, size, maxRating)  
+✅ Lightweight and beginner-friendly  
+✅ Supports lifting state up via `onSetRating` prop  
+✅ Defaults like `defaultRating` built-in
 
 ## 🛠 Tech Stack
 
-- ⚛️ React
+-⚛️ React (useState, props)
 
-- 🎨 CSS
+🎨 Inline CSS styles
+
+🧩 SVG Icons
 
 ## ✏️ Customization
 
@@ -27,22 +28,38 @@ maxRating Number 5 Number of stars to display
 
 You can also modify the styles, star icons, or logic to suit your UI preferences.
 
-## 🧠 How It Works
+## 💡 How It Works
 
-useState tracks both selected rating and temporary hover rating
+useState tracks both selected (rating) and hovered (tempRating) values.
 
-On hover: stars fill up based on hovered index
+Stars fill based on hover or click.
 
-On click: rating is locked in until changed again
+Star is a reusable child component that handles SVG rendering and events.
 
-Icons are rendered using inline SVGs (full and empty stars)
+Fully customizable by props.
 
 ## 🧪 Future Improvements
 
-Allow passing custom icons or SVGs
+✅ Accept custom star icons or SVGs
 
-Keyboard accessibility
+✅ Allow passing custom CSS class
 
-Allow half-star ratings
+⬜ Keyboard accessibility
 
-Add animations
+⬜ Support for half-star ratings
+
+⬜ Add animations and transitions
+
+⬜ Accessibility labels for screen readers
+
+### ✏️ Props
+
+| Prop            | Type     | Default   | Description                                  |
+| --------------- | -------- | --------- | -------------------------------------------- |
+| `maxRating`     | Number   | `5`       | Number of stars to display                   |
+| `color`         | String   | `#fcc419` | Color of filled stars                        |
+| `size`          | Number   | `48`      | Size of each star in pixels                  |
+| `message`       | Array    | `[]`      | Custom label under the stars for each rating |
+| `defaultRating` | Number   | `0`       | Initial selected rating                      |
+| `onSetRating`   | Function | `null`    | Callback function to get the selected rating |
+| `className`     | String   | `""`      | Optional CSS class to style the container    |
