@@ -1,67 +1,48 @@
-# ⭐ React Star Rating Component
+# 📝 React TextExpander Component
 
-A simple, interactive, and reusable Star Rating component built with React. Hover to preview the rating and click to select.
-Supports dynamic star counts, hover preview, click-to-select ratings, custom messages, and full styling control.
-Perfect for reviews, feedback forms, and user rating interfaces.
+A clean, flexible, and reusable Text Expander component built with React. Perfect for showing previews of long texts with a toggle to expand or collapse the content.
 
-## ✨ Features
+### ✨ Features
 
-✅ Dynamic rendering of stars (default: 5)  
-✅ Hover effect to preview rating  
-✅ Click to select rating  
-✅ Optional custom messages per star  
-✅ Fully customizable (color, size, maxRating)  
-✅ Lightweight and beginner-friendly  
-✅ Supports lifting state up via `onSetRating` prop  
-✅ Defaults like `defaultRating` built-in
+👁️ Show only a preview of long text (default: first 10 words)
 
-## 🛠 Tech Stack
+🔘 Expand or collapse text with a toggle button
 
--⚛️ React (useState, props)
+🎨 Customizable button color and text
 
-🎨 Inline CSS styles
+🧩 Can be controlled or uncontrolled (default or always-expanded)
 
-🧩 SVG Icons
+🧱 Easy to style via className prop
 
-## ✏️ Customization
+🛠 Tech Stack
+⚛️ React (Functional Components + Hooks)
+
+💅 Inline CSS for styling buttons
+
+### ✏️ Customization
 
 Prop Type Default Description
-maxRating Number 5 Number of stars to display
+collapsedNumWords Number 10 Number of words to show when collapsed
+expandButtonText String "Show more" Text for the expand button
+collapseButtonText String "Show less" Text for the collapse button
+buttonColor String "blue" Color of the expand/collapse button
+expanded Boolean false Show text expanded by default
+className String - Optional class for styling container
 
-You can also modify the styles, star icons, or logic to suit your UI preferences.
+### 🧠 How It Works
 
-## 💡 How It Works
+useState tracks whether the text is expanded or collapsed.
 
-useState tracks both selected (rating) and hovered (tempRating) values.
+If collapsed, the component splits the text and shows the first n words followed by ....
 
-Stars fill based on hover or click.
+Clicking the button toggles between full text and preview.
 
-Star is a reusable child component that handles SVG rendering and events.
+### 🧪 Future Improvements
 
-Fully customizable by props.
+Add transition/animation when expanding or collapsing
 
-## 🧪 Future Improvements
+Improve accessibility (e.g., aria-expanded)
 
-✅ Accept custom star icons or SVGs
+Support for truncating by characters or lines, not just words
 
-✅ Allow passing custom CSS class
-
-⬜ Keyboard accessibility
-
-⬜ Support for half-star ratings
-
-⬜ Add animations and transitions
-
-⬜ Accessibility labels for screen readers
-
-### ✏️ Props
-
-| Prop            | Type     | Default   | Description                                  |
-| --------------- | -------- | --------- | -------------------------------------------- |
-| `maxRating`     | Number   | `5`       | Number of stars to display                   |
-| `color`         | String   | `#fcc419` | Color of filled stars                        |
-| `size`          | Number   | `48`      | Size of each star in pixels                  |
-| `message`       | Array    | `[]`      | Custom label under the stars for each rating |
-| `defaultRating` | Number   | `0`       | Initial selected rating                      |
-| `onSetRating`   | Function | `null`    | Callback function to get the selected rating |
-| `className`     | String   | `""`      | Optional CSS class to style the container    |
+Optional ellipsis style (e.g., fadeout)
