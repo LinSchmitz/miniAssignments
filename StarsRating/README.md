@@ -1,6 +1,8 @@
 # ⭐ React Star Rating Component
 
-A simple, interactive, and reusable Star Rating component built with React. Hover to preview the rating and click to select. Perfect for reviews, feedback forms, and user rating interfaces.
+A simple, interactive, and reusable Star Rating component built with React. Hover to preview the rating and click to select.
+Supports dynamic star counts, hover preview, click-to-select ratings, custom messages, and full styling control.
+Perfect for reviews, feedback forms, and user rating interfaces.
 
 ## ✨ Features
 
