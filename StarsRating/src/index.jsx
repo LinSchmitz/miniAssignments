@@ -12,7 +12,7 @@ root.render(
     />
     <StarRating color="red" size={24} />
     <StarRating color="blue" defaultRating={3} />
-    {/* <StarRating maxRating={10} /> */}
+    <StarRating maxRating={10} />
     {/* <StarRating /> */}
   </React.StrictMode>
 );
