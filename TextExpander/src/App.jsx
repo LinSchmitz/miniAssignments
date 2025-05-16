@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 export default function App() {
   return (
     <div>
-      <TextExpander collapsedNumWords={10} expanded={true}>
+      <TextExpander collapsedNumWords={10}>
         Space travel is the ultimate adventure! Imagine soaring past the stars
         and exploring new worlds. It's the stuff of dreams and science fiction,
         but believe it or not, space travel is a real thing. Humans and robots
@@ -17,7 +17,6 @@ export default function App() {
         expandButtonText="Show text"
         collapseButtonText="Collapse text"
         buttonColor="#ff6622"
-        expanded={true}
       >
         Space travel requires some seriously amazing technology and
         collaboration between countries, private companies, and international
@@ -39,17 +38,19 @@ export default function App() {
 function TextExpander({
   children,
   collapsedNumWords,
-  expandButtonText,
-  collapseButtonText = 'show more',
+  expandButtonText = 'Show more',
+  collapseButtonText,
   buttonColor = 'blue',
-  expanded,
+  expanded = false,
   className,
 }) {
-  // const [expand, setExpand] = useState(collapsedNumWords);
-  const first10Words = children
-    .split(/\s+/)
-    .slice(0, collapsedNumWords)
-    .join(' ');
+  const [isExpanded, setIsExpanded] = useState(expanded);
+  const displaytext = isExpanded ? children : 'text';
+
+  // = children
+  //   .split(/\s+/)
+  //   .slice(0, collapsedNumWords)
+  //   .join(' ');
 
   function handleClick() {
     return <p> click</p>;
@@ -59,12 +60,12 @@ function TextExpander({
     <>
       {expanded && (
         <div className={className}>
-          {first10Words}...
+          {displaytext}...
           <button
             style={{ color: buttonColor, border: 'none' }}
             onClick={handleClick}
           >
-            {expanded ? 'show less' : collapseButtonText}
+            {expanded ? 'Show less' : expandButtonText}
           </button>
         </div>
       )}
