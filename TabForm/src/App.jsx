@@ -91,6 +91,8 @@ function TabContent({ item }) {
   );
 }
 
+console.log(<DifferentContent />);
+
 function DifferentContent() {
   return (
     <div className="tab-content">
