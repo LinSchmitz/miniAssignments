@@ -29,15 +29,20 @@
 | 19  | [Speak Number Guessing Game](https://github.com/naLeilan/miniAssignments/tree/main/speak-number-guess) |  [Live Demo](https://leilanSchmitz.com/projects/speak-number-guess/)  |
 | 20  |    [Product Filtering UI](https://github.com/naLeilan/miniAssignments/tree/main/product-filtering)     |  [Live Demo](https://leilanSchmitz.com/projects/product-filtering/)   |
 | 21  |         [Form Validator](https://github.com/naLeilan/miniAssignments/tree/main/Form-Validator)         |    [Live Demo](https://leilanSchmitz.com/projects/Form-Validator/)    |
+| 22  |           [TextExpander](https://github.com/naLeilan/miniAssignments/tree/main/TextExpander)           |     [Live Demo](https://leilanSchmitz.com/projects/TextExpander/)     |
 
 +++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++++++++++++++++++++++++++++++++
+
+### more about mini projects
+
 +++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++++++++++++++++++++++++++++++++
 
 # 📝 React TextExpander Component
 
-A clean, flexible, and reusable Text Expander component built with React. Perfect for showing previews of long texts with a toggle to expand or collapse the content.
+A clean, flexible, and reusable Text Expander component built with React. Perfect for showing
+previews of long texts with a toggle to expand or collapse the content.
 
 ### ✨ Features
 
