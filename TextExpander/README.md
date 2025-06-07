@@ -1,6 +1,7 @@
 # 📝 React TextExpander Component
 
-A clean, flexible, and reusable Text Expander component built with React. Perfect for showing previews of long texts with a toggle to expand or collapse the content.
+A clean, flexible, and reusable Text Expander component built with React. Perfect for showing
+previews of long texts with a toggle to expand or collapse the content.
 
 ### ✨ Features
 

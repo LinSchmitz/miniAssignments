@@ -15,6 +15,10 @@ Perfect for reviews, feedback forms, and user rating interfaces.
 ✅ Supports lifting state up via `onSetRating` prop  
 ✅ Defaults like `defaultRating` built-in
 
+### 📸 Preview
+
+![alt text](<public/img/Star Rating.gif>)
+
 ## 🛠 Tech Stack
 
 -⚛️ React (useState, props)
