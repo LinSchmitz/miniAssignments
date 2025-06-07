@@ -31,81 +31,13 @@
 | 21  |         [Form Validator](https://github.com/naLeilan/miniAssignments/tree/main/Form-Validator)         |    [Live Demo](https://leilanSchmitz.com/projects/Form-Validator/)    |
 | 22  |           [TextExpander](https://github.com/naLeilan/miniAssignments/tree/main/TextExpander)           |     [Live Demo](https://leilanSchmitz.com/projects/TextExpander/)     |
 | 23  |            [Star Rating](https://github.com/naLeilan/miniAssignments/tree/main/StarsRating)            |      [Live Demo](https://leilanSchmitz.com/projects/StarRating/)      |
+| 24  |           [Split the Bill](https://github.com/naLeilan/miniAssignments/tree/main/splitBill)            |      [Live Demo](https://leilanSchmitz.com/projects/SplitBill/)       |
+| 25  |         [Accordion Facts](https://github.com/naLeilan/miniAssignments/tree/main/accordionList)         |    [Live Demo](https://leilanSchmitz.com/projects/accordionList/)     |
 
 +++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++++++++++++++++++++++++++++++++
 
 ### more about mini projects
-
-+++++++++++++++++++++++++++++++++++++++++++++++
-
-🧾 Split a Bill with Friends – React App
-This is a simple and interactive React application that allows users to split expenses with friends and keep track of balances. It's a beginner-friendly project demonstrating essential React concepts like useState, component props, conditional rendering, and form handling.
-
-🚀 Features
-Add friends with name and avatar
-
-Select a friend to split a bill with
-
-Track who owes whom and how much
-
-Automatically updates balances after each split
-
-Clean and modular component structure
-
-### 📸 Preview
-
-![alt text](splitBill.png)
-
-![alt text](public/img/splitBill.gif)
-
-🛠️ Tech Stack
-React.js – UI framework
-
-JavaScript – Programming language
-
-CSS – For styling the app (basic class-based styling)
-
-+++++++++++++++++++++++++++++++++++++++++++++++
-
-# 💰 Tip Calculator App (splitBill)
-
-A simple and interactive React app to help you calculate tips based on how you and a friend rate the service.
-Built for practicing state management using useState.
-
-### ✨ Features
-
-💵 Enter the total bill amount
-
-🤝 Rate the service from both you and your friend
-
-🧮 Calculates total tip and final amount to pay
-
-🔄 Reset and start over anytime
-
-+++++++++++++++++++++++++++++++++++++++++++++++
-
-# 📚 Accordion Facts
-
-A simple and interactive React app that displays fun random facts in an accordion layout. Built for practicing React components and useState management.
-
-### 📸 Preview
-
-![alt text](public/img/accordionList.png)
-
-### ✨ Features
-
-🔥 Displays a list of random facts
-
-🧩 Expand or collapse each fact individually
-
-⚛️ Built with React functional components
-
-🎨 Easy to customize and extend
-
-### 🛠️ Built With
-
-useState hook (for opening/closing items)
 
 +++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -286,3 +218,19 @@ A simple stepper app built with React. It allows the user to navigate through di
 - 🟢 Highlights active steps dynamically
 
 +++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++
+
+# 💰 Tip Calculator App (splitBill)
+
+A simple and interactive React app to help you calculate tips based on how you and a friend rate the service.
+Built for practicing state management using useState.
+
+### ✨ Features
+
+💵 Enter the total bill amount
+
+🤝 Rate the service from both you and your friend
+
+🧮 Calculates total tip and final amount to pay
+
+🔄 Reset and start over anytime
