@@ -34,30 +34,13 @@
 | 24  |           [Split the Bill](https://github.com/naLeilan/miniAssignments/tree/main/splitBill)            |      [Live Demo](https://leilanSchmitz.com/projects/SplitBill/)       |
 | 25  |         [Accordion Facts](https://github.com/naLeilan/miniAssignments/tree/main/accordionList)         |    [Live Demo](https://leilanSchmitz.com/projects/accordionList/)     |
 | 26  |           [Mood Tracker](https://github.com/naLeilan/miniAssignments/tree/main/moodTracker)            |     [Live Demo](https://leilanSchmitz.com/projects/MoodTracker/)      |
+| 27  |            [Travel List](https://github.com/naLeilan/miniAssignments/tree/main/travelList)             |      [Live Demo](https://leilanSchmitz.com/projects/travelList/)      |
 
 +++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++++++++++++++++++++++++++++++++
-
-### more about mini projects
-
 +++++++++++++++++++++++++++++++++++++++++++++++
 
 +++++++++++++++++++++++++++++++++++++++++++++++
-
-# 🧳 Travel List App
-
-A simple React app to manage your travel items, allowing you to add, track, and mark items as packed for your upcoming trip.
-
-### 📸 Preview
-
-![alt text](public/img/travelLists.png)
-
-### ✨ Features
-
-- 🛍 Add items with their quantity to your packing list
-- ✅ Mark items as packed
-- 🔄 Toggle between packed and not packed status
-- 📊 View stats for total items and packed items
 
 +++++++++++++++++++++++++++++++++++++++++++++++
 

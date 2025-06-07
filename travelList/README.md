@@ -14,6 +14,10 @@ Component composition (splitting the app into smaller pieces).
 
 A simple React app to manage your travel items, allowing you to add, track, and mark items as packed for your upcoming trip.
 
+### 📸 Preview
+
+![alt text](public/img/travelLists.png)
+
 ## ✨ Features
 
 - 🛍 Add items with their quantity to your packing list
