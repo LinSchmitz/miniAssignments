@@ -19,66 +19,34 @@ body {
   font-family: Quicksand;
   color: var(--color-gray);
   line-height: 1;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
 }
 
-.accordion {
-  width: 700px;
+.title {
+  margin-bottom: 2rem;
+}
+
+.container {
+  width: 400px;
   margin: 100px auto;
   display: flex;
   flex-direction: column;
-  gap: 24px;
-}
-
-.item {
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-  padding: 20px 24px;
-  padding-right: 48px;
-  cursor: pointer;
-  border-top: 4px solid var(--color-yellow);
-  border-bottom: 4px solid var(--color-yellow);
-
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  column-gap: 24px;
-  row-gap: 32px;
+  justify-content: center;
   align-items: center;
+  gap: 24px;
+  background-color: var(--color-blue);
+  padding: 2rem;
 }
 
-.number {
-  font-size: 24px;
-  font-weight: 500;
-  color: var(--color-blue);
-}
-
-.title,
-.icon {
-  font-size: 24px;
-  font-weight: 500;
-}
-
-.content-box {
-  grid-column: 2 / -1;
-  padding-bottom: 16px;
-  line-height: 1.6;
-}
-
-.content-box ul {
-  color: var(--color-orange);
-  margin-left: 16px;
-  margin-top: 16px;
-
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-/* OPEN STATE */
-.open {
-  border-top: 4px solid var(--color-green);
-}
-
-.open .number,
-.open .title {
-  color: var(--color-green);
+input,
+button {
+  width: 85%;
+  height: 2rem;
+  border-radius: 15px;
+  border: none;
+  padding: 5px;
+  margin-bottom: 2rem;
 }
