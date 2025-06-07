@@ -36,26 +36,12 @@
 | 26  |           [Mood Tracker](https://github.com/naLeilan/miniAssignments/tree/main/moodTracker)            |     [Live Demo](https://leilanSchmitz.com/projects/MoodTracker/)      |
 | 27  |            [Travel List](https://github.com/naLeilan/miniAssignments/tree/main/travelList)             |      [Live Demo](https://leilanSchmitz.com/projects/travelList/)      |
 | 28  |            [Date Slider](https://github.com/naLeilan/miniAssignments/tree/main/dateSlider)             |      [Live Demo](https://leilanSchmitz.com/projects/dateSlider/)      |
+| 29  |              [Flashcard](https://github.com/naLeilan/miniAssignments/tree/main/flashcard)              |      [Live Demo](https://leilanSchmitz.com/projects/flashcard/)       |
 
 +++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++++++++++++++++++++++++++++++++
 
 +++++++++++++++++++++++++++++++++++++++++++++++
-
-# 🧠 React Flashcard App
-
-A simple Flashcard App built with React to practice JavaScript interview questions and state management.
-
-### 📸 Preview
-
-![alt text](flashcard/public/img/flashcard.png)
-
-### ✨ Features
-
-- 🖱️ Click to reveal or hide answers
-- ⚙️ State management with `useState`
-- 🔁 Conditional rendering and dynamic styling
-- 🧱 Clean and reusable component structure
 
 +++++++++++++++++++++++++++++++++++++++++++++++
 
