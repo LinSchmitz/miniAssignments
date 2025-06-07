@@ -28,6 +28,7 @@
 | 18  |     [New Year Countdown](https://github.com/naLeilan/miniAssignments/tree/main/new-year-countdown)     |  [Live Demo](https://leilanSchmitz.com/projects/new-year-countdown/)  |
 | 19  | [Speak Number Guessing Game](https://github.com/naLeilan/miniAssignments/tree/main/speak-number-guess) |  [Live Demo](https://leilanSchmitz.com/projects/speak-number-guess/)  |
 | 20  |    [Product Filtering UI](https://github.com/naLeilan/miniAssignments/tree/main/product-filtering)     |  [Live Demo](https://leilanSchmitz.com/projects/product-filtering/)   |
+| 21  |         [Form Validator](https://github.com/naLeilan/miniAssignments/tree/main/Form-Validator)         |    [Live Demo](https://leilanSchmitz.com/projects/Form-Validator/)    |
 
 +++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++++++++++++++++++++++++++++++++
