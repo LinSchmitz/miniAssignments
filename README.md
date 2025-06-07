@@ -37,6 +37,7 @@
 | 27  |            [Travel List](https://github.com/naLeilan/miniAssignments/tree/main/travelList)             |      [Live Demo](https://leilanSchmitz.com/projects/travelList/)      |
 | 28  |            [Date Slider](https://github.com/naLeilan/miniAssignments/tree/main/dateSlider)             |      [Live Demo](https://leilanSchmitz.com/projects/dateSlider/)      |
 | 29  |              [Flashcard](https://github.com/naLeilan/miniAssignments/tree/main/flashcard)              |      [Live Demo](https://leilanSchmitz.com/projects/flashcard/)       |
+| 30  |       [Random Advice Generator](https://github.com/naLeilan/miniAssignments/tree/main/getAdvice)       |      [Live Demo](https://leilanSchmitz.com/projects/getAdvice/)       |
 
 +++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++++++++++++++++++++++++++++++++
@@ -44,24 +45,6 @@
 +++++++++++++++++++++++++++++++++++++++++++++++
 
 +++++++++++++++++++++++++++++++++++++++++++++++
-
-# 🧠 Random Advice Generator App(getAdvise)
-
-A small and fun ReactJS project that fetches random life advice from the Advice Slip API and displays it on the screen. Great for practicing React Hooks (useState, useEffect), working with APIs, and learning about API caching issues.
-
-### 📸 Preview
-
-![alt text](public/img/getAdvice.png)
-
-### ✨ Features
-
-🔄 Fetches random advice from an external API
-
-💡 Displays a new advice every time the button is clicked
-
-🧮 Keeps track of how many advices you've seen
-
-🎯 Simple and minimal UI
 
 +++++++++++++++++++++++++++++++++++++++++++++++
 

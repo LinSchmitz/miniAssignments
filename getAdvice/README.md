@@ -2,6 +2,10 @@
 
 A small and fun ReactJS project that fetches random life advice from the Advice Slip API and displays it on the screen. Great for practicing React Hooks (useState, useEffect), working with APIs, and learning about API caching issues.
 
+### 📸 Preview
+
+![alt text](public/img/getAdvice.png)
+
 ### ✨ Features
 
 🔄 Fetches random advice from an external API
