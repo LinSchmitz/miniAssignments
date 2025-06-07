@@ -30,7 +30,7 @@
 | 20  |    [Product Filtering UI](https://github.com/naLeilan/miniAssignments/tree/main/product-filtering)     |  [Live Demo](https://leilanSchmitz.com/projects/product-filtering/)   |
 | 21  |         [Form Validator](https://github.com/naLeilan/miniAssignments/tree/main/Form-Validator)         |    [Live Demo](https://leilanSchmitz.com/projects/Form-Validator/)    |
 | 22  |           [TextExpander](https://github.com/naLeilan/miniAssignments/tree/main/TextExpander)           |     [Live Demo](https://leilanSchmitz.com/projects/TextExpander/)     |
-| 23  |            [Star Rating](https://github.com/naLeilan/miniAssignments/tree/main/Star-Rating)            |      [Live Demo](https://leilanSchmitz.com/projects/StarRating/)      |
+| 23  |            [Star Rating](https://github.com/naLeilan/miniAssignments/tree/main/StarsRating)            |      [Live Demo](https://leilanSchmitz.com/projects/StarRating/)      |
 
 +++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++++++++++++++++++++++++++++++++
