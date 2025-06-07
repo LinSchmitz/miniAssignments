@@ -2,6 +2,10 @@
 
 A simple stepper app built with React. It allows the user to navigate through different steps, showing motivational messages with previous and next buttons.
 
+### 📸 Preview
+
+![alt text](public/img/steps.png)
+
 ## ✨ Features
 
 - 🧭 Navigate through steps with "Previous" and "Next" buttons

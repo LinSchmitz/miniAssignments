@@ -1,6 +1,33 @@
 # 🧾 Split a Bill with Friends – React App
 
+This is a simple and interactive React application that allows users to split expenses with friends and keep track of balances. It's a beginner-friendly project demonstrating essential React concepts like useState, component props, conditional rendering, and form handling.
 web application built using HTML, CSS, and ReactJS, designed to simplify the process of splitting expenses among friends. This application provides a seamless experience for managing shared finances within a friend group. Let's explore the key features and technologies used in the project:
+
+### 📸 Preview
+
+![alt text](splitBill.png)
+
+![alt text](public/img/splitBill.gif)
+
+### 🛠️ Tech Stack:
+
+React.js – UI framework
+
+JavaScript – Programming language
+
+CSS – For styling the app (basic class-based styling)
+
+### 🚀 Features:
+
+Add friends with name and avatar
+
+Select a friend to split a bill with
+
+Track who owes whom and how much
+
+Automatically updates balances after each split
+
+Clean and modular component structure
 
 ### Dynamic Friend List:
 
@@ -57,23 +84,3 @@ Conditional Rendering:
 
 - The project follows the principles of component-based architecture, promoting reusability and maintainability of code.
   Divvy Up offers an efficient and enjoyable solution for friends to manage their shared expenses, fostering transparency and fairness in financial transactions. The combination of ReactJS and thoughtful design choices results in a user-friendly application for hassle-free expense splitting.
-
-### 🚀 Features
-
-Add friends with name and avatar
-
-Select a friend to split a bill with
-
-Track who owes whom and how much
-
-Automatically updates balances after each split
-
-Clean and modular component structure
-
-### 🛠️ Tech Stack
-
-React.js – UI framework
-
-JavaScript – Programming language
-
-CSS – For styling the app (basic class-based styling)

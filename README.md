@@ -31,7 +31,7 @@
 | 21  |         [Form Validator](https://github.com/naLeilan/miniAssignments/tree/main/Form-Validator)         |    [Live Demo](https://leilanSchmitz.com/projects/Form-Validator/)    |
 | 22  |           [TextExpander](https://github.com/naLeilan/miniAssignments/tree/main/TextExpander)           |     [Live Demo](https://leilanSchmitz.com/projects/TextExpander/)     |
 | 23  |            [Star Rating](https://github.com/naLeilan/miniAssignments/tree/main/StarsRating)            |      [Live Demo](https://leilanSchmitz.com/projects/StarRating/)      |
-| 24  |           [Split the Bill](https://github.com/naLeilan/miniAssignments/tree/main/splitBill)            |      [Live Demo](https://leilanSchmitz.com/projects/SplitBill/)       |
+| 24  |        [Split the Bill](https://github.com/naLeilan/miniAssignments/tree/main/split-The-Bills)         |   [Live Demo](https://leilanSchmitz.com/projects/split-The-Bills/)    |
 | 25  |         [Accordion Facts](https://github.com/naLeilan/miniAssignments/tree/main/accordionList)         |    [Live Demo](https://leilanSchmitz.com/projects/accordionList/)     |
 | 26  |           [Mood Tracker](https://github.com/naLeilan/miniAssignments/tree/main/moodTracker)            |     [Live Demo](https://leilanSchmitz.com/projects/MoodTracker/)      |
 | 27  |            [Travel List](https://github.com/naLeilan/miniAssignments/tree/main/travelList)             |      [Live Demo](https://leilanSchmitz.com/projects/travelList/)      |
@@ -39,81 +39,6 @@
 | 29  |              [Flashcard](https://github.com/naLeilan/miniAssignments/tree/main/flashcard)              |      [Live Demo](https://leilanSchmitz.com/projects/flashcard/)       |
 | 30  |       [Random Advice Generator](https://github.com/naLeilan/miniAssignments/tree/main/getAdvice)       |      [Live Demo](https://leilanSchmitz.com/projects/getAdvice/)       |
 | 31  |           [Date Counter](https://github.com/naLeilan/miniAssignments/tree/main/dateCounter)            |     [Live Demo](https://leilanSchmitz.com/projects/dateCounter/)      |
-
-+++++++++++++++++++++++++++++++++++++++++++++++
-+++++++++++++++++++++++++++++++++++++++++++++++
-
-+++++++++++++++++++++++++++++++++++++++++++++++
-
-+++++++++++++++++++++++++++++++++++++++++++++++
-
-+++++++++++++++++++++++++++++++++++++++++++++++
-
-+++++++++++++++++++++++++++++++++++++++++++++++
-
-# 🍕 Fast React Pizza.co
-
-A fun and interactive pizza menu app built with React. Explore a list of delicious pizzas, check availability, and see dynamic updates based on opening hours.
-
-### 📸 Preview
-
-![alt text](public/img/pizzaMenu.png)
-
-### ✨ Features
-
-- 🧾 Displays a dynamic menu of pizzas
-- ❌ Marks pizzas as sold out visually
-- 🕒 Shows open/closed message based on real-time hours
-- 🔁 Conditional rendering and clean component-based architecture
-
-+++++++++++++++++++++++++++++++++++++++++++++++
-
-# 🧠 Developer Profile Card
-
-A personal developer profile card built with React. Includes a profile picture, introduction, and a list of technical skills with visual indicators based on experience level.
-
-### 📸 Preview
-
-![alt text](public/img/ProfileCard.png)
-
-### ✨ Features
-
-- 🖼 Displays an avatar and brief developer bio
-- 🧪 Lists skills with color-coded experience levels
-- 🔁 Dynamic rendering using `map()` and component props
-- 🎨 Custom styling with dynamic background colors
-
-+++++++++++++++++++++++++++++++++++++++++++++++
-
-# 🧠 Stepper App
-
-A simple stepper app built with React. It allows the user to navigate through different steps, showing motivational messages with previous and next buttons.
-
-### 📸 Preview
-
-![alt text](public/img/steps.png)
-
-### ✨ Features
-
-- 🧭 Navigate through steps with "Previous" and "Next" buttons
-- 🚪 Toggle visibility of the card using the close button
-- 🔢 Displays current step and related motivational message
-- 🟢 Highlights active steps dynamically
-
-+++++++++++++++++++++++++++++++++++++++++++++++
-+++++++++++++++++++++++++++++++++++++++++++++++
-
-# 💰 Tip Calculator App (splitBill)
-
-A simple and interactive React app to help you calculate tips based on how you and a friend rate the service.
-Built for practicing state management using useState.
-
-### ✨ Features
-
-💵 Enter the total bill amount
-
-🤝 Rate the service from both you and your friend
-
-🧮 Calculates total tip and final amount to pay
-
-🔄 Reset and start over anytime
+| 32  |        [Fast React Pizza.co](https://github.com/naLeilan/miniAssignments/tree/main/pizza-menu)         |      [Live Demo](https://leilanSchmitz.com/projects/pizza-menu/)      |
+| 33  |               [Stepper App](https://github.com/naLeilan/miniAssignments/tree/main/Steps)               |        [Live Demo](https://leilanSchmitz.com/projects/Steps/)         |
+| 34  |        [💰 Tip Calculator App](https://github.com/naLeilan/miniAssignments/tree/main/splitBill)        |      [Live Demo](https://leilanSchmitz.com/projects/splitbill/)       |

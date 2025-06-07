@@ -2,6 +2,10 @@
 
 A fun and interactive pizza menu app built with React. Explore a list of delicious pizzas, check availability, and see dynamic updates based on opening hours.
 
+### 📸 Preview
+
+![alt text](public/img/pizzaMenu.png)
+
 ## ✨ Features
 
 - 🧾 Displays a dynamic menu of pizzas

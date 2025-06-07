@@ -1,26 +1,14 @@
-🧾 Split a Bill with Friends – React App
-This is a simple and interactive React application that allows users to split expenses with friends and keep track of balances. It's a beginner-friendly project demonstrating essential React concepts like useState, component props, conditional rendering, and form handling.
+# 💰 Tip Calculator App (splitBill)
 
-🚀 Features
-Add friends with name and avatar
+A simple and interactive React app to help you calculate tips based on how you and a friend rate the service.
+Built for practicing state management using useState.
 
-Select a friend to split a bill with
+### ✨ Features
 
-Track who owes whom and how much
+💵 Enter the total bill amount
 
-Automatically updates balances after each split
+🤝 Rate the service from both you and your friend
 
-Clean and modular component structure
+🧮 Calculates total tip and final amount to pay
 
-### 📸 Preview
-
-![alt text](splitBill.png)
-
-![alt text](public/img/splitBill.gif)
-
-🛠️ Tech Stack
-React.js – UI framework
-
-JavaScript – Programming language
-
-CSS – For styling the app (basic class-based styling)
+🔄 Reset and start over anytime
