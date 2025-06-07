@@ -33,7 +33,7 @@
 | 23  |            [Star Rating](https://github.com/naLeilan/miniAssignments/tree/main/StarsRating)            |      [Live Demo](https://leilanSchmitz.com/projects/StarRating/)      |
 | 24  |           [Split the Bill](https://github.com/naLeilan/miniAssignments/tree/main/splitBill)            |      [Live Demo](https://leilanSchmitz.com/projects/SplitBill/)       |
 | 25  |         [Accordion Facts](https://github.com/naLeilan/miniAssignments/tree/main/accordionList)         |    [Live Demo](https://leilanSchmitz.com/projects/accordionList/)     |
-| 26  |           [Mood Tracker](https://github.com/naLeilan/miniAssignments/tree/main/MoodTracker)            |     [Live Demo](https://leilanSchmitz.com/projects/MoodTracker/)      |
+| 26  |           [Mood Tracker](https://github.com/naLeilan/miniAssignments/tree/main/moodTracker)            |     [Live Demo](https://leilanSchmitz.com/projects/MoodTracker/)      |
 
 +++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++++++++++++++++++++++++++++++++
