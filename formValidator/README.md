@@ -1,21 +1,23 @@
-# 📚 Accordion Facts
+# 🧾 Form Validator App
 
-A simple and interactive React app that displays fun random facts in an accordion layout. Built for practicing React components and useState management.
+A simple and responsive form validation app built with HTML, CSS, and JavaScript.  
+The form collects user **name**, **email**, **password**, and **confirm password**, and validates all fields before submission.
 
-### 📸 Preview
+## ✨ Features
 
-![alt text](public/img/accordionList.png)
+- Real-time input validation
+- Error messages for:
+  - Empty fields
+  - Invalid email format
+  - Password mismatch
+  - Minimum password length
+- Clean and minimal UI
+- Fully responsive design
 
-### ✨ Features
+## 🚀 Technologies Used
 
-🔥 Displays a list of random facts
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
 
-🧩 Expand or collapse each fact individually
-
-⚛️ Built with React functional components
-
-🎨 Easy to customize and extend
-
-### 🛠️ Built With
-
-useState hook (for opening/closing items)
+## 📸 Preview
