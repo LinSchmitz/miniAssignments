@@ -8,13 +8,13 @@ export default function App() {
         <label>Username</label>
         <input type="text" placeholder="Username" />
 
-        <label htmlFor="">Email</label>
+        <label>Email</label>
         <input type="email" placeholder="email" />
 
-        <label htmlFor="">Password</label>
+        <label>Password</label>
         <input type="password" placeholder="password" />
 
-        <label htmlFor="">Confirm Password</label>
+        <label>Confirm Password</label>
         <input type="password" placeholder="password" />
 
         <button>Submit</button>
