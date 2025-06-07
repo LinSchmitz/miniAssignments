@@ -33,6 +33,7 @@
 | 23  |            [Star Rating](https://github.com/naLeilan/miniAssignments/tree/main/StarsRating)            |      [Live Demo](https://leilanSchmitz.com/projects/StarRating/)      |
 | 24  |           [Split the Bill](https://github.com/naLeilan/miniAssignments/tree/main/splitBill)            |      [Live Demo](https://leilanSchmitz.com/projects/SplitBill/)       |
 | 25  |         [Accordion Facts](https://github.com/naLeilan/miniAssignments/tree/main/accordionList)         |    [Live Demo](https://leilanSchmitz.com/projects/accordionList/)     |
+| 26  |           [Mood Tracker](https://github.com/naLeilan/miniAssignments/tree/main/MoodTracker)            |     [Live Demo](https://leilanSchmitz.com/projects/MoodTracker/)      |
 
 +++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++++++++++++++++++++++++++++++++
@@ -40,31 +41,6 @@
 ### more about mini projects
 
 +++++++++++++++++++++++++++++++++++++++++++++++
-
-# 😄 Mood Tracker App
-
-A simple and interactive React app that lets users track their current mood. Built for practicing React state management with `useState`.
-
-### 📸 Preview
-
-![alt text](public/img/modeTracker.png)
-
-![alt text](public/img/modeTracker.gif)
-
-### ✨ Features
-
-- 🌈 Choose your mood from a set of emoji options
-- 📝 Add a personal note about how you feel
-- 📆 See the currently selected mood and note
-- 🔄 Reset mood and start over
-
-### 🧠 Concepts Practiced
-
-- React Functional Components
-- `useState` Hook
-- Conditional Rendering
-- Event Handling
-- Simple Component Composition
 
 +++++++++++++++++++++++++++++++++++++++++++++++
 
