@@ -55,5 +55,6 @@ button {
 
 button {
   background-color: var(--color-delete);
+  color: var(--color-yellow);
   border: none;
 }
