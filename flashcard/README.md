@@ -4,7 +4,7 @@ A simple Flashcard App built with React to practice JavaScript interview questio
 
 ### 📸 Preview
 
-![alt text](flashcard/public/img/flashcard.png)
+![alt text](public/img/flashcard.png)
 
 ## ✨ Features
 
