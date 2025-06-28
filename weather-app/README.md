@@ -1,4 +1,4 @@
-# 📚 Accordion Facts
+# 📚 Weather App
 
 A simple and interactive React app that displays fun random facts in an accordion layout. Built for practicing React components and useState management.
 
@@ -19,3 +19,7 @@ A simple and interactive React app that displays fun random facts in an accordio
 ### 🛠️ Built With
 
 useState hook (for opening/closing items)
+
+### API
+
+https://openweathermap.org/api
