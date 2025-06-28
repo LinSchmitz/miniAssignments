@@ -84,6 +84,7 @@ nav span {
   );
   background-size: 400% 400%;
   animation: animate 5s ease-in infinite;
+  cursor: pointer;
 }
 
 .square101::before {
