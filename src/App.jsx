@@ -46,7 +46,7 @@ function Main() {
       <section className="cards">
         <div className="card">
           <div>
-            🌥️ <strong> Weather App </strong>
+            ✈️ <strong> Travel List App </strong>
           </div>
           <div className="btns">
             <button className="show-modal" onClick={openModal}>
@@ -61,12 +61,17 @@ function Main() {
                   <button className="close-modal" onClick={closeModal}>
                     &times;
                   </button>
-                  <h1>🌦️ React Weather App</h1>
+                  <h1>✈️ Travel List App</h1>
                   <p>
-                    A simple weather forecast app built with **React** and the
-                    **OpenWeatherMap API**. Type a city name and press `Enter`
-                    to get real-time weather data, including temperature and
-                    conditions.
+                    This is a simple React application that helps users manage a
+                    packing list before going on a trip. It uses: useState to
+                    manage app state (list of items, form inputs). Props to pass
+                    functions and data between components. Event handling to
+                    update the UI (add, delete, toggle). Conditional rendering
+                    (cross out packed items). Component composition (splitting
+                    the app into smaller pieces). A simple React app to manage
+                    your travel items, allowing you to add, track, and mark
+                    items as packed for your upcoming trip.
                   </p>
                 </div>
               </>
@@ -74,12 +79,17 @@ function Main() {
             <a
               target="_blank"
               rel="noreferrer"
-              href="https://github.com/LinSchmitz/miniAssignments/tree/main/weather-app"
+              href="https://github.com/LinSchmitz/miniAssignments/tree/main/travelList"
               className="code"
             >
               <button>Code</button>
             </a>
-            <a target="_blank" rel="noreferrer" href="#" className="preview">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://mini-assignments-u4xk.vercel.app/"
+              className="preview"
+            >
               <button>Preview</button>
             </a>
           </div>
