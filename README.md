@@ -1,5 +1,7 @@
 # All my mini React/js project. (🚀 still updating)
 
+[Live Demo](https://mini-assignments.vercel.app/)
+
 ### 🛠 Tech Stacks used in projects:
 
 ⚛️ React, 📦 JavaScript (ES6+), 🎨 HTML & CSS
