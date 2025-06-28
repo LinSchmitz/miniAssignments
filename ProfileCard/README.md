@@ -1,6 +1,6 @@
-# 🧠 Developer Profile Card
+# 👧🏼 Profile Card
 
-A personal developer profile card built with React. Includes a profile picture, introduction, and a list of technical skills with visual indicators based on experience level.
+A personal profile card built with React. Includes a profile picture, introduction, and a list of technical skills with visual indicators based on experience level.
 
 ### 📸 Preview
 
@@ -8,7 +8,7 @@ A personal developer profile card built with React. Includes a profile picture, 
 
 ## ✨ Features
 
-- 🖼 Displays an avatar and brief developer bio
+- 🖼 Displays an avatar and brief bio
 
 - 🧪 Lists skills with color-coded experience levels
 

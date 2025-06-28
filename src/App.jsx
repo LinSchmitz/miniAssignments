@@ -149,6 +149,53 @@ function Cards() {
         </div>
       </div>
 
+      {/* +++++++++++++++++++++ ProfileCard +++++++++++++++++++++++++ */}
+
+      <div className="card">
+        <div>
+          👧🏼 <strong> Profile Card App </strong>
+        </div>
+        <div className="btns">
+          <button className="show-modal" onClick={openModal}>
+            info
+          </button>
+
+          {/* Modal - moved outside of cards */}
+          {isModalOpen && (
+            <>
+              <div className="overlay" onClick={closeModal}></div>
+              <div className="modal">
+                <button className="close-modal" onClick={closeModal}>
+                  &times;
+                </button>
+                <h1>👧🏼 Profile Card App</h1>
+                <p>
+                  A personal profile card built with React. Includes a profile
+                  picture, introduction, and a list of technical skills with
+                  visual indicators based on experience level.
+                </p>
+              </div>
+            </>
+          )}
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/LinSchmitz/miniAssignments/tree/main/ProfileCard"
+            className="code"
+          >
+            <button>Code</button>
+          </a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://mini-assignments-y1pv.vercel.app/"
+            className="preview"
+          >
+            <button>Preview</button>
+          </a>
+        </div>
+      </div>
+
       {/* +++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
     </section>
   );
