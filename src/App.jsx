@@ -188,7 +188,7 @@ function Cards() {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://mini-assignments-y1pv.vercel.app/"
+            href="https://mini-assignments-u21r.vercel.app/"
             className="preview"
           >
             <button>Preview</button>
