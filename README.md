@@ -34,11 +34,12 @@
 | 24  |      [💸 Split the Bill](https://github.com/LinSchmitz/miniAssignments/tree/main/split-The-Bills)      |        [Live Demo](https://mini-assignments-3zjv.vercel.app/)         |
 | 25  |         [Accordion Facts](https://github.com/naLeilan/miniAssignments/tree/main/accordionList)         |    [Live Demo](https://leilanSchmitz.com/projects/accordionList/)     |
 | 26  |           [Mood Tracker](https://github.com/naLeilan/miniAssignments/tree/main/moodTracker)            |     [Live Demo](https://leilanSchmitz.com/projects/MoodTracker/)      |
-| 27  |            [Travel List](https://github.com/naLeilan/miniAssignments/tree/main/travelList)             |      [Live Demo](https://leilanSchmitz.com/projects/travelList/)      |
+| 27  |           [✈️ Travel List](https://github.com/naLeilan/miniAssignments/tree/main/travelList)           |        [Live Demo](https://mini-assignments-uh6k.vercel.app/)         |
 | 28  |            [Date Slider](https://github.com/naLeilan/miniAssignments/tree/main/dateSlider)             |      [Live Demo](https://leilanSchmitz.com/projects/dateSlider/)      |
 | 29  |            [🗃️ Flashcard](https://github.com/naLeilan/miniAssignments/tree/main/flashcard)             |        [Live Demo](https://mini-assignments-3fj8.vercel.app/)         |
 | 30  |       [Random Advice Generator](https://github.com/naLeilan/miniAssignments/tree/main/getAdvice)       |      [Live Demo](https://leilanSchmitz.com/projects/getAdvice/)       |
 | 31  |           [Date Counter](https://github.com/naLeilan/miniAssignments/tree/main/dateCounter)            |     [Live Demo](https://leilanSchmitz.com/projects/dateCounter/)      |
 | 32  |       [🍕 Fast React Pizza.co](https://github.com/naLeilan/miniAssignments/tree/main/pizza-menu)       |        [Live Demo](https://mini-assignments-ywrt.vercel.app/)         |
-| 33  |               [Stepper App](https://github.com/naLeilan/miniAssignments/tree/main/Steps)               |        [Live Demo](https://leilanSchmitz.com/projects/Steps/)         |
+| 33  |             [🪜 Stepper App](https://github.com/naLeilan/miniAssignments/tree/main/Steps)              |        [Live Demo](https://mini-assignments-u21r.vercel.app/)         |
 | 34  |        [💰 Tip Calculator App](https://github.com/naLeilan/miniAssignments/tree/main/splitBill)        |      [Live Demo](https://leilanSchmitz.com/projects/splitbill/)       |
+| 35  |          [🌥️ Weather App](https://github.com/naLeilan/miniAssignments/tree/main/weather-app)           |        [Live Demo](https://mini-assignments-y1pv.vercel.app/)         |
