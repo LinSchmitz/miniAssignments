@@ -45,6 +45,16 @@ const cardData = [
       'https://github.com/LinSchmitz/miniAssignments/tree/main/flashcard',
     previewLink: 'https://mini-assignments-3fj8.vercel.app/',
   },
+  {
+    id: 'pizzamenu',
+    icon: '🍕',
+    title: 'Pizza Menu',
+    description: `A fun and interactive pizza menu app built with React. Explore a list of delicious pizzas, 
+    check availability, and see dynamic updates based on opening hours.`,
+    codeLink:
+      'https://github.com/LinSchmitz/miniAssignments/tree/main/pizza-menu',
+    previewLink: 'https://mini-assignments-3fj8.vercel.app/',
+  },
 ];
 
 export function Cards() {
