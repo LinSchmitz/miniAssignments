@@ -53,7 +53,7 @@ const cardData = [
     check availability, and see dynamic updates based on opening hours.`,
     codeLink:
       'https://github.com/LinSchmitz/miniAssignments/tree/main/pizza-menu',
-    previewLink: 'https://mini-assignments-3fj8.vercel.app/',
+    previewLink: 'https://mini-assignments-ywrt.vercel.app/',
   },
 ];
 
