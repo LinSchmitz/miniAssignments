@@ -101,7 +101,7 @@ function Cards() {
         </div>
       </div>
 
-      {/* +++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
+      {/* +++++++++++++++++++++++  Weather App  ++++++++++++++++++++++++++++++ */}
 
       <div className="card">
         <div>
@@ -196,7 +196,7 @@ function Cards() {
         </div>
       </div>
 
-      {/* ++++++++++++++++++++++++ split-The-Bills +++++++++++++++++++++++++++++ */}
+      {/* ++++++++++++++++++++++++ Split The Bills  +++++++++++++++++++++++++++++ */}
 
       <div className="card">
         <div>
@@ -225,8 +225,7 @@ function Cards() {
                   built using HTML, CSS, and ReactJS, designed to simplify the
                   process of splitting expenses among friends. This application
                   provides a seamless experience for managing shared finances
-                  within a friend group. Let's explore the key features and
-                  technologies used in the project:
+                  within a friend group.
                 </p>
               </div>
             </>
@@ -250,6 +249,50 @@ function Cards() {
         </div>
       </div>
 
+      {/* +++++++++++++++++++++++  Flash Card  ++++++++++++++++++++++++++++++ */}
+      <div className="card">
+        <div>
+          🗃️ <strong> Flash Card </strong>
+        </div>
+        <div className="btns">
+          <button className="show-modal" onClick={openModal}>
+            info
+          </button>
+
+          {/* Modal - moved outside of cards */}
+          {isModalOpen && (
+            <>
+              <div className="overlay" onClick={closeModal}></div>
+              <div className="modal">
+                <button className="close-modal" onClick={closeModal}>
+                  &times;
+                </button>
+                <h1>🗃️ Flash Card</h1>
+                <p>
+                  A simple Flashcard App built with React to practice JavaScript
+                  interview questions and state management.
+                </p>
+              </div>
+            </>
+          )}
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/LinSchmitz/miniAssignments/tree/main/flashcard"
+            className="code"
+          >
+            <button>Code</button>
+          </a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://mini-assignments-3zjv.vercel.app/"
+            className="preview"
+          >
+            <button>Preview</button>
+          </a>
+        </div>
+      </div>
       {/* +++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
     </section>
   );

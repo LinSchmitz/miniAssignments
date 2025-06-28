@@ -1,4 +1,4 @@
-# 🧠 React Flashcard App
+# 🗃️ React Flashcard App
 
 A simple Flashcard App built with React to practice JavaScript interview questions and state management.
 
