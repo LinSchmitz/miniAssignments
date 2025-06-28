@@ -196,6 +196,60 @@ function Cards() {
         </div>
       </div>
 
+      {/* ++++++++++++++++++++++++ split-The-Bills +++++++++++++++++++++++++++++ */}
+
+      <div className="card">
+        <div>
+          💸 <strong> Split The Bills </strong>
+        </div>
+        <div className="btns">
+          <button className="show-modal" onClick={openModal}>
+            info
+          </button>
+
+          {/* Modal - moved outside of cards */}
+          {isModalOpen && (
+            <>
+              <div className="overlay" onClick={closeModal}></div>
+              <div className="modal">
+                <button className="close-modal" onClick={closeModal}>
+                  &times;
+                </button>
+                <h1>💸 Split The Bills</h1>
+                <p>
+                  This is a simple and interactive React application that allows
+                  users to split expenses with friends and keep track of
+                  balances. It's a beginner-friendly project demonstrating
+                  essential React concepts like useState, component props,
+                  conditional rendering, and form handling. web application
+                  built using HTML, CSS, and ReactJS, designed to simplify the
+                  process of splitting expenses among friends. This application
+                  provides a seamless experience for managing shared finances
+                  within a friend group. Let's explore the key features and
+                  technologies used in the project:
+                </p>
+              </div>
+            </>
+          )}
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/LinSchmitz/miniAssignments/tree/main/split-The-Bills"
+            className="code"
+          >
+            <button>Code</button>
+          </a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://mini-assignments-u21r.vercel.app/"
+            className="preview"
+          >
+            <button>Preview</button>
+          </a>
+        </div>
+      </div>
+
       {/* +++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
     </section>
   );
