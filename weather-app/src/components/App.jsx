@@ -40,7 +40,14 @@ export default function App() {
     let month = months[d.getMonth()];
     let year = d.getFullYear();
 
-    return `${day}  ${date}  ${month}  ${year}`;
+    return (
+      <div className="date">
+        <span>{day}</span>
+        <span>{date}</span>
+        <span>{month}</span>
+        <span>{year}</span>
+      </div>
+    );
   };
 
   const search = evt => {
