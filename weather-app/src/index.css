@@ -36,14 +36,14 @@ main {
 }
 
 .app {
-  background-image: url('../public/img/cold-bg.jpg');
+  background-image: url('./img/cold-bg.jpg');
   background-size: cover;
   background-position: bottom;
   transition: 0.4s ease;
 }
 
 .app.warm {
-  background-image: url('../public/img/warm-bg.jpg');
+  background-image: url('./img/warm-bg.jpg');
 }
 
 .search-box {
