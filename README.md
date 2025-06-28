@@ -39,6 +39,6 @@
 | 29  |              [Flashcard](https://github.com/naLeilan/miniAssignments/tree/main/flashcard)              |      [Live Demo](https://leilanSchmitz.com/projects/flashcard/)       |
 | 30  |       [Random Advice Generator](https://github.com/naLeilan/miniAssignments/tree/main/getAdvice)       |      [Live Demo](https://leilanSchmitz.com/projects/getAdvice/)       |
 | 31  |           [Date Counter](https://github.com/naLeilan/miniAssignments/tree/main/dateCounter)            |     [Live Demo](https://leilanSchmitz.com/projects/dateCounter/)      |
-| 32  |        [Fast React Pizza.co](https://github.com/naLeilan/miniAssignments/tree/main/pizza-menu)         |        [Live Demo](https://mini-assignments-ywrt.vercel.app/)         |
+| 32  |       [Fast React Pizza.co](https://github.com/naLeilan/miniAssignments/tree/main/🍕 pizza-menu)       |        [Live Demo](https://mini-assignments-ywrt.vercel.app/)         |
 | 33  |               [Stepper App](https://github.com/naLeilan/miniAssignments/tree/main/Steps)               |        [Live Demo](https://leilanSchmitz.com/projects/Steps/)         |
 | 34  |        [💰 Tip Calculator App](https://github.com/naLeilan/miniAssignments/tree/main/splitBill)        |      [Live Demo](https://leilanSchmitz.com/projects/splitbill/)       |
