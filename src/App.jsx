@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 function App() {
   return (
     <div className="app">
@@ -43,10 +45,13 @@ function Main() {
     <main>
       <section className="cards">
         <div className="card">
-          <h2>Guess My Number</h2>
-          <p>Developed an SEO-friendly website</p>
+          <div>
+            🌥️ <strong> Weather App </strong>
+          </div>
           <div className="btns">
-            <button className="show-modal">info</button>
+            <button className="show-modal" onClick={openModal}>
+              info
+            </button>
 
             {/* Modal - moved outside of cards */}
             {isModalOpen && (
@@ -56,11 +61,12 @@ function Main() {
                   <button className="close-modal" onClick={closeModal}>
                     &times;
                   </button>
-                  <h1>I'm a modal window 😍</h1>
+                  <h1>🌦️ React Weather App</h1>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                    A simple weather forecast app built with **React** and the
+                    **OpenWeatherMap API**. Type a city name and press `Enter`
+                    to get real-time weather data, including temperature and
+                    conditions.
                   </p>
                 </div>
               </>
@@ -68,7 +74,7 @@ function Main() {
             <a
               target="_blank"
               rel="noreferrer"
-              href="https://github.com/naleilan/CodeCraft101"
+              href="https://github.com/LinSchmitz/miniAssignments/tree/main/weather-app"
               className="code"
             >
               <button>Code</button>
@@ -79,10 +85,9 @@ function Main() {
           </div>
         </div>
 
-        <div className="card">
+        {/* <div className="card">
           <h2>Guess My Number</h2>
-          <p>Developed an SEO-friendly website</p>
-          {/* <img className="imgs" src="img/CodeCraft101.jpg" alt="CodeCraft101" /> */}
+          <p>Developed an SEO-friendly website</p> 
           <div className="btns">
             <a
               target="_blank"
@@ -104,7 +109,7 @@ function Main() {
               <button>Preview</button>
             </a>
           </div>
-        </div>
+        </div> */}
       </section>
     </main>
   );
@@ -116,7 +121,7 @@ function Footer() {
   return (
     <footer>
       <div className="footer-div">
-        <a href="https://github.com/naleilan" target="-blank">
+        <a href="https://github.com/LinSchmitz" target="-blank">
           <svg
             className="icons"
             stroke="currentColor"
@@ -131,7 +136,7 @@ function Footer() {
           </svg>
         </a>
 
-        <a href="https://twitter.com/NaLeilan" target="-blank">
+        <a href="https://x.com/LinSchmtz" target="-blank">
           <svg
             className="icons"
             xmlns="http://www.w3.org/2000/svg"
@@ -147,7 +152,7 @@ function Footer() {
         </a>
       </div>
       <p className="copyright">
-        &copy; {currentYear} <span className="footer-name">Leilan Na</span>
+        &copy; {currentYear} <span className="footer-name">Lin Schmitz</span>
       </p>
       <p></p>
     </footer>
