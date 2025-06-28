@@ -153,7 +153,7 @@ function Cards() {
 
       <div className="card">
         <div>
-          👧🏼 <strong> Profile Card App </strong>
+          🪜 <strong> Stepper App </strong>
         </div>
         <div className="btns">
           <button className="show-modal" onClick={openModal}>
@@ -168,11 +168,11 @@ function Cards() {
                 <button className="close-modal" onClick={closeModal}>
                   &times;
                 </button>
-                <h1>👧🏼 Profile Card App</h1>
+                <h1>🪜 Stepper App</h1>
                 <p>
-                  A personal profile card built with React. Includes a profile
-                  picture, introduction, and a list of technical skills with
-                  visual indicators based on experience level.
+                  A simple stepper app built with React. It allows the user to
+                  navigate through different steps, showing motivational
+                  messages with previous and next buttons.
                 </p>
               </div>
             </>
@@ -180,7 +180,7 @@ function Cards() {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://github.com/LinSchmitz/miniAssignments/tree/main/ProfileCard"
+            href="https://github.com/LinSchmitz/miniAssignments/tree/main/Steps"
             className="code"
           >
             <button>Code</button>
