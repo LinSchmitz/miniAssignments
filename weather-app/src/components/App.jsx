@@ -18,3 +18,7 @@ export default function App() {
     </div>
   );
 }
+
+let today = new Date().toDateString();
+
+console.log(today);
