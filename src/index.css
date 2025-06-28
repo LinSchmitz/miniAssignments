@@ -36,7 +36,7 @@
 
 body {
   margin: 0;
-  padding: 2rem 3rem;
+  padding: 1rem;
   min-width: 320px;
   min-height: 100vh;
   display: flex;
@@ -123,8 +123,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
-  height: 70vh;
+  padding: 1rem;
+  height: auto;
 }
 
 ul,
@@ -135,11 +135,16 @@ li {
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  /* gap: 1rem; */
   width: 100%;
   max-width: 1100px;
   margin: 1rem auto;
   gap: 1rem;
+}
+
+@media (max-width: 400px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
 }
 
 .imgs {
@@ -150,7 +155,7 @@ li {
 
 .card {
   position: relative;
-  padding: 1rem;
+  padding: 1.2rem;
   text-align: left;
   justify-content: center;
   align-items: center;
@@ -163,7 +168,7 @@ li {
   flex-direction: column;
 
   width: 100%; /* Remove fixed width */
-  height: 100px;
+  height: auto;
   margin: 0; /* Remove individual margins */
   /* Keep other existing styles */
 }
@@ -186,10 +191,7 @@ li {
   line-height: 1.5;
 }
 
-/* .card li {
-  margin: 1rem 0;
-  font-size: 1.25rem;
-} */
+/*  +++++++++++++++++  */
 
 .btns {
   position: absolute;
@@ -211,12 +213,15 @@ li {
 }
 
 .btns button {
-  padding: 10px;
   border-radius: 10px;
   border-style: none;
   transition: 0.3s;
-  width: 80px;
   background-color: var(--color-blu);
+
+  width: auto;
+  min-width: 60px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
 }
 
 .btns button:hover {
@@ -233,17 +238,6 @@ li {
 input {
   color: var(--fg);
   font: 1em/1.5 Hind, sans-serif;
-}
-
-.searchbtn {
-  justify-content: flex-end;
-  margin-left: auto;
-  position: relative;
-  width: 100%;
-  max-width: 17em;
-}
-
-input {
   background: transparent;
   border-radius: 50%;
   box-shadow: 0 0 0 0.25em inset;
@@ -253,6 +247,14 @@ input {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+.searchbtn {
+  justify-content: flex-end;
+  margin-left: auto;
+  position: relative;
+  width: 100%;
+  max-width: 17em;
 }
 
 input,
@@ -446,13 +448,59 @@ a {
 
 /*************/
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  main {
+    padding: 1rem;
+    height: auto;
+  }
+
+  .searchbtn {
+    max-width: 100%;
+  }
+
   .grid {
     width: 100%;
     flex-direction: column;
   }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-template-columns: 1fr;
+  }
+
   .card {
-    width: 80%;
+    width: 90%;
+    height: auto;
+    padding: 1.2rem;
+  }
+
+  nav {
+    flex-direction: column;
+    height: auto;
+    gap: 1rem;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 0.8rem;
+  }
+
+  .footer-div {
+    gap: 10px;
+  }
+
+  .btns button {
+    width: auto;
+    min-width: 60px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
   }
 }
 
@@ -528,5 +576,3 @@ a {
   border: none;
   background: none;
 }
-
-/* Remove the .hidden class - we'll use conditional rendering */
