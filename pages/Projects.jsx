@@ -1,3 +1,11 @@
+import PageNav from '../components/PageNav';
+import { Cards } from '../src/Cards';
+
 export default function Projects() {
-  return <div>Projects</div>;
+  return (
+    <div>
+      <PageNav />
+      <Cards />
+    </div>
+  );
 }

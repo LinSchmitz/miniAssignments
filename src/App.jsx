@@ -1,17 +1,28 @@
 import { Cards } from './Cards';
+import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
 
-// const HomePage = lazy(() => import('./pages/HomePage'));
-// const Product = lazy(() => import('./pages/Projects'));
-// const Pricing = lazy(() => import('./pages/About'));
-// const PageNotFound = lazy(() => import('./pages/PageNotFound'));
-// const AppLayout = lazy(() => import('./pages/AppLayout'));
+import About from '../pages/About';
+import HomePage from '../pages/HomePage';
+import Projects from '../pages/Projects';
+import PageNotFound from '../pages/PageNotFound';
+import PageNav from '../components/PageNav';
 
 function App() {
   return (
     <div className="app">
-      <Header />
-      <Main />
-      <Footer />
+      <BrowserRouter>
+        <Header />
+
+        <Routes>
+          <Route index path="/" element={<HomePage />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
+
+        {/* <Main /> */}
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }
@@ -21,29 +32,28 @@ function Header() {
     <header>
       <nav>
         <div>
-          <span className="square101"> Mini Codes </span>
+          {/* <NavLink to="/">Home</NavLink> */}
+          <NavLink to="/" className="square101">
+            <span>Mini Codes</span>
+          </NavLink>
         </div>
         <div className="searchbtn">
           <label htmlFor="search">Search</label>
           <input id="search" type="search" pattern=".*\S.*" required />
           <span className="caret"></span>
         </div>
-        <div className="navbar">
-          <h4>About</h4>
-          <h4>Projects</h4>
-        </div>
       </nav>
     </header>
   );
 }
 
-function Main() {
-  return (
-    <main>
-      <Cards />
-    </main>
-  );
-}
+// function Main() {
+//   return (
+//     <main>
+//       <Cards />
+//     </main>
+//   );
+// }
 
 function Footer() {
   const currentYear = new Date().getFullYear();
