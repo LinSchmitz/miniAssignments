@@ -1,10 +1,11 @@
-import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import About from '../pages/About';
 import HomePage from '../pages/HomePage';
 import Projects from '../pages/Projects';
 import PageNotFound from '../pages/PageNotFound';
 import { Footer } from '../src/Footer';
+import Header from './Header';
 
 function App() {
   return (
@@ -22,25 +23,6 @@ function App() {
         <Footer />
       </BrowserRouter>
     </div>
-  );
-}
-
-function Header() {
-  return (
-    <header>
-      <nav>
-        <div>
-          <NavLink to="/" className="square101">
-            <span>Mini Codes</span>
-          </NavLink>
-        </div>
-        <div className="searchbtn">
-          <label htmlFor="search">Search</label>
-          <input id="search" type="search" pattern=".*\S.*" required />
-          <span className="caret"></span>
-        </div>
-      </nav>
-    </header>
   );
 }
 

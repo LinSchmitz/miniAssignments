@@ -1,9 +1,8 @@
-import PageNav from '../components/PageNav';
+// import PageNav from '../components/PageNav';
 
 export default function About() {
   return (
     <div>
-      <PageNav />
       <p>
         Welcome to Mini Codes — a growing collection of mini web projects built
         with React, JavaScript, and CSS. Each project here is crafted to

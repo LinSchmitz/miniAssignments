@@ -51,19 +51,26 @@ body {
   padding: 1rem;
 }
 
-nav {
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.nav-left {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  height: 2.5rem;
 }
 
-nav p {
+.nav-left p {
   font-size: 1.6rem;
-  /* height: 50px; */
 }
 
-nav span {
+.nav-left span {
   background-color: var(--color-yelow);
   color: var(--color-blu);
   border-radius: 10px;
@@ -72,9 +79,11 @@ nav span {
 
 .square101 {
   white-space: nowrap;
-  width: 5rem;
-  height: 5rem;
+  width: 5.5rem;
+  height: 2rem;
+  padding: 0.3rem;
   border-radius: 10px;
+  color: var(--color-dark);
   background: linear-gradient(
     135deg,
     #facc15 25%,
@@ -84,7 +93,6 @@ nav span {
   );
   background-size: 400% 400%;
   animation: animate 5s ease-in infinite;
-  cursor: pointer;
 }
 
 .square101::before {
@@ -109,15 +117,82 @@ nav span {
   }
 }
 
-.navbar {
-  display: flex;
-  /* margin-left: auto; */
+/* .square101 {
+  position: relative;
+  white-space: nowrap;
+  width: 5rem;
+  height: 1.2rem;
+  border-radius: 10px;
+  background: linear-gradient(
+    135deg,
+    #facc15 25%,
+    #a9a9a9 25% 50%,
+    #facc15 50% 75%,
+    #a7abfa 75%
+  );
+  animation: animate 5s ease-in infinite;
+  background-size: 400% 400%;
+  background-repeat: no-repeat;
   cursor: pointer;
+} */
+
+/* .square101::before {
+  content: '';
+  width: 85%;
+  height: 85%;
+  left: 50%;
+  top: 50%;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  background-color: #121212;
+} */
+
+/* @keyframes animate {
+  0%,
+  100% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+} */
+
+/* Group Mini Codes and PageNav inline */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-.navbar h4 {
-  margin-left: 10px;
+/* Style for the PageNav */
+.navbar {
+  display: flex;
 }
+
+.navbar ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0;
+}
+
+.navbar a {
+  color: var(--fg);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: var(--color-yelow);
+}
+
 /*********main********/
 main {
   display: flex;
@@ -456,6 +531,12 @@ a {
   main {
     padding: 1rem;
     height: auto;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
 
   .searchbtn {
