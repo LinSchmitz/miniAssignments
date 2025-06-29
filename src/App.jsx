@@ -1,5 +1,11 @@
 import { Cards } from './Cards';
 
+const HomePage = lazy(() => import('./pages/HomePage'));
+const Product = lazy(() => import('./pages/Projects'));
+const Pricing = lazy(() => import('./pages/About'));
+const PageNotFound = lazy(() => import('./pages/PageNotFound'));
+const AppLayout = lazy(() => import('./pages/AppLayout'));
+
 function App() {
   return (
     <div className="app">
