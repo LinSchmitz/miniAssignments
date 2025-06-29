@@ -62,7 +62,7 @@ const cardData = [
     description: `Track your mood with emojis.`,
     codeLink:
       'https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/moodTracker',
-    previewLink: 'https://mini-assignments-ywrt.vercel.app/',
+    previewLink: 'https://mini-assignments-5o7w.vercel.app/',
   },
 ];
 
