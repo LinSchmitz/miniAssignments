@@ -50,16 +50,25 @@ const cardData = [
     id: 'pizzamenu',
     icon: '🍕',
     title: 'Pizza Menu',
-    description: `A fun and interactive pizza menu app built with React. Explore a list of delicious pizzas, 
-    check availability, and see dynamic updates based on opening hours.`,
+    description: `A fun and interactive pizza menu app built with React. Explore a list of delicious pizzas, check availability, and see dynamic updates based on opening hours.`,
     codeLink:
       'https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/pizza-menu',
+    previewLink: 'https://mini-assignments-ywrt.vercel.app/',
+  },
+  {
+    id: 'moodTracker',
+    icon: '👧🏼',
+    title: 'Mood Tracker',
+    description: `Track your mood each day with this interactive app and reflect on your mental wellness journey.`,
+    codeLink:
+      'https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/moodTracker',
     previewLink: 'https://mini-assignments-ywrt.vercel.app/',
   },
 ];
 
 export function Cards() {
   const [activeCard, setActiveCard] = useState(null);
+  const [showAll, setShowAll] = useState(false);
 
   const openModal = (e, card) => {
     e.preventDefault();
@@ -68,9 +77,12 @@ export function Cards() {
 
   const closeModal = () => setActiveCard(null);
 
+  // 👇 show first 6 if not showAll, otherwise all
+  const visibleCards = showAll ? cardData : cardData.slice(0, 6);
+
   return (
     <section className="cards">
-      {cardData.map(card => (
+      {visibleCards.map(card => (
         <div className="card" key={card.id}>
           <div>
             {card.icon} <strong>{card.title}</strong>
@@ -99,7 +111,16 @@ export function Cards() {
         </div>
       ))}
 
-      {/* Render modal only once at the end, with proper card content */}
+      {/* Show More / Show Less Button */}
+      {cardData.length > 6 && (
+        <div style={{ textAlign: 'center', marginTop: '1rem' }}>
+          <button className="more-btn" onClick={() => setShowAll(!showAll)}>
+            {showAll ? 'Show Less' : 'More'}
+          </button>
+        </div>
+      )}
+
+      {/* Modal Section */}
       {activeCard && (
         <>
           <div className="overlay" onClick={closeModal}></div>
