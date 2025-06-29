@@ -50,7 +50,7 @@ const cardData = [
     id: 'pizzamenu',
     icon: '🍕',
     title: 'Pizza Menu',
-    description: `A fun and interactive pizza menu app built with React. Explore a list of delicious pizzas, check availability, and see dynamic updates based on opening hours.`,
+    description: `A fun and interactive pizza menu app built with React.`,
     codeLink:
       'https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/pizza-menu',
     previewLink: 'https://mini-assignments-ywrt.vercel.app/',
@@ -59,7 +59,7 @@ const cardData = [
     id: 'moodTracker',
     icon: '👧🏼',
     title: 'Mood Tracker',
-    description: `Track your mood each day with this interactive app and reflect on your mental wellness journey.`,
+    description: `Track your mood with emojis.`,
     codeLink:
       'https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/moodTracker',
     previewLink: 'https://mini-assignments-ywrt.vercel.app/',
@@ -77,64 +77,67 @@ export function Cards() {
 
   const closeModal = () => setActiveCard(null);
 
-  // 👇 show first 6 if not showAll, otherwise all
   const visibleCards = showAll ? cardData : cardData.slice(0, 6);
 
   return (
-    <section className="cards">
-      {visibleCards.map(card => (
-        <div className="card" key={card.id}>
-          <div>
-            {card.icon} <strong>{card.title}</strong>
+    <div>
+      <section className="cards">
+        {visibleCards.map(card => (
+          <div className="card" key={card.id}>
+            <div>
+              {card.icon} <strong>{card.title}</strong>
+            </div>
+            <div className="btns">
+              <button className="show-modal" onClick={e => openModal(e, card)}>
+                info
+              </button>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href={card.codeLink}
+                className="code"
+              >
+                <button>Code</button>
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href={card.previewLink}
+                className="preview"
+              >
+                <button>Preview</button>
+              </a>
+            </div>
           </div>
-          <div className="btns">
-            <button className="show-modal" onClick={e => openModal(e, card)}>
-              info
-            </button>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href={card.codeLink}
-              className="code"
-            >
-              <button>Code</button>
-            </a>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href={card.previewLink}
-              className="preview"
-            >
-              <button>Preview</button>
-            </a>
-          </div>
-        </div>
-      ))}
+        ))}
 
-      {/* Show More / Show Less Button */}
+        {/* Modal */}
+        {activeCard && (
+          <>
+            <div className="overlay" onClick={closeModal}></div>
+            <div className="modal">
+              <button className="close-modal" onClick={closeModal}>
+                &times;
+              </button>
+              <h1>
+                {activeCard.icon} {activeCard.title}
+              </h1>
+              <p>{activeCard.description}</p>
+            </div>
+          </>
+        )}
+      </section>{' '}
+      {/* More / Show Less Button below the cards, same row */}
       {cardData.length > 6 && (
-        <div style={{ textAlign: 'center', marginTop: '1rem' }}>
-          <button className="more-btn" onClick={() => setShowAll(!showAll)}>
+        <div className="more-btn-wrapper">
+          <button
+            className="more-btn"
+            onClick={() => setShowAll(prev => !prev)}
+          >
             {showAll ? 'Show Less' : 'More'}
           </button>
         </div>
       )}
-
-      {/* Modal Section */}
-      {activeCard && (
-        <>
-          <div className="overlay" onClick={closeModal}></div>
-          <div className="modal">
-            <button className="close-modal" onClick={closeModal}>
-              &times;
-            </button>
-            <h1>
-              {activeCard.icon} {activeCard.title}
-            </h1>
-            <p>{activeCard.description}</p>
-          </div>
-        </>
-      )}
-    </section>
+    </div>
   );
 }
