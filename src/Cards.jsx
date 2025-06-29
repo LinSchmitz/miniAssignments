@@ -7,7 +7,7 @@ const cardData = [
     title: 'Travel List App',
     description: `This is a simple React application that helps users manage a packing list before going on a trip...`,
     codeLink:
-      'https://github.com/LinSchmitz/miniAssignments/tree/main/travelList',
+      'https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/travelList',
     previewLink: 'https://mini-assignments-uh6k.vercel.app/',
   },
   {
@@ -16,7 +16,7 @@ const cardData = [
     title: 'Weather App',
     description: `A simple weather forecast app built with React and the OpenWeatherMap API...`,
     codeLink:
-      'https://github.com/LinSchmitz/miniAssignments/tree/main/weather-app',
+      'https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/weather-app',
     previewLink: 'https://mini-assignments-y1pv.vercel.app/',
   },
   {
@@ -24,7 +24,8 @@ const cardData = [
     icon: '🪜',
     title: 'Stepper App',
     description: `A simple stepper app built with React. It allows the user to navigate through different steps...`,
-    codeLink: 'https://github.com/LinSchmitz/miniAssignments/tree/main/Steps',
+    codeLink:
+      'https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/Steps',
     previewLink: 'https://mini-assignments-u21r.vercel.app/',
   },
   {
@@ -33,7 +34,7 @@ const cardData = [
     title: 'Split The Bills',
     description: `An interactive React application that allows users to split expenses with friends...`,
     codeLink:
-      'https://github.com/LinSchmitz/miniAssignments/tree/main/split-The-Bills',
+      'https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/split-The-Bills',
     previewLink: 'https://mini-assignments-3zjv.vercel.app/',
   },
   {
@@ -42,7 +43,7 @@ const cardData = [
     title: 'Flash Card',
     description: `A simple Flashcard App built with React to practice JavaScript interview questions...`,
     codeLink:
-      'https://github.com/LinSchmitz/miniAssignments/tree/main/flashcard',
+      'https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/flashcard',
     previewLink: 'https://mini-assignments-3fj8.vercel.app/',
   },
   {
@@ -52,7 +53,7 @@ const cardData = [
     description: `A fun and interactive pizza menu app built with React. Explore a list of delicious pizzas, 
     check availability, and see dynamic updates based on opening hours.`,
     codeLink:
-      'https://github.com/LinSchmitz/miniAssignments/tree/main/pizza-menu',
+      'https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/pizza-menu',
     previewLink: 'https://mini-assignments-ywrt.vercel.app/',
   },
 ];
