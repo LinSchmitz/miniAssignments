@@ -6,6 +6,7 @@ export default function About() {
       <pre
         style={{
           whiteSpace: 'pre-wrap',
+          lineHeight: '1.6',
           textAlign: 'justify',
           fontFamily: 'inherit',
           marginTop: '2rem',
