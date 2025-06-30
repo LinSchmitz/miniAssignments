@@ -67,13 +67,23 @@ const cardData = [
   },
   {
     id: 'accordionList',
-    icon: '👧🏼',
+    icon: '➕',
     title: 'Accordion List',
     description: `A simple and interactive React app that displays fun random facts in an accordion layout. 
                   Built for practicing React components and useState management.`,
     codeLink:
       'https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/accordionList',
     previewLink: 'https://mini-assignments-tfof.vercel.app/',
+  },
+  {
+    id: 'ProfileCard',
+    icon: '🧬',
+    title: 'Profile Card',
+    description: `A simple and interactive React app that displays fun random facts in an accordion layout. 
+                  Built for practicing React components and useState management.`,
+    codeLink:
+      'https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/ProfileCard',
+    previewLink: 'hhttps://mini-assignments-ursg.vercel.app/',
   },
 ];
 
