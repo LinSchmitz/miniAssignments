@@ -59,10 +59,21 @@ const cardData = [
     id: 'moodTracker',
     icon: '👧🏼',
     title: 'Mood Tracker',
-    description: `Track your mood with emojis.`,
+    description: `A simple and interactive React app that lets users track their current mood. 
+                  Built for practicing React state management with useState.`,
     codeLink:
       'https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/moodTracker',
     previewLink: 'https://mini-assignments-5o7w.vercel.app/',
+  },
+  {
+    id: 'accordionList',
+    icon: '👧🏼',
+    title: 'Accordion List',
+    description: `A simple and interactive React app that displays fun random facts in an accordion layout. 
+                  Built for practicing React components and useState management.`,
+    codeLink:
+      'https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/accordionList',
+    previewLink: 'https://mini-assignments-tfof.vercel.app/',
   },
 ];
 
