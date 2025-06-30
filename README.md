@@ -34,7 +34,7 @@
 | 22  |           [TextExpander](https://github.com/naLeilan/miniAssignments/tree/main/TextExpander)           |     [Live Demo](https://leilanSchmitz.com/projects/TextExpander/)     |
 | 23  |            [Star Rating](https://github.com/naLeilan/miniAssignments/tree/main/StarsRating)            |      [Live Demo](https://leilanSchmitz.com/projects/StarRating/)      |
 | 24  |      [💸 Split the Bill](https://github.com/LinSchmitz/miniAssignments/tree/main/split-The-Bills)      |        [Live Demo](https://mini-assignments-3zjv.vercel.app/)         |
-| 25  |         [Accordion Facts](https://github.com/naLeilan/miniAssignments/tree/main/accordionList)         |    [Live Demo](https://leilanSchmitz.com/projects/accordionList/)     |
+| 25  |         [Accordion List](https://github.com/naLeilan/miniAssignments/tree/main/accordionList)          |        [Live Demo](https://mini-assignments-tfof.vercel.app/)         |
 | 26  |       [👧🏼 Mood Tracker](https://github.com/naLeilan/miniAssignments/tree/main/Apps/moodTracker)        |        [Live Demo](https://mini-assignments-5o7w.vercel.app/)         |
 | 27  |           [✈️ Travel List](https://github.com/naLeilan/miniAssignments/tree/main/travelList)           |        [Live Demo](https://mini-assignments-uh6k.vercel.app/)         |
 | 28  |            [Date Slider](https://github.com/naLeilan/miniAssignments/tree/main/dateSlider)             |      [Live Demo](https://leilanSchmitz.com/projects/dateSlider/)      |
