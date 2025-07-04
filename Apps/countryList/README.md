@@ -1,12 +1,92 @@
-# React + Vite
+Here's a `README.md` for your project:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+# 🌍 Country Search App
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A simple JavaScript web app that fetches data from the [REST Countries API](https://restcountries.com/) and displays a list of countries with their flag, name, and capital. It includes a search bar with debounce functionality and uses `localStorage` for caching API results.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Features
+
+- Fetches country data from REST Countries API
+- Caches data in `localStorage` to reduce API calls
+- Displays:
+
+  - Country flag
+  - Country name
+  - Capital
+
+- Real-time filtering with debounce on input
+- Responsive country cards
+
+---
+
+## 📁 Folder Structure
+
+```
+/project-root
+│
+├── index.html
+├── style.css
+└── src
+    └── js
+        └── main.js
+```
+
+---
+
+## 🔧 How It Works
+
+### 1. **Fetch and Cache**
+
+- On page load, it checks if the data exists in `localStorage`.
+- If not, it fetches data from the REST Countries API and stores it.
+
+### 2. **Render**
+
+- Each country's data is rendered into a `.item` div with its flag, name, and capital.
+
+### 3. **Search**
+
+- User can search for countries by name.
+- Debounce with a 500ms delay improves performance.
+
+---
+
+## 🛠 Technologies Used
+
+- **Vanilla JavaScript**
+- **HTML**
+- **CSS**
+- [REST Countries API](https://restcountries.com/)
+
+---
+
+## 🧪 How to Use
+
+1. Clone or download this repository.
+2. Open `index.html` in your browser.
+3. Start typing in the search bar to filter countries by name.
+
+---
+
+## 📸 Example
+
+```text
+
+[ Brazil 🇧🇷 ] — Capital: Brasília
+[ Germany 🇩🇪 ] — Capital: Berlin
+```
+
+---
+
+## ⚠️ Notes
+
+- Make sure you're connected to the internet on first load to fetch API data.
+- The app uses `altSpellings[1]` as the country name (some countries may not have this index).
+
+---
+
+Let me know if you'd like a version in Persian or need images/preview badges added.
