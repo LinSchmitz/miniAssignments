@@ -95,6 +95,36 @@ const cardData = [
       'https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/darkModePortfolio',
     previewLink: 'https://darkmodeportfolio-sch.netlify.app/',
   },
+  {
+    id: 'starRating',
+    icon: '⭐',
+    title: 'Star Rating',
+    description: `Welcome to my personal portfolio website built using **HTML**, **CSS**, and **JavaScript**.
+                  This website serves as my digital space to showcase my skills, projects, and online presence.`,
+    codeLink:
+      'https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/StarsRating',
+    previewLink: 'https://app.netlify.com/projects/starsrating-sch/',
+  },
+  {
+    id: 'formValidator',
+    icon: '📃',
+    title: 'Form Validator',
+    description: `Welcome to my personal portfolio website built using **HTML**, **CSS**, and **JavaScript**.
+                  This website serves as my digital space to showcase my skills, projects, and online presence.`,
+    codeLink:
+      'https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/formValidator',
+    previewLink: 'https://app.netlify.com/projects/starsrating-sch/',
+  },
+  {
+    id: 'dateCounter',
+    icon: '📅',
+    title: 'Date Counter',
+    description: `Welcome to my personal portfolio website built using **HTML**, **CSS**, and **JavaScript**.
+                  This website serves as my digital space to showcase my skills, projects, and online presence.`,
+    codeLink:
+      'https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/dateCounter',
+    previewLink: 'https://app.netlify.com/projects/starsrating-sch/',
+  },
 ];
 
 export function Cards() {

@@ -21,9 +21,6 @@
 | 08 | [➕ Accordion List](https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/accordionList) | [Live Demo](https://mini-assignments-tfof.vercel.app/) |
 | 09 | [🧬 Profile Card](https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/ProfileCard) | [Live Demo](https://mini-assignments-ursg.vercel.app/) |
 | 10 | [🌐 Dark Mode Portfolio](https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/darkModePortfolio) | [Live Demo](https://darkmodeportfolio-sch.netlify.app/) |
-| 11 | [Star Rating](https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/StarsRating) | [Live Demo](https://starsrating-sch.netlify.app/) |
-| 12 | [Form Validator](https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/formValidator) | [Live Demo](https://formvalidator-sch.netlify.app/) |
-| 13 | [Date Counter](https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/dateCounter) | [Live Demo](https://datecounter-sch.netlify.app/) |
-| 14 | [💰 Tip Calculator App](https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/splitBill) | [Live Demo](https://LinSchmitz.com/projects/splitbill/) |
-| 15 | [TextExpander](https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/TextExpander) | |
-| 16 | [Random Advice Generator](https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/getAdvice) | |
+| 11 | [⭐ Star Rating](https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/StarsRating) | [Live Demo](https://starsrating-sch.netlify.app/) |
+| 12 | [📃 Form Validator](https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/formValidator) | [Live Demo](https://formvalidator-sch.netlify.app/) |
+| 13 | [📅 Date Counter](https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/dateCounter) | [Live Demo](https://datecounter-sch.netlify.app/) |
