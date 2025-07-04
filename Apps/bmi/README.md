@@ -2,6 +2,14 @@
 
 A simple BMI (Body Mass Index) calculator built with vanilla HTML, CSS, and JavaScript.
 
+---
+
+## 📷 Screen Shot
+
+## ![alt text](public/img/bmi.png)
+
+---
+
 ## 📐 Features
 
 - 🏋️‍♂️ Enter height in centimeters and weight in kilograms
@@ -9,11 +17,15 @@ A simple BMI (Body Mass Index) calculator built with vanilla HTML, CSS, and Java
 - 📊 Displays the BMI result dynamically
 - 🧼 Clean and minimal form design using custom CSS
 
+---
+
 ## 🚀 Technologies Used
 
 - HTML5
 - CSS3
 - JavaScript (ES6)
+
+---
 
 ## 🧠 Formula Used
 
