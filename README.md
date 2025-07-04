@@ -1,6 +1,6 @@
 # All my mini React/js project. (🚀 still updating)
 
-[Live Demo](https://mini-assignments.vercel.app/)
+[Live Demo](https://miniassignment.netlify.app/)
 
 ### 🛠 Tech Stacks used in projects:
 
