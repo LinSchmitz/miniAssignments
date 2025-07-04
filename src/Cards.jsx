@@ -83,7 +83,7 @@ const cardData = [
                   Built for practicing React components and useState management.`,
     codeLink:
       'https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/ProfileCard',
-    previewLink: 'hhttps://mini-assignments-ursg.vercel.app/',
+    previewLink: 'https://mini-assignments-ursg.vercel.app/',
   },
 ];
 
