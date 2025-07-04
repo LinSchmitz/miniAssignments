@@ -129,8 +129,10 @@ const cardData = [
     id: 'changeBackgroundColor',
     icon: '🎨',
     title: 'Change Background Color',
-    description: `Welcome to my personal portfolio website built using **HTML**, **CSS**, and **JavaScript**.
-                  This website serves as my digital space to showcase my skills, projects, and online presence.`,
+    description: `A simple and interactive JavaScript project that allows users to dynamically 
+                  change the background color of the page by clicking on color buttons. 
+                  When the page loads, a random color is selected and applied. The currently selected color 
+                  is also displayed on the page.`,
     codeLink:
       'https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/changeBackgroundColor',
     previewLink: 'https://bakcolorchange.netlify.app/',
@@ -139,8 +141,8 @@ const cardData = [
     id: 'bmi',
     icon: '🧮',
     title: 'BMI',
-    description: `Welcome to my personal portfolio website built using **HTML**, **CSS**, and **JavaScript**.
-                  This website serves as my digital space to showcase my skills, projects, and online presence.`,
+    description: `A simple BMI (Body Mass Index) calculator built with vanilla HTML, CSS, and JavaScript.
+`,
     codeLink:
       'https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/bmi',
     previewLink: 'https://c-bmi.netlify.app/',
@@ -159,8 +161,10 @@ const cardData = [
     id: 'todoList',
     icon: '✅',
     title: 'Todo List',
-    description: `Welcome to my personal portfolio website built using **HTML**, **CSS**, and **JavaScript**.
-                  This website serves as my digital space to showcase my skills, projects, and online presence.`,
+    description: `A simple and elegant TODO List application built with HTML, CSS, 
+                  and Vanilla JavaScript (ES Modules). This app allows users to add tasks and view 
+                  their current task list. 
+                  It uses modern best practices such as module imports and scoped styling.`,
     codeLink:
       'https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/todoList',
     previewLink: 'https://listofday.netlify.app/',
