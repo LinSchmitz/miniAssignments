@@ -3,18 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>ToDo</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <script type="module" defer src="/src/js/main.js"></script>
+
+    <title>TODO List</title>
   </head>
+
   <body>
-    <div class="container">
-      <h1>To-Do List</h1>
-      <div class="form">
-        <input type="text" id="taskInput" placeholder="Add a new task..." />
-        <button id="addTaskBtn">+</button>
+    <div id="app">
+      <form>
+        <h3>Add Items</h3>
+        <input
+          type="text"
+          id="title"
+          placeholder="Title"
+          class="form-control"
+          autocomplete="off"
+        />
+        <button>+</button>
+      </form>
+      <div class="items">
+        <h3>My Items</h3>
       </div>
-      <ul id="taskList"></ul>
     </div>
-    <script src="script.js"></script>
   </body>
 </html>
