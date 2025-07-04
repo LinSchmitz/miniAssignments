@@ -44,7 +44,7 @@ export default function App() {
 function Avatar() {
   return (
     <div className="avatar">
-      <img src="./public/img/avatar.png" alt="avatar" />
+      <img src="./img/avatar.png" alt="avatar" />
     </div>
   );
 }
