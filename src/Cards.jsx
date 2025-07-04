@@ -135,6 +135,36 @@ const cardData = [
       'https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/changeBackgroundColor',
     previewLink: 'https://bakcolorchange.netlify.app/',
   },
+  {
+    id: 'bmi',
+    icon: '🧮',
+    title: 'BMI',
+    description: `Welcome to my personal portfolio website built using **HTML**, **CSS**, and **JavaScript**.
+                  This website serves as my digital space to showcase my skills, projects, and online presence.`,
+    codeLink:
+      'https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/bmi',
+    previewLink: 'https://bakcolorchange.netlify.app/',
+  },
+  {
+    id: 'countryList',
+    icon: '📃',
+    title: 'Country List',
+    description: `Welcome to my personal portfolio website built using **HTML**, **CSS**, and **JavaScript**.
+                  This website serves as my digital space to showcase my skills, projects, and online presence.`,
+    codeLink:
+      'https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/countryList)',
+    previewLink: 'https://listofcountry.netlify.app/',
+  },
+  {
+    id: 'countryList',
+    icon: '✅',
+    title: 'Todo List',
+    description: `Welcome to my personal portfolio website built using **HTML**, **CSS**, and **JavaScript**.
+                  This website serves as my digital space to showcase my skills, projects, and online presence.`,
+    codeLink:
+      'https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/todoList',
+    previewLink: 'https://listofday.netlify.app/',
+  },
 ];
 
 export function Cards() {

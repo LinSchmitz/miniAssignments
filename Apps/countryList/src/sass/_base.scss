@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css");
+
+$color-background: #add8e6;
+$color-black: #0008;
+$color-text: gray;
+
+$coin-bk: #fff7;
+
+$link-primary-color: #f0842c;
+$link-secondry-color: #cde7f0;
+$link-third-color: #5d737a;
+
+$gradient: linear-gradient(
+  to right bottom,
+  $link-secondry-color,
+  $link-third-color
+);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Share Tech Mono", monospace;
+  line-height: 1.6;
+  font-size: 1.7rem;
+  text-align: right;
+  color: $color-black;
+  background-color: $color-background;
+  display: inline-block;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // min-height: calc(100vh - 2 * 4vw);
+}
+
+.head {
+  margin-bottom: 10px;
+}
+
+#app {
+  margin: 50px auto;
+  padding: 0 15px;
+}
+
+.container {
+  /* max-width: 600px; */
+  max-width: 100%;
+}
+
+.items {
+  width: 100%;
+  margin: auto;
+  background: $coin-bk;
+  padding: 50px;
+  border-radius: 2rem;
+}
+
+.items:empty {
+  display: none;
+}
+
+h2:hover {
+  align-items: center;
+  font-weight: bolder;
+  font-size: 50px;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: $link-primary-color;
+  // cursor: pointer;
+}
+
+h2,
+h3 {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 50px;
+  margin-bottom: 5px;
+}
+
+.item {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.item img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.item img:hover {
+  border-radius: 50%;
+  width: 100px;
+  cursor: pointer;
+  scale: 110%;
+}
+
+.item h3 {
+  margin-top: 15px;
+  font-size: 1.5rem;
+}
+
+input {
+  border-radius: 2rem !important;
+  width: 250px !important;
+}

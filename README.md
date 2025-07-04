@@ -38,3 +38,9 @@
 | 13 | [📅 Date Counter](https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/dateCounter) | [Live Demo](https://datecounter-sch.netlify.app/) |
 
 | 14 | [🎨 Change Background Color](https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/changeBackgroundColor) | [Live Demo](https://bakcolorchange.netlify.app/) |
+
+| 15 | [🧮 BMI](https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/bmi) | [Live Demo](https://bakcolorchange.netlify.app/) |
+
+| 16 | [📃 Country List](https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/countryList) | [Live Demo](https://listofcountry.netlify.app/) |
+
+| 1 | [✅ Todo List](https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/todoList) | [Live Demo](https://listofday.netlify.app/) |

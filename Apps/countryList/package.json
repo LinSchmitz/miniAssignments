@@ -1,21 +1,22 @@
 {
-  "name": "changebackgroundcolor",
+  "name": "fetch-data",
   "version": "1.0.0",
   "description": "",
   "default": "index.html",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html --dist-dir ./dist",
-    "compile:sass": "sass main.scss css/style.css -w"
+    "compile:sass": "sass sass/main.scss css/style.css -w"
   },
   "author": "Leilan Na",
   "license": "ISC",
-  "dependencies": {
-    "live-server": "^1.2.2",
-    "parcel": "^2.9.3"
-  },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.9.3",
-    "sass": "^1.67.0"
+    "parcel": "^2.9.3",
+    "sass": "^1.68.0"
+  },
+  "dependencies": {
+    "core-js": "^3.32.2",
+    "regenerator-runtime": "^0.14.0"
   }
 }
