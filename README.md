@@ -4,7 +4,7 @@
 
 ### 🛠 Tech Stacks used in projects:
 
-⚛️ React, 📦 JavaScript (ES6+), 🎨 HTML & CSS
+⚛️ Reactjs, 📦 JavaScript (ES6+), 🎨 HTML & CSS
 
 +++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -36,3 +36,5 @@
 | 12 | [📃 Form Validator](https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/formValidator) | [Live Demo](https://formvalidator-sch.netlify.app/) |
 
 | 13 | [📅 Date Counter](https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/dateCounter) | [Live Demo](https://datecounter-sch.netlify.app/) |
+
+| 14 | [🎨 Change Background Color](https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/changeBackgroundColor) | [Live Demo](https://bakcolorchange.netlify.app/) |

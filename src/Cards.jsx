@@ -125,6 +125,16 @@ const cardData = [
       'https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/dateCounter',
     previewLink: 'https://app.netlify.com/projects/starsrating-sch/',
   },
+  {
+    id: 'changeBackgroundColor',
+    icon: '🎨',
+    title: 'Change Background Color',
+    description: `Welcome to my personal portfolio website built using **HTML**, **CSS**, and **JavaScript**.
+                  This website serves as my digital space to showcase my skills, projects, and online presence.`,
+    codeLink:
+      'https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/changeBackgroundColor',
+    previewLink: 'https://bakcolorchange.netlify.app/',
+  },
 ];
 
 export function Cards() {
