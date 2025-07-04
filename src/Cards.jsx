@@ -88,7 +88,7 @@ const cardData = [
   {
     id: 'darkModePortfolio',
     icon: '🌐',
-    title: 'Profile Card',
+    title: 'Dark Mode Portfolio',
     description: `Welcome to my personal portfolio website built using **HTML**, **CSS**, and **JavaScript**.
                   This website serves as my digital space to showcase my skills, projects, and online presence.`,
     codeLink:
