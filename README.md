@@ -45,4 +45,4 @@
 | 33  |             [🪜 Stepper App](https://github.com/naLeilan/miniAssignments/tree/main/Apps/Steps)              |        [Live Demo](https://mini-assignments-u21r.vercel.app/)         |
 | 34  |        [💰 Tip Calculator App](https://github.com/naLeilan/miniAssignments/tree/main/Apps/splitBill)        |      [Live Demo](https://leilanSchmitz.com/projects/splitbill/)       |
 | 35  |          [🌥️ Weather App](https://github.com/naLeilan/miniAssignments/tree/main/Apps/weather-app)           |        [Live Demo](https://mini-assignments-y1pv.vercel.app/)         |
-| 36  |  [🌐 Dark Mode Portfolio](https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/darkModePortfolio)   |        [Live Demo](https://mini-assignments-y1pv.vercel.app/)         |
+| 36  |  [🌐 Dark Mode Portfolio](https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/darkModePortfolio)   |        [Live Demo](https://darkmodeportfolio-sch.netlify.app/)        |

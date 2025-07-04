@@ -93,7 +93,7 @@ const cardData = [
                   This website serves as my digital space to showcase my skills, projects, and online presence.`,
     codeLink:
       'https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/darkModePortfolio',
-    previewLink: 'https://mini-assignments-ursg.vercel.app/',
+    previewLink: 'https://darkmodeportfolio-sch.netlify.app/',
   },
 ];
 
