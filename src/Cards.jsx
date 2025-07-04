@@ -85,6 +85,16 @@ const cardData = [
       'https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/ProfileCard',
     previewLink: 'https://mini-assignments-ursg.vercel.app/',
   },
+  {
+    id: 'darkModePortfolio',
+    icon: '🧬',
+    title: 'Profile Card',
+    description: `A simple and interactive React app that displays fun random facts in an accordion layout. 
+                  Built for practicing React components and useState management.`,
+    codeLink:
+      'https://github.com/LinSchmitz/miniAssignments/tree/main/Apps/darkModePortfolio',
+    previewLink: 'https://mini-assignments-ursg.vercel.app/',
+  },
 ];
 
 export function Cards() {

@@ -1,25 +1,54 @@
-# 🗓️ React Date Counter App
+# 🌐 Personal Portfolio Website
 
-A simple and interactive React app that helps you explore `useState`, perform dynamic updates, and manipulate dates based on user input. Great for learning how state updates can drive UI changes in real time.
+Welcome to my personal portfolio website built using **HTML**, **CSS**, and **JavaScript**.
+This website serves as my digital space to showcase my skills, projects, and online presence.
 
-### 📸 Preview
-
-![alt text](public/img/dateCounter.png)
+---
 
 ## ✨ Features
 
-- 🔁 Adjust the **step** value to control how much the counter increases or decreases.
+- 🎨 **Dark/Light Mode Toggle** – switch between themes using the sun/moon icon.
+- 👋 Interactive welcome section with emojis and profile image.
+- 🔗 Social media integration (GitHub, LinkedIn, Twitter).
+- 📦 Organized sections: Biography, Experience, Projects, and Technologies.
+- ❤️ Stylish footer with credit and GitHub profile link.
 
-- ➕➖ Increment or decrement the **count** by the current step.
+---
 
-- 📅 Dynamically calculates and displays the new date based on the current count.
+## 🔧 How to Use
 
-- 🗓️ Smart messages like “3 days ago” or “5 days from today”.
+1. Clone the repository:
 
-## 🛠 Tech Stack
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+```
 
-⚛️ **React** (with Hooks)
+2. Open `index.html` in your browser to see it in action.
 
-📦 **JavaScript** (ES6+)
+---
 
-🎨 **HTML & CSS**
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
+
+---
+
+## 🚀 Live Demo
+
+> [🌍 Portfolio Live Site](https://yourusername.github.io/your-repo-name/)
+
+---
+
+## 📸 Preview
+
+## ![alt text](public/img/darkModePortfolio.png)
+
+---
+
+> Made with ❤️ by [LinSchmitz](https://github.com/LinSchmitz)
+
+---
+
+Let me know if you want me to auto-fill your real name, GitHub handle, or social links.
