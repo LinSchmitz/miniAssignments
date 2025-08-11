@@ -124,7 +124,7 @@ const App = () => {
 
       <footer>
         <p className="copyright">
-          Made with ❤️ by{' '}
+          Made with ❤️ by
           <a
             className="Github-link"
             target="_blank"
